@@ -1,0 +1,1808 @@
+{
+  "FilterHeaders": [
+    {
+      "Header": "x-requested-with",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "x-goog-encode-response-if-executable",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "x-goog-api-key",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "x-client-data",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "user-agent",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "upgrade-insecure-requests",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "sec-fetch-site",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "sec-fetch-mode",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "sec-fetch-dest",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "sec-ch-ua-platform",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "sec-ch-ua-mobile",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "sec-ch-ua",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "pragma",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "origin",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "intervention",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "if-none-match",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "content-encoding",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "cache-control",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "authorization",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "access-control-request-method",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "access-control-request-headers",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "accept-language",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "accept-encoding",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "accept",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "a-im",
+      "IncludeInScript": false
+    }
+  ],
+  "FilterResources": [
+    {
+      "IsNonResource": false,
+      "type": "text/plain"
+    },
+    {
+      "IsNonResource": false,
+      "type": "text/javascript"
+    },
+    {
+      "IsNonResource": true,
+      "type": "text/html"
+    },
+    {
+      "IsNonResource": false,
+      "type": "text/css"
+    },
+    {
+      "IsNonResource": false,
+      "type": "image/webp"
+    },
+    {
+      "IsNonResource": false,
+      "type": "image/svg+xml"
+    },
+    {
+      "IsNonResource": false,
+      "type": "image/gif"
+    },
+    {
+      "IsNonResource": false,
+      "type": "image/avif"
+    },
+    {
+      "IsNonResource": false,
+      "type": "font/woff2"
+    },
+    {
+      "IsNonResource": false,
+      "type": "application/x-gzip"
+    },
+    {
+      "IsNonResource": false,
+      "type": "application/vnd.google.octet-stream-compressible"
+    },
+    {
+      "IsNonResource": true,
+      "type": "application/json"
+    },
+    {
+      "IsNonResource": false,
+      "type": "application/javascript"
+    }
+  ],
+  "GeneralInfo": {
+    "BrowserVersion": "",
+    "IsWinInetMode": false,
+    "MaxUsedConnections": 35,
+    "RecordedBrowser": "Chrome",
+    "RecordingDate": "Feb-05-2024",
+    "RecordingDuration": 55781,
+    "RecordingMode": "N/A",
+    "RecordingTimeStamp": 1707126877,
+    "RecordingType": "Browser",
+    "TotalBytesReceived": 2066730,
+    "TotalBytesSent": 102416,
+    "TotalRequests": 146,
+    "UserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+  },
+  "HostInfo": [
+    {
+      "DomainName": "unpkg.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "104.16.126.175",
+          "IncludeInScript": true,
+          "Name": "unpkg.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "br",
+              "DataType": "application/javascript",
+              "DownloadTime": 31,
+              "EventId": 1595,
+              "HttpStatus": 200,
+              "Size": 13807,
+              "URL": "https://unpkg.com/@adobe/magento-storefront-events-sdk@1.6.0/dist/index.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/plain",
+              "DownloadTime": 110,
+              "EventId": 1580,
+              "HttpStatus": 302,
+              "Size": 79,
+              "URL": "https://unpkg.com/@adobe/magento-storefront-events-sdk@%5E1/dist/index.js"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "servedbyadbutler.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "148.113.1.23",
+          "IncludeInScript": true,
+          "Name": "servedbyadbutler.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 93,
+              "EventId": 1216,
+              "HttpStatus": 200,
+              "Size": 3180,
+              "URL": "https://servedbyadbutler.com/adserve/;ID=169583;size=0x0;setID=570360;type=js;referrer=https%3A%2F%2Fwww.hp.com%2Fin-en%2Fshop%2Flaptops-tablets.html%3Fprice%3D40000-50000%26gad_source%3D1%26gclid%3DEAIaIQobChMIr4_-wvuYhAMVWKVmAh2regiBEAAYASABEgI65vD_BwE%26gclsrc%3Daw.ds;sw=1280;sh=720;spr=1;kw=in-en,Laptops,websiteCode-base;pid=2984283;place=0;rnd=2984283;click=CLICK_MACRO_PLACEHOLDER"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "optimizely.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "23.213.102.155",
+          "IncludeInScript": true,
+          "Name": "tapi.optimizely.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/json",
+              "DownloadTime": 656,
+              "EventId": 1583,
+              "HttpStatus": 200,
+              "Size": 304,
+              "URL": "https://tapi.optimizely.com/api/targeting/7794130212/18974061969/oeu1707299228114r0.5612377947471365"
+            }
+          ],
+          "SSLCipher": "",
+          "SSLVersion": ""
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "34.111.140.246",
+          "IncludeInScript": true,
+          "Name": "logx.optimizely.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "text/plain",
+              "DownloadTime": 296,
+              "EventId": 1618,
+              "HttpStatus": 204,
+              "Size": 0,
+              "URL": "https://logx.optimizely.com/v1/events"
+            }
+          ],
+          "SSLCipher": "",
+          "SSLVersion": ""
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "23.45.164.167",
+          "IncludeInScript": true,
+          "Name": "cdn.optimizely.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/javascript",
+              "DownloadTime": 31,
+              "EventId": 1191,
+              "HttpStatus": 200,
+              "Size": 148414,
+              "URL": "https://cdn.optimizely.com/js/7794130212.js"
+            }
+          ],
+          "SSLCipher": "",
+          "SSLVersion": ""
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "23.207.77.149",
+          "IncludeInScript": true,
+          "Name": "a2129670914.cdn.optimizely.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/html",
+              "DownloadTime": 0,
+              "EventId": 1538,
+              "HttpStatus": 200,
+              "Size": 992,
+              "URL": "https://a2129670914.cdn.optimizely.com/client_storage/a2129670914.html"
+            }
+          ],
+          "SSLCipher": "",
+          "SSLVersion": ""
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "kampyle.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "199.232.105.175",
+          "IncludeInScript": true,
+          "Name": "nebula-cdn.kampyle.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 63,
+              "EventId": 1253,
+              "HttpStatus": 200,
+              "Size": 518,
+              "URL": "https://nebula-cdn.kampyle.com/wu/541116/onsite/embed.js"
+            }
+          ],
+          "SSLCipher": "ECDHE-RSA-AES128-GCM-SHA256",
+          "SSLVersion": "TLS1.2"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "hp.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "23.44.10.9",
+          "IncludeInScript": true,
+          "Name": "www.hp.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/javascript",
+              "DownloadTime": 47,
+              "EventId": 1534,
+              "HttpStatus": 200,
+              "Size": 35082,
+              "URL": "https://www.hp.com/cma/ng/lib/exceptions/mu.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/javascript",
+              "DownloadTime": 31,
+              "EventId": 1162,
+              "HttpStatus": 200,
+              "Size": 8902,
+              "URL": "https://www.hp.com/cma/ng/lib/exceptions/privacy-banner.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 31,
+              "EventId": 1153,
+              "HttpStatus": 200,
+              "Size": 8772,
+              "URL": "https://www.hp.com/akam/13/23479c11"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "application/javascript",
+              "DownloadTime": 32,
+              "EventId": 1132,
+              "HttpStatus": 200,
+              "Size": 80294,
+              "URL": "https://www.hp.com/xGQkKIC3NtdX/jq3xaR/U_AsFp/EaiOhpVmm2/BS8eYThxBg/VywXCX/EfRTk"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/html",
+              "DownloadTime": 407,
+              "EventId": 1082,
+              "HttpStatus": 200,
+              "Size": 151830,
+              "URL": "https://www.hp.com/in-en/shop/laptops-tablets.html?price=40000-50000&gad_source=1&gclid=EAIaIQobChMIr4_-wvuYhAMVWKVmAh2regiBEAAYASABEgI65vD_BwE&gclsrc=aw.ds"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "gstatic.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "142.250.183.227",
+          "IncludeInScript": true,
+          "Name": "fonts.gstatic.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "font/woff2",
+              "DownloadTime": 31,
+              "EventId": 863,
+              "HttpStatus": 200,
+              "Size": 21464,
+              "URL": "https://fonts.gstatic.com/s/googlesans/v14/4UaGrENHsxJlGDuGo1OIlL3Owp4.woff2"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "142.250.77.174",
+          "IncludeInScript": true,
+          "Name": "encrypted-tbn3.gstatic.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 31,
+              "EventId": 970,
+              "HttpStatus": 200,
+              "Size": 4350,
+              "URL": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSrkwmDpYmukvPFpP_rBzeszpWhhQDiZaKkloz_lFE_Z5IVlAlD45hwF-fjIZPTeVhVVI6mxmiJ_PnsjL7BVpgaY-T3tsIpfoI-uqEgi8nKiS3KETQtSO_K8Q"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 46,
+              "EventId": 958,
+              "HttpStatus": 200,
+              "Size": 4204,
+              "URL": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTUTfLGJ37zo_nc_nbhfaM7qKdhzsxd7Xk6bakdEXqzHZluIikEpG_xj09_Mv14rVriWjj78FHNeApfrpFK0x1EhtHiEUPfrwk1_F2Ytn96c02OY1CL3-PO"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 31,
+              "EventId": 952,
+              "HttpStatus": 200,
+              "Size": 3664,
+              "URL": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRV2ET9fyNVHS2vqGfjNdnGvvBR7br9ijfDeYF_FyWBrZgJm2WZLNdnw1ukgLFpRJ_pxVdVEPf4R81-HZrj2pIyvVA7ZprnRnygmdS9KBAdiodGRtJIFb1d"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 31,
+              "EventId": 948,
+              "HttpStatus": 200,
+              "Size": 3892,
+              "URL": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTYuftbQoUseoVKxmeo7DmUznz7rGShEJrdrV9v0a2FnqOi2orTCihiz_WVRDu9n_UPZEcA4AEdjLJTxxdeBhhk2WuME2jgbszFBLdI1gXadVGNpjP8bmzH-w"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "142.250.193.142",
+          "IncludeInScript": true,
+          "Name": "encrypted-tbn2.gstatic.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 47,
+              "EventId": 1048,
+              "HttpStatus": 200,
+              "Size": 3568,
+              "URL": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTbtZOp9bXJ683SdN7qKkuDcw1prOSmrz_PW14TKKRAw2NtiwcMqVbcg2dyyg92Ril100yBMaE15J77UtKFoqtDHkJOUtUu-gn46A0beTKF84A-tLOIVJM"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 31,
+              "EventId": 1001,
+              "HttpStatus": 200,
+              "Size": 4194,
+              "URL": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQgeNboOGTxBkJ_6MG8Djd6zcTK0pFLTtM5rzPEOFi1HXVjRWaTaceHGJl2wmjgPf4WsSrfs9oFTqC0s0Ml_IjvlrNBQq0hjC9fhejqqkkDnTywUSrfz9cW"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 32,
+              "EventId": 996,
+              "HttpStatus": 200,
+              "Size": 4246,
+              "URL": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS9qFONkun2ud41UU2V0cQTj4XRQ9foL4MmiSDes9vB5Vtbc6VNf0uQVVw8A4xmCc01pfVEZ-v7rDthFmKi97m8JVL0v2hdjVHYO2hiyyA9RcPxJZRpq1ha"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 32,
+              "EventId": 986,
+              "HttpStatus": 200,
+              "Size": 4220,
+              "URL": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSuxFPnhAXyca4JwBnk1jAkZWiZ5jOOS2JcrYpx_hxDUU5FvhcGOtfPVtaLKjcxdcBsDusZTz4iBWibEMj5P_7WXouzzNRpTlMy6jn8Y97jNk6G4XsQPN1L"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 16,
+              "EventId": 982,
+              "HttpStatus": 200,
+              "Size": 2976,
+              "URL": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQAdPyS7y7wJsRY8wHCioYa-1lbUHu4T3EWKRLJhI2FYxIFe7R0bKHqe16jnetEgj1O2M2s0D2lnmcrNaepLlkpMDZRlHUvwYCOV2Dii0RnOWbFooUyFxuLHQ"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "142.250.183.238",
+          "IncludeInScript": true,
+          "Name": "encrypted-tbn1.gstatic.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 141,
+              "EventId": 1054,
+              "HttpStatus": 200,
+              "Size": 4364,
+              "URL": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRJE-Lc2R3xf74BjZzMFXkgQQUfP2HWn9SJlegpoyocehba_u4WEYLmGBTfIw9jgyZyKCJdUAeEMN--EebHJia2wNz4ecJ654bPQKbSeq7Xg0LipUMz78O4KA"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 31,
+              "EventId": 1041,
+              "HttpStatus": 200,
+              "Size": 3978,
+              "URL": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT__-rQVuXZifm1lC5kRP4u5W1tXkF98vCHXuuA4vNdodwvqOUbQn6Z-CgID3euuTEpmtz9vCirUEnxrDD5Vsa01SNY-K6sK-SOdyxNbMM"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 47,
+              "EventId": 1035,
+              "HttpStatus": 200,
+              "Size": 4956,
+              "URL": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQh1Dyu6Y3GWSVBG1xwq4CLTkMoYbv2CYiA3qnDW03M3-BTwJSLUS54LrdMyeAbqvXKnBRJsVU19Y3tvt5LGb6EKVs4SV0O5iSrXLtP3pxvHbfxNlkeh_ij"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 31,
+              "EventId": 1031,
+              "HttpStatus": 200,
+              "Size": 2584,
+              "URL": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTwl4W2FR8mlvpHqzoxJ_Lpr4v1-AlDt8gbDGgfFx5CZMzv9okAzTtM1G86sYBlLirwzIm1ORGYSjNQWHOvRO6lik0hw9_FeQpUuMbi--BbbFFDKf3SadKK"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 47,
+              "EventId": 1025,
+              "HttpStatus": 200,
+              "Size": 5086,
+              "URL": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSlwA76_8oywJMzH7ceJblvZRqwgGw6nx-HUJRDexKcsEgSmw2GRe57S-yiCFSMTHyYOvr1KEiiV7Nre58A0lUZ2uK2XojaDiDpd_arFK0"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 31,
+              "EventId": 1018,
+              "HttpStatus": 200,
+              "Size": 3684,
+              "URL": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRYGp0ixO9GZ7RMnKkgqIZ8vLuu1oCgXLkIVeYBOCWoFd5aphLn8Q1SljvxkYdW2de9NKeE39pbdjeAg8k-mAZVdUNNi3v7kGbx9nbHHNM"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 47,
+              "EventId": 1013,
+              "HttpStatus": 200,
+              "Size": 3566,
+              "URL": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQ7xg6V0VpS7yqCscrggFJunl-7YW9VNR2lHHYY6WAwxUcaOYqiw8mTNeW67agVeVuPXcpqY5943ZmqGR5x1v3SqiNXBJlNwQDZImxTnQXsA53X2fJIZxU4"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "googletagmanager.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "142.250.182.72",
+          "IncludeInScript": true,
+          "Name": "www.googletagmanager.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "br",
+              "DataType": "application/javascript",
+              "DownloadTime": 78,
+              "EventId": 1261,
+              "HttpStatus": 200,
+              "Size": 89664,
+              "URL": "https://www.googletagmanager.com/gtm.js?id=GTM-NSSSFFL"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "googleapis.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "142.250.193.170",
+          "IncludeInScript": true,
+          "Name": "content-autofill.googleapis.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/plain",
+              "DownloadTime": 312,
+              "EventId": 816,
+              "HttpStatus": 200,
+              "Size": 36,
+              "URL": "https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTIxLjAuNjE2Ny4xNDASGQn11VQ7sgCk8RIFDWlIR0chrbMLunyG1js=?alt=proto"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "142.250.195.99",
+          "IncludeInScript": true,
+          "Name": "clientservices.googleapis.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "application/x-gzip",
+              "DownloadTime": 219,
+              "EventId": 807,
+              "HttpStatus": 200,
+              "Size": 942,
+              "URL": "https://clientservices.googleapis.com/chrome-variations/seed?osname=win&channel=stable&milestone=121"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "google.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "172.217.193.94",
+          "IncludeInScript": true,
+          "Name": "id.google.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "text/plain",
+              "DownloadTime": 516,
+              "EventId": 904,
+              "HttpStatus": 204,
+              "Size": 0,
+              "URL": "https://id.google.com/verify/ANsg4T7QMqxWQ5lSOuccOwuO4gZf537BZrQLRmP0qbnEm8GdBtvx7lMd8UFUorTyZ9ajBmxMaDpg8W9gtGywsKBUDHf_nQTrZfVRZ1MrN4PC5CsirDpA"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "142.250.205.238",
+          "IncludeInScript": true,
+          "Name": "clients4.google.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/vnd.google.octet-stream-compressible",
+              "DownloadTime": 375,
+              "EventId": 910,
+              "HttpStatus": 200,
+              "Size": 2247,
+              "URL": "https://clients4.google.com/chrome-sync/command/?client=Google+Chrome&client_id=I76XEoEoSqxhEjiZ7akd2w%3D%3D"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/vnd.google.octet-stream-compressible",
+              "DownloadTime": 312,
+              "EventId": 906,
+              "HttpStatus": 200,
+              "Size": 255,
+              "URL": "https://clients4.google.com/chrome-sync/command/?client=Google+Chrome&client_id=I76XEoEoSqxhEjiZ7akd2w%3D%3D"
+            }
+          ],
+          "SSLCipher": "",
+          "SSLVersion": ""
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "go-mpulse.net",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "23.45.160.158",
+          "IncludeInScript": true,
+          "Name": "s.go-mpulse.net",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "br",
+              "DataType": "application/javascript",
+              "DownloadTime": 15,
+              "EventId": 1188,
+              "HttpStatus": 200,
+              "Size": 52061,
+              "URL": "https://s.go-mpulse.net/boomerang/YJ2XX-MFTTM-QC8YL-NJ6NC-DHH57"
+            }
+          ],
+          "SSLCipher": "ECDHE-ECDSA-AES256-GCM-SHA384",
+          "SSLVersion": "TLS1.2"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "23.45.164.147",
+          "IncludeInScript": true,
+          "Name": "c.go-mpulse.net",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/json",
+              "DownloadTime": 406,
+              "EventId": 1373,
+              "HttpStatus": 200,
+              "Size": 4067,
+              "URL": "https://c.go-mpulse.net/api/config.json?key=YJ2XX-MFTTM-QC8YL-NJ6NC-DHH57&d=www.hp.com&t=5690997&v=1.766.0&sl=0&si=97659fee-7680-4237-8202-c45c3ff1bbae-s8hcib&plugins=AK,ConfigOverride,Continuity,PageParams,IFrameDelay,AutoXHR,SPA,History,Angular,Backbone,Ember,RT,CrossDomain,BW,PaintTiming,NavigationTiming,ResourceTiming,Memory,CACHE_RELOAD,Errors,TPAnalytics,UserTiming,Akamai,Early,EventTiming,LOGN&acao=&ak.ai=687787"
+            }
+          ],
+          "SSLCipher": "",
+          "SSLVersion": ""
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "bazaarvoice.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "18.161.216.84",
+          "IncludeInScript": true,
+          "Name": "apps.bazaarvoice.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/javascript",
+              "DownloadTime": 63,
+              "EventId": 1236,
+              "HttpStatus": 200,
+              "Size": 23328,
+              "URL": "https://apps.bazaarvoice.com/deployments/hpshopping-in/main_site/production/en_IN/bv.js"
+            }
+          ],
+          "SSLCipher": "TLS_AES_128_GCM_SHA256",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "apjonlinecdn.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "18.67.161.107",
+          "IncludeInScript": true,
+          "Name": "in-media.apjonlinecdn.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 15,
+              "EventId": 1625,
+              "HttpStatus": 200,
+              "Size": 981,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/mage/utils/compare.min.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 16,
+              "EventId": 1623,
+              "HttpStatus": 200,
+              "Size": 596,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/mage/utils/arrays.min.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 16,
+              "EventId": 1616,
+              "HttpStatus": 200,
+              "Size": 508,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/Magento_Ui/js/lib/core/storage/local.min.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 16,
+              "EventId": 1614,
+              "HttpStatus": 200,
+              "Size": 609,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/Magento_Ui/js/lib/core/events.min.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 15,
+              "EventId": 1612,
+              "HttpStatus": 200,
+              "Size": 2374,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/knockoutjs/knockout-fast-foreach.min.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 16,
+              "EventId": 1610,
+              "HttpStatus": 200,
+              "Size": 1749,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/knockoutjs/knockout-repeat.min.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "font/woff2",
+              "DownloadTime": 16,
+              "EventId": 1593,
+              "HttpStatus": 200,
+              "Size": 13636,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/fonts/icomoon/icomoon.woff2"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 16,
+              "EventId": 1591,
+              "HttpStatus": 200,
+              "Size": 935,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/Magento_Theme/js/contact_us.min.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "font/woff2",
+              "DownloadTime": 15,
+              "EventId": 1589,
+              "HttpStatus": 200,
+              "Size": 12768,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/fonts/hpicons/hpi-hf-icons.woff2"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "font/woff2",
+              "DownloadTime": 15,
+              "EventId": 1587,
+              "HttpStatus": 200,
+              "Size": 3272,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/fonts/Luma-Icons.woff2"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "font/woff2",
+              "DownloadTime": 31,
+              "EventId": 1573,
+              "HttpStatus": 200,
+              "Size": 4452,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/fonts/iconfont/iconfont.woff2"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "font/woff2",
+              "DownloadTime": 15,
+              "EventId": 1570,
+              "HttpStatus": 200,
+              "Size": 39360,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/fonts/FormaDJR/FormaDJRMicro-Regular.woff2"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "font/woff2",
+              "DownloadTime": 15,
+              "EventId": 1568,
+              "HttpStatus": 200,
+              "Size": 6800,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/fonts/hpIconfont/iconfont.woff2"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "font/woff2",
+              "DownloadTime": 31,
+              "EventId": 1566,
+              "HttpStatus": 200,
+              "Size": 37804,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/fonts/FormaDJR/FormaDJRMicro-Bold.woff2"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/avif",
+              "DownloadTime": 47,
+              "EventId": 1564,
+              "HttpStatus": 200,
+              "Size": 397,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/images/worldmap/hpi-flag-in.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 16,
+              "EventId": 1562,
+              "HttpStatus": 200,
+              "Size": 286,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/images/icon/icon_chevron_right_s.svg"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 16,
+              "EventId": 1556,
+              "HttpStatus": 200,
+              "Size": 37968,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/Magento_Catalog/js/view/swiper-bundle.min.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 16,
+              "EventId": 1554,
+              "HttpStatus": 200,
+              "Size": 542,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/Magento_Ui/js/lib/logger/console-logger.min.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/javascript",
+              "DownloadTime": 16,
+              "EventId": 1552,
+              "HttpStatus": 200,
+              "Size": 697,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/jquery/z-index.min.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/javascript",
+              "DownloadTime": 15,
+              "EventId": 1550,
+              "HttpStatus": 200,
+              "Size": 256,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/jquery/ui-modules/core.min.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/javascript",
+              "DownloadTime": 16,
+              "EventId": 1548,
+              "HttpStatus": 200,
+              "Size": 257,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/Magento_Ui/js/lib/key-codes.min.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 16,
+              "EventId": 1546,
+              "HttpStatus": 200,
+              "Size": 692,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/Magento_Ui/js/lib/knockout/extender/bound-nodes.min.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 31,
+              "EventId": 1544,
+              "HttpStatus": 200,
+              "Size": 525,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/Magento_Ui/js/lib/knockout/extender/observable_array.min.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 16,
+              "EventId": 1542,
+              "HttpStatus": 200,
+              "Size": 418,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/Magento_Ui/js/lib/knockout/bindings/bootstrap.min.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 16,
+              "EventId": 1540,
+              "HttpStatus": 200,
+              "Size": 1150,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/Magento_Ui/js/lib/knockout/template/engine.min.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 31,
+              "EventId": 1532,
+              "HttpStatus": 200,
+              "Size": 1183,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/Magento_Ui/js/lib/registry/registry.min.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/javascript",
+              "DownloadTime": 31,
+              "EventId": 1530,
+              "HttpStatus": 200,
+              "Size": 372,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/mage/utils/main.min.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 16,
+              "EventId": 1522,
+              "HttpStatus": 200,
+              "Size": 563,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/mage/apply/scripts.min.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/javascript",
+              "DownloadTime": 15,
+              "EventId": 1520,
+              "HttpStatus": 200,
+              "Size": 199,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/jquery/ui-modules/version.min.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "font/woff2",
+              "DownloadTime": 31,
+              "EventId": 1516,
+              "HttpStatus": 200,
+              "Size": 4452,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1706826464/frontend/HPOLS/stellar/en_US/fonts/iconfont/iconfont.woff2"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/html",
+              "DownloadTime": 15,
+              "EventId": 1512,
+              "HttpStatus": 200,
+              "Size": 623,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/Magento_Ui/templates/modal/modal-custom.html"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 16,
+              "EventId": 1510,
+              "HttpStatus": 200,
+              "Size": 7730,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/HPOLS_Cms/js/jquery.flexslider.min.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "",
+              "DownloadTime": 156,
+              "EventId": 1508,
+              "HttpStatus": 200,
+              "Size": 0,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/Magento_Ui/templates/modal/modal-custom.html"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 15,
+              "EventId": 1506,
+              "HttpStatus": 200,
+              "Size": 2185,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/knockoutjs/knockout-es5.min.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/html",
+              "DownloadTime": 15,
+              "EventId": 1504,
+              "HttpStatus": 200,
+              "Size": 647,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/Magento_Ui/templates/modal/modal-slide.html"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/html",
+              "DownloadTime": 15,
+              "EventId": 1502,
+              "HttpStatus": 200,
+              "Size": 630,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/Magento_Ui/templates/modal/modal-popup.html"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "",
+              "DownloadTime": 109,
+              "EventId": 1499,
+              "HttpStatus": 200,
+              "Size": 0,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/Magento_Ui/templates/modal/modal-slide.html"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 16,
+              "EventId": 1496,
+              "HttpStatus": 200,
+              "Size": 37849,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/knockoutjs/knockout.min.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "",
+              "DownloadTime": 110,
+              "EventId": 1494,
+              "HttpStatus": 200,
+              "Size": 0,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/Magento_Ui/templates/modal/modal-popup.html"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/css",
+              "DownloadTime": 16,
+              "EventId": 1492,
+              "HttpStatus": 200,
+              "Size": 6205,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/css/bootstrap/bootstrap-grid.min.css"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/css",
+              "DownloadTime": 31,
+              "EventId": 1490,
+              "HttpStatus": 200,
+              "Size": 1658,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/css/print.min.css"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/css",
+              "DownloadTime": 16,
+              "EventId": 1488,
+              "HttpStatus": 200,
+              "Size": 4471,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/Magento_Catalog/css/swiper-bundle.min.css"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 16,
+              "EventId": 1486,
+              "HttpStatus": 200,
+              "Size": 693,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/js-translation.json"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "",
+              "DownloadTime": 47,
+              "EventId": 1481,
+              "HttpStatus": 200,
+              "Size": 0,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/js-translation.json"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "font/woff2",
+              "DownloadTime": 15,
+              "EventId": 1478,
+              "HttpStatus": 200,
+              "Size": 3272,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1706826464/frontend/HPOLS/stellar/en_US/fonts/Luma-Icons.woff2"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "font/woff2",
+              "DownloadTime": 16,
+              "EventId": 1473,
+              "HttpStatus": 200,
+              "Size": 39360,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1706826464/frontend/HPOLS/stellar/en_US/fonts/FormaDJR/FormaDJRMicro-Regular.woff2"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "font/woff2",
+              "DownloadTime": 281,
+              "EventId": 1467,
+              "HttpStatus": 200,
+              "Size": 6800,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1706826464/frontend/HPOLS/stellar/en_US/fonts/hpIconfont/iconfont.woff2"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "font/woff2",
+              "DownloadTime": 31,
+              "EventId": 1462,
+              "HttpStatus": 200,
+              "Size": 37804,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1706826464/frontend/HPOLS/stellar/en_US/fonts/FormaDJR/FormaDJRMicro-Bold.woff2"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/css",
+              "DownloadTime": 16,
+              "EventId": 1434,
+              "HttpStatus": 200,
+              "Size": 211314,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/css/styles-l.min.css"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/css",
+              "DownloadTime": 47,
+              "EventId": 1430,
+              "HttpStatus": 200,
+              "Size": 3096,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/HPOLS_Cms/css/swiper.min.css"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 15,
+              "EventId": 1422,
+              "HttpStatus": 200,
+              "Size": 286,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1706826464/frontend/HPOLS/stellar/en_US/images/icon/icon_chevron_right_s.svg"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/css",
+              "DownloadTime": 15,
+              "EventId": 1412,
+              "HttpStatus": 200,
+              "Size": 5302,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/mage/gallery/gallery.min.css"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/css",
+              "DownloadTime": 15,
+              "EventId": 1402,
+              "HttpStatus": 200,
+              "Size": 2016,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/Knowband_Spinandwin/css/front_style.min.css"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/css",
+              "DownloadTime": 16,
+              "EventId": 1397,
+              "HttpStatus": 200,
+              "Size": 431333,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/css/styles-m.min.css"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/css",
+              "DownloadTime": 16,
+              "EventId": 1395,
+              "HttpStatus": 200,
+              "Size": 1163,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/mage/calendar.min.css"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 16,
+              "EventId": 1393,
+              "HttpStatus": 200,
+              "Size": 1803,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/PluginCompany_ContactForms/lib/require-css/css.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 15,
+              "EventId": 1391,
+              "HttpStatus": 200,
+              "Size": 2206,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/Magento_Ui/js/modal/modal.min.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/javascript",
+              "DownloadTime": 15,
+              "EventId": 1389,
+              "HttpStatus": 200,
+              "Size": 566,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/mage/translate.min.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 16,
+              "EventId": 1387,
+              "HttpStatus": 200,
+              "Size": 749,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/HPOLS_Core/js/escaper.min.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 16,
+              "EventId": 1385,
+              "HttpStatus": 200,
+              "Size": 906,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/Magento_Security/js/escaper.min.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/javascript",
+              "DownloadTime": 15,
+              "EventId": 1383,
+              "HttpStatus": 200,
+              "Size": 712,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/mage/mage.min.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 16,
+              "EventId": 1381,
+              "HttpStatus": 200,
+              "Size": 480,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/mage/smart-keyboard-handler.min.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 16,
+              "EventId": 1379,
+              "HttpStatus": 200,
+              "Size": 903,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/mage/requirejs/text.min.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 15,
+              "EventId": 1377,
+              "HttpStatus": 200,
+              "Size": 9619,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/underscore.min.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 16,
+              "EventId": 1375,
+              "HttpStatus": 200,
+              "Size": 435,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/mage/utils/wrapper.min.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 16,
+              "EventId": 1371,
+              "HttpStatus": 200,
+              "Size": 2464,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/Magento_Ui/js/core/renderer/layout.min.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/javascript",
+              "DownloadTime": 15,
+              "EventId": 1369,
+              "HttpStatus": 200,
+              "Size": 524,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/Magento_Ui/js/core/renderer/types.min.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/javascript",
+              "DownloadTime": 16,
+              "EventId": 1367,
+              "HttpStatus": 200,
+              "Size": 259,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/Magento_Ui/js/lib/knockout/bootstrap.min.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 16,
+              "EventId": 1365,
+              "HttpStatus": 200,
+              "Size": 617,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/mage/apply/main.min.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 15,
+              "EventId": 1363,
+              "HttpStatus": 200,
+              "Size": 3906,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/jquery/ui-modules/widget.min.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 15,
+              "EventId": 1361,
+              "HttpStatus": 200,
+              "Size": 508,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/Magento_Ui/js/modal/confirm.min.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/javascript",
+              "DownloadTime": 15,
+              "EventId": 1359,
+              "HttpStatus": 200,
+              "Size": 601,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/mage/template.min.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/javascript",
+              "DownloadTime": 15,
+              "EventId": 1357,
+              "HttpStatus": 200,
+              "Size": 649,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/Magento_ReCaptchaWebapiUi/js/jquery-mixin.min.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 16,
+              "EventId": 1345,
+              "HttpStatus": 200,
+              "Size": 588,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/requirejs/domReady.min.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 15,
+              "EventId": 1340,
+              "HttpStatus": 200,
+              "Size": 1196,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/js/stellar-global.min.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/javascript",
+              "DownloadTime": 16,
+              "EventId": 1330,
+              "HttpStatus": 200,
+              "Size": 763,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/Magento_Theme/js/theme.min.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/javascript",
+              "DownloadTime": 16,
+              "EventId": 1322,
+              "HttpStatus": 200,
+              "Size": 91,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/Magento_Translation/js/mage-translation-dictionary.min.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 15,
+              "EventId": 1314,
+              "HttpStatus": 200,
+              "Size": 746,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/Magento_PageCache/js/form-key-provider.min.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/javascript",
+              "DownloadTime": 32,
+              "EventId": 1305,
+              "HttpStatus": 200,
+              "Size": 212,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/Magento_Ui/js/core/app.min.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/javascript",
+              "DownloadTime": 15,
+              "EventId": 1298,
+              "HttpStatus": 200,
+              "Size": 158,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/mage/bootstrap.min.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 16,
+              "EventId": 1294,
+              "HttpStatus": 200,
+              "Size": 803,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/mage/dataPost.min.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 16,
+              "EventId": 1278,
+              "HttpStatus": 200,
+              "Size": 477,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/mage/common.min.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 15,
+              "EventId": 1275,
+              "HttpStatus": 200,
+              "Size": 40989,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/jquery.min.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/avif",
+              "DownloadTime": 63,
+              "EventId": 1263,
+              "HttpStatus": 200,
+              "Size": 1240,
+              "URL": "https://in-media.apjonlinecdn.com/attribute/swatch/m/i/microsoftteams-image_1_1.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/avif",
+              "DownloadTime": 47,
+              "EventId": 1259,
+              "HttpStatus": 200,
+              "Size": 2746,
+              "URL": "https://in-media.apjonlinecdn.com/attribute/swatch/b/a/backpack_1_.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/avif",
+              "DownloadTime": 63,
+              "EventId": 1250,
+              "HttpStatus": 200,
+              "Size": 30299,
+              "URL": "https://in-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/c/0/c08484491_3_1.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/avif",
+              "DownloadTime": 32,
+              "EventId": 1246,
+              "HttpStatus": 200,
+              "Size": 30544,
+              "URL": "https://in-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/c/0/c08515110.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/avif",
+              "DownloadTime": 62,
+              "EventId": 1231,
+              "HttpStatus": 200,
+              "Size": 30037,
+              "URL": "https://in-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/c/0/c08077457_1_1.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/avif",
+              "DownloadTime": 47,
+              "EventId": 1228,
+              "HttpStatus": 200,
+              "Size": 26352,
+              "URL": "https://in-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/c/0/c08748456_1_1.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/avif",
+              "DownloadTime": 125,
+              "EventId": 1223,
+              "HttpStatus": 200,
+              "Size": 1283,
+              "URL": "https://in-media.apjonlinecdn.com/attribute/swatch/_/t/_thumb_128208.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/avif",
+              "DownloadTime": 109,
+              "EventId": 1218,
+              "HttpStatus": 200,
+              "Size": 38247,
+              "URL": "https://in-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/c/0/c08192495_1_4.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/avif",
+              "DownloadTime": 62,
+              "EventId": 1201,
+              "HttpStatus": 200,
+              "Size": 31232,
+              "URL": "https://in-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/c/0/c08182657_1_10.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/avif",
+              "DownloadTime": 63,
+              "EventId": 1193,
+              "HttpStatus": 200,
+              "Size": 2772,
+              "URL": "https://in-media.apjonlinecdn.com/attribute/swatch/b/a/backpack.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/gif",
+              "DownloadTime": 16,
+              "EventId": 1185,
+              "HttpStatus": 200,
+              "Size": 17255,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/images/loader-1.gif"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/avif",
+              "DownloadTime": 47,
+              "EventId": 1176,
+              "HttpStatus": 200,
+              "Size": 309,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/Mageplaza_LazyLoading/mageplaza/lazyloading/BG.png"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 15,
+              "EventId": 1174,
+              "HttpStatus": 200,
+              "Size": 661,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/HPOLS_Cms/js/quick-menu.min.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 16,
+              "EventId": 1168,
+              "HttpStatus": 200,
+              "Size": 4978,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/HP_HawkSearch/js/hawk-search.min.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 31,
+              "EventId": 1166,
+              "HttpStatus": 200,
+              "Size": 2490,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/Smile_ElasticsuiteTracker/js/tracking.min.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/avif",
+              "DownloadTime": 47,
+              "EventId": 1149,
+              "HttpStatus": 200,
+              "Size": 56007,
+              "URL": "https://in-media.apjonlinecdn.com/wysiwyg/2024/L2-menu/L2-924x720_1.png"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 31,
+              "EventId": 1147,
+              "HttpStatus": 200,
+              "Size": 836,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/HPOLS_BvReview/js/review.min.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/gif",
+              "DownloadTime": 16,
+              "EventId": 1127,
+              "HttpStatus": 200,
+              "Size": 2035,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/images/loader-2.gif"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 15,
+              "EventId": 1123,
+              "HttpStatus": 200,
+              "Size": 839,
+              "URL": "https://in-media.apjonlinecdn.com/logo/stores/1/LogoHPblue_1.svg"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 32,
+              "EventId": 1119,
+              "HttpStatus": 200,
+              "Size": 8012,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/requirejs/require.min.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/javascript",
+              "DownloadTime": 15,
+              "EventId": 1117,
+              "HttpStatus": 200,
+              "Size": 819,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/requirejs-min-resolver.min.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 16,
+              "EventId": 1115,
+              "HttpStatus": 200,
+              "Size": 8157,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/requirejs-config.min.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 47,
+              "EventId": 1113,
+              "HttpStatus": 200,
+              "Size": 904,
+              "URL": "https://in-media.apjonlinecdn.com/static/version1707169154/frontend/HPOLS/stellar/en_US/mage/requirejs/mixins.min.js"
+            }
+          ],
+          "SSLCipher": "TLS_AES_128_GCM_SHA256",
+          "SSLVersion": "TLS1.3"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "18.155.99.30",
+          "IncludeInScript": true,
+          "Name": "in-files.apjonlinecdn.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 125,
+              "EventId": 1130,
+              "HttpStatus": 200,
+              "Size": 4738,
+              "URL": "https://in-files.apjonlinecdn.com/landingpages/content-pages/hp-contact-us/images/QR_sales_support.png"
+            }
+          ],
+          "SSLCipher": "TLS_AES_128_GCM_SHA256",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    }
+  ],
+  "WebSocket": {
+    "IncludeInScript": false,
+    "IsScriptIncludeWebSocket": false
+  },
+  "NumberOfCorrelations": 6
+}

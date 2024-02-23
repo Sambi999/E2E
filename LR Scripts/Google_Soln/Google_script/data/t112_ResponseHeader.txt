@@ -1,0 +1,16 @@
+HTTP/1.1 204 No Content
+timing-allow-origin: *
+access-control-allow-credentials: true
+access-control-allow-origin: https://www.hp.com
+access-control-allow-headers: X-Requested-With,Content-Type,Accept,Origin,X-App-Trace-Id,X-Optimizely-Strict
+access-control-allow-methods: POST,OPTIONS
+access-control-expose-headers: X-Requested-With,Content-Type,Accept,Origin,X-App-Trace-Id
+content-type: text/plain
+date: Wed, 07 Feb 2024 09:58:04 GMT
+server: istio-envoy
+x-envoy-upstream-service-time: 2
+x-request-id: 795ba03c-f60b-4c63-a003-9713196949a4
+x-envoy-decorator-operation: events-smart-router.edp-prod.svc.cluster.local:8080/*
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+

@@ -1,0 +1,8 @@
+const QuickMenuJS={showDelay:42,hideDelay:300,criticalWidth:1024,toggleMobileMenu:function(){let element,html,globalMessage,pageWrapper;element=document.getElementsByClassName('message global inside-notice');html=document.querySelector('html');if(element.length){globalMessage=element[0];}
+if(!html){return;}
+pageWrapper=document.querySelectorAll('.page-wrapper');if(html.classList.contains('nav-open')){html.classList.remove('nav-open');setTimeout(()=>{html.classList.remove('nav-before-open');},this.hideDelay);if(globalMessage){Array.from(element).forEach(item=>{if(item.classList.contains('private-notices')==false){item.style='';globalMessage.style.position='';}});}
+pageWrapper.forEach(item=>{item.style='';});}else{document.querySelectorAll('.level0.submenu').forEach(item=>{item.style.display='none';})
+html.classList.add('nav-before-open');setTimeout(()=>{html.classList.add('nav-open');},this.showDelay);}
+if(window.innerWidth<this.criticalWidth){document.querySelectorAll('.level-top.has-dropdown-menu, .level-top.menu-link-enable').forEach((level1Menu)=>{level1Menu.addEventListener('click',(event)=>{event.preventDefault();if(window.innerWidth>=this.criticalWidth){level1Menu.removeEventListener('click',arguments.callee,false);return;}
+let _allSubmenu=document.querySelectorAll('.level0.submenu');Array.from(_allSubmenu).forEach((_submenu)=>{_submenu.style.display='none';})
+let _children=level1Menu.parentElement.children;Array.from(_children).forEach((_child)=>{if(_child.tagName=='UL'){_child.style.display='block';}})});})}}}

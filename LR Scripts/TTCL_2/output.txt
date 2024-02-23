@@ -1,0 +1,114 @@
+Virtual User Script started at: 20-02-2024 17:14:26
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 2023.0.0 for Windows 10; build 506 (Mar 08 2023 13:11:40)  	[MsgId: MMSG-26983]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Replay user agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36  	[MsgId: MMSG-26988]
+Runtime Settings file: "D:\LR Scripts\TTCL_2\\default.cfg"  	[MsgId: MMSG-27141]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Maximum number of concurrent connections per server: 6  	[MsgId: MMSG-26989]
+Starting action Action.
+Action.c(4): web_set_sockets_option started  	[MsgId: MMSG-26355]
+Action.c(4): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+Action.c(6): web_url("thinking-tester-contact-list.herokuapp.com") started  	[MsgId: MMSG-26355]
+Action.c(6): Found resource "https://thinking-tester-contact-list.herokuapp.com/css/styles.css" in HTML "https://thinking-tester-contact-list.herokuapp.com/"  	[MsgId: MMSG-26659]
+Action.c(6): Found resource "https://thinking-tester-contact-list.herokuapp.com/img/thinkingTesterLogo.png" in HTML "https://thinking-tester-contact-list.herokuapp.com/"  	[MsgId: MMSG-26659]
+Action.c(6): Found resource "https://thinking-tester-contact-list.herokuapp.com/js/login.js" in HTML "https://thinking-tester-contact-list.herokuapp.com/"  	[MsgId: MMSG-26659]
+Action.c(6): web_url("thinking-tester-contact-list.herokuapp.com") was successful, 15841 body bytes, 3231 header bytes  	[MsgId: MMSG-26386]
+Action.c(45): web_reg_save_param_regexp started  	[MsgId: MMSG-26355]
+Action.c(45): Registering web_reg_save_param_regexp was successful  	[MsgId: MMSG-26390]
+Action.c(53): web_custom_request("login") started  	[MsgId: MMSG-26355]
+Action.c(53): Warning: The string '"email":"WWWXXX123@gmail.com","password":"WWWXXX111"' with parameter delimiters is not a parameter.
+Action.c(53): Notify: Saving Parameter "tokenParam = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWQ0MmY0OWI0MjFmZjAwMTM4NzY1ZmUiLCJpYXQiOjE3MDg0MzAwMjZ9._C6mi9audKE4XwiMig2Hs_EiBItLjypf78I1sRh1V2E".
+Action.c(53): web_custom_request("login") was successful, 277 body bytes, 982 header bytes  	[MsgId: MMSG-26386]
+Action.c(65): Notify: Parameter Substitution: parameter "tokenParam" =  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWQ0MmY0OWI0MjFmZjAwMTM4NzY1ZmUiLCJpYXQiOjE3MDg0MzAwMjZ9._C6mi9audKE4XwiMig2Hs_EiBItLjypf78I1sRh1V2E"
+Action.c(65): Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWQ0MmY0OWI0MjFmZjAwMTM4NzY1ZmUiLCJpYXQiOjE3MDg0MzAwMjZ9._C6mi9audKE4XwiMig2Hs_EiBItLjypf78I1sRh1V2E
+Action.c(67): web_url("contactList") started  	[MsgId: MMSG-26355]
+Action.c(67): Found resource "https://thinking-tester-contact-list.herokuapp.com/css/styles.css" in HTML "https://thinking-tester-contact-list.herokuapp.com/contactList"  	[MsgId: MMSG-26659]
+Action.c(67): Found resource "https://thinking-tester-contact-list.herokuapp.com/img/thinkingTesterLogo.png" in HTML "https://thinking-tester-contact-list.herokuapp.com/contactList"  	[MsgId: MMSG-26659]
+Action.c(67): Found resource "https://thinking-tester-contact-list.herokuapp.com/js/contactList.js" in HTML "https://thinking-tester-contact-list.herokuapp.com/contactList"  	[MsgId: MMSG-26659]
+Action.c(67): web_url("contactList") was successful, 4709 body bytes, 3201 header bytes  	[MsgId: MMSG-26386]
+Action.c(76): web_add_header("Authorization") started  	[MsgId: MMSG-26355]
+Action.c(76): Notify: Parameter Substitution: parameter "tokenParam" =  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWQ0MmY0OWI0MjFmZjAwMTM4NzY1ZmUiLCJpYXQiOjE3MDg0MzAwMjZ9._C6mi9audKE4XwiMig2Hs_EiBItLjypf78I1sRh1V2E"
+Action.c(76): Warning -26593: The header being added may cause unpredictable results if applied to ALL the URLs generated on behalf of the next script function. It will apply to the primary URL only.  	[MsgId: MWAR-26593]
+Action.c(76): web_add_header("Authorization") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(78): web_custom_request("contacts") started  	[MsgId: MMSG-26355]
+Action.c(78): web_custom_request("contacts") was successful, 114 body bytes, 754 header bytes  	[MsgId: MMSG-26386]
+Action.c(90): web_custom_request("json") started  	[MsgId: MMSG-26355]
+Action.c(90): Warning: The string '"fp":"1.aeedb246d19256a956fedaa89fb62423ae5bd8855a2a1f3189161cf045645a19"' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string 'c28bb01f-5cc8-40ba-9ebe-eed7a33d9048' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '"fp":"1.c900ba9a2d8318263fd43782ee6fd5fb50bad78bf0eb2c972b5922c458af45ed"' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '680d8c0e-885d-47a9-b2b8-71793df8e310' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '66d67f41-abf1-49fc-90fe-6745c47b6b42' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '"fp":"1.8069f8805123f74944304604381770bb694317c9e1044e096f540222dc56c0f6"' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string 'e4cc05e5-ee21-4471-ac03-dd31e89baa84' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '"fp":"1.cd1978742a4afdbaaa15bf712d5c90bef4144caa99024df98f6a9ad58043ae85"' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '9fe34e7f-2abc-4366-9bad-da4a908d0fb5' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '"fp":"1.04dfbee1ec2fd167512805dedf3fa2a823dc28fe9fa2c97a74e664b38486110f"' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '211cec1f-939a-4fed-857c-cc08a86d0519' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '"fp":"1.fa8f95866e02e4f5b8f7c6b0aeb6a7230517c7f23f4d1374c337a731193a9bde"' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '29bcd255-e3d9-433b-b677-e91c76d3129e' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '"fp":"1.4a6508925b2ffec931c1e3931ddeb15ca41d820a8264cd5a962b526e9932bcdf"' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '8924de7b-1a55-48bf-bd74-86949fc174f7' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '"fp":"1.fd515ec0dc30d25a09641b8b83729234bc50f4511e35ce17d24fd996252eaace"' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string 'ae7509d6-fa98-4c22-b7ab-27fd7a711bb7' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '"fp":"1.f4f1eb04881095d1cc8f2e1799a8144c10476dc1088a03ecdb4418644040a554"' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string 'ad5ad1a0-4cfd-4465-85d2-98d55ec48d42' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '"fp":"1.43242be9456dcad18ec3f6597c842a521246ccc3cc377919779b356dfb5b5e20"' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '55ab761c-3189-494b-9110-007400f630c9' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '"fp":"1.3a118962ef814c91f6476bb9f0de58afa63103af6ac1b8729be9b39a86789e96"' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '26f3ac5f-a202-4a75-9052-d2fdf1c66e36' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '79f82a53-4fcd-4b5d-a09c-25b42d8192b5' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '"fp":"1.a8a79d350c2a5e3bc36226633a8e0bed0dfab184e77f38fc8f0820ebacf8eafc"' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '7a4e1fb6-48fb-4e60-a515-f6133045ef07' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '"fp":"1.4ccf4cac4c37dd966d3bee0b3a4137894eecde1b22a9d4e7ef07d5081b5cf67a"' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '2dfffdf4-b5e4-4966-a2e6-5f78b9bfbcab' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '"fp":"1.af8fa6822a4a3a4aeaf78dd2b562b3b76ed3ef0b362f8ebc822df79717c996df"' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '80f00d58-47d0-4b7d-884e-374eef72e5b3' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '"fp":"1.c45cd56a0a8da0883c8f9757b31891d6c628f38cb80724015ffdf33b419a73f3"' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '2b5d1cb9-1646-42a7-a315-e2bf4c1a7765' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '"fp":"1.c52c62a7c50daf7d3f73ec16977cd4b0ea401710807d5dbe3850941dd1b73a70"' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '7d3f08dd-76c4-4127-a1c8-edac0dbf57d8' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '"fp":"1.545666a4efd056351597bb386aea1368105ededc976ed5650d8682daab9f37ff"' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '229ca3f5-cc43-44db-b0cf-503aa8bb6d5a' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '"fp":"1.d32c86b9cc1bfeb1660731da145c5b23085f91eaad4a1a810e9da6773189bb93"' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string 'e879f600-3958-470e-9981-12698f627583' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '"fp":"1.c64c9c1008f3ba5f6e18b3ca524bc98dcd8acfae0a2720a8f1f3ef0f8d643d05"' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string 'a7675b21-b92e-45e5-b346-abb87b58d7c5' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '"fp":"1.7e7996864a74a4b8db2b59c559f924f321668848edbcb85386212a4901ef0e6e"' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '617e2011-81cc-47a0-b86d-d9d69a5196c4' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '"avx":true,"physmemory":12,"sse":true,"sse2":true,"sse3":true,"sse41":true,"sse42":true,"ssse3":true' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '"arch":"x86_64","platform":"Windows","version":"10.0.19045.3324"' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '7e6c7214-367b-4d49-864a-571afaab6484' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string 'a05e6ad2-8630-4e4c-81ca-25fbea13c60c' with parameter delimiters is not a parameter.
+Action.c(90): Warning: The string '"autoupdatecheckenabled":true,"ismachine":true,"lastchecked":0,"laststarted":0,"name":"Omaha","updatepolicy":-1,"version":"1.3.36.372"' with parameter delimiters is not a parameter.
+Action.c(90): web_custom_request("json") was successful, 916 body bytes, 1152 header bytes  	[MsgId: MMSG-26386]
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

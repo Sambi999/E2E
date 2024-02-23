@@ -1,0 +1,18 @@
+dtksUShXvmgY_Y3cWoFS0Thq7IvugZ-RARJxxa2Att0-9MSyp_d0LykHHh8L6NmBiU7qtUg1OYn6COKRN-STBQ==
+
+
+
+uname:learnersambi
+password: BaBa1617!@$
+
+
+
+from(bucket: "Jmeter")
+  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)
+  |> filter(fn: (r) => r["_measurement"] == "jmeter")
+  |> filter(fn: (r) => r["transaction"] == "HomePage HTTP Request")
+  |> filter(fn: (r) => r["threadName"] == "GHP1-1" or r["threadName"] == "GHP1-10" or r["threadName"] == "GHP1-2" or r["threadName"] == "GHP1-3" or r["threadName"] == "GHP1-4" or r["threadName"] == "GHP1-5" or r["threadName"] == "GHP1-6" or r["threadName"] == "GHP1-7" or r["threadName"] == "GHP1-8" or r["threadName"] == "GHP1-9")
+  |> filter(fn: (r) => r["status"] == "ok")
+  |> filter(fn: (r) => r["_field"] == "duration")
+  |> aggregateWindow(every: v.windowPeriod, fn: min, createEmpty: false)
+  |> yield(name: "min")

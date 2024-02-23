@@ -1,0 +1,21 @@
+https://prometheus.io/docs/introduction/first_steps/
+
+launch of prometheus - prometheus --config.file=prometheus.yml
+
+metric - hyperlink in 
+metrics in prometheus
+counter
+gauge
+histogram
+summary
+
+instant metric
+range metric
+
+blackbox exporter- gather data and store in 9115 port.
+
+
+
+probe_http_duration_seconds{instance="localhost:9115",job="scraping",phase="connect"}[1m]
+
+expression browser- main page of prometheus

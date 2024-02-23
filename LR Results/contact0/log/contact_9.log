@@ -1,0 +1,11 @@
+Start auto log messages stack.	[MsgId: MMSG-10546]
+vuser_init.c(65): web_url("addContact") was successful, 4613 body bytes, 3170 header bytes  	[MsgId: MMSG-26386]
+vuser_init.c(75): web_custom_request("json") started  	[MsgId: MMSG-26355]
+vuser_init.c(75): web_custom_request("json") was successful, 892 body bytes, 1088 header bytes  	[MsgId: MMSG-26386]
+vuser_init.c(111): lr_think_time: 36.00 seconds.	[MsgId: MMSG-15948]
+vuser_init.c(113): web_custom_request("contacts_2") started  	[MsgId: MMSG-26355]
+vuser_init.c(113): Connection to clientservices.googleapis.com:443 closed after being inactive for 91 seconds, exceeding the "HTTP Keep-Alive timeout" Runtime Setting (60 seconds). URL="[None]"  	[MsgId: MMSG-27647]
+vuser_init.c(113): Error -26546: Authentication required, please use "web_set_user", e.g. web_set_user("domain\\user", "password", "host:port");  	[MsgId: MERR-26546]
+vuser_init.c(113): Error -26629: HTTP Status-Code=401 (Unauthorized) for "http://thinking-tester-contact-list.herokuapp.com/contacts"  	[MsgId: MERR-26629]
+End auto log messages stack.	[MsgId: MMSG-10544]
+

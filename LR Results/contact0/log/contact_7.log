@@ -1,0 +1,10 @@
+Start auto log messages stack.	[MsgId: MMSG-10546]
+vuser_init.c(12): web_set_sockets_option started  	[MsgId: MMSG-26355]
+vuser_init.c(12): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+vuser_init.c(14): web_url("seed") started  	[MsgId: MMSG-26355]
+vuser_init.c(14): HTML parsing not performed for Content-Type "application/octet-stream" ("ParseHtmlContentType" Runtime Setting is "TEXT"). URL="https://clientservices.googleapis.com/chrome-variations/seed?osname=win&channel=stable&milestone=121"  	[MsgId: MMSG-26547]
+vuser_init.c(14): web_url("seed") was successful, 388477 body bytes, 377 header bytes  	[MsgId: MMSG-26386]
+vuser_init.c(23): web_url("thinking-tester-contact-list.herokuapp.com") started  	[MsgId: MMSG-26355]
+vuser_init.c(23): Error -27794: Could not resolve address of host thinking-tester-contact-list.herokuapp.com  	[MsgId: MERR-27794]
+End auto log messages stack.	[MsgId: MMSG-10544]
+

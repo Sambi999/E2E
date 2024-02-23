@@ -1,0 +1,17 @@
+HTTP/1.1 200 OK
+access-control-allow-credentials: true
+access-control-allow-headers: X-Requested-With
+access-control-allow-methods: GET, POST, OPTIONS
+access-control-allow-origin: https://supertails.com
+access-control-expose-headers: X-MP-CE-Backoff
+access-control-max-age: 1728000
+cache-control: no-cache, no-store
+content-type: application/json
+strict-transport-security: max-age=604800; includeSubDomains
+date: Mon, 12 Feb 2024 16:45:37 GMT
+Content-Length: 25
+x-envoy-upstream-service-time: 36
+server: envoy
+Via: 1.1 google
+Alt-Svc: clear
+

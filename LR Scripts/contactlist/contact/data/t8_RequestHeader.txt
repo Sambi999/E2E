@@ -1,0 +1,14 @@
+POST /contacts HTTP/1.1
+Host: thinking-tester-contact-list.herokuapp.com
+Connection: keep-alive
+Content-Length: 40
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWM3MDZjZWE2OGQ4MzAwMTMyNTg0ZGIiLCJpYXQiOjE3MDc3MjkzMTh9.VIJG2ni36tacLPRrQZgCdHWxDL0LqrtIwrYm_K6s2mQ
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36
+Content-Type: application/json
+Accept: */*
+Origin: http://thinking-tester-contact-list.herokuapp.com
+Referer: http://thinking-tester-contact-list.herokuapp.com/addContact
+Accept-Encoding: gzip, deflate
+Accept-Language: en-GB,en;q=0.9
+Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWM3MDZjZWE2OGQ4MzAwMTMyNTg0ZGIiLCJpYXQiOjE3MDc3MjkzMTh9.VIJG2ni36tacLPRrQZgCdHWxDL0LqrtIwrYm_K6s2mQ
+

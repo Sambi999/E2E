@@ -1,0 +1,2073 @@
+{
+  "FilterHeaders": [
+    {
+      "Header": "x-user-agent",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "user-agent",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "upload-time",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "upgrade-insecure-requests",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "service-worker",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "sec-fetch-user",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "sec-fetch-site",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "sec-fetch-mode",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "sec-fetch-dest",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "sec-ch-ua-platform-version",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "sec-ch-ua-platform",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "sec-ch-ua-model",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "sec-ch-ua-mobile",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "sec-ch-ua-full-version-list",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "sec-ch-ua-full-version",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "sec-ch-ua-arch",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "sec-ch-ua",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "sdk-version",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "origin",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "msa_deviceticket",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "expect",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "content-encoding",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "client-id",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "cache-control",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "apikey",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "access-control-request-method",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "access-control-request-headers",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "accept-language",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "accept-encoding",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "accept",
+      "IncludeInScript": false
+    }
+  ],
+  "FilterResources": [
+    {
+      "IsNonResource": true,
+      "type": "text/xml"
+    },
+    {
+      "IsNonResource": false,
+      "type": "text/plain"
+    },
+    {
+      "IsNonResource": false,
+      "type": "text/javascript"
+    },
+    {
+      "IsNonResource": true,
+      "type": "text/html"
+    },
+    {
+      "IsNonResource": false,
+      "type": "text/css"
+    },
+    {
+      "IsNonResource": false,
+      "type": "image/webp"
+    },
+    {
+      "IsNonResource": false,
+      "type": "image/svg+xml"
+    },
+    {
+      "IsNonResource": false,
+      "type": "image/png"
+    },
+    {
+      "IsNonResource": false,
+      "type": "image/gif"
+    },
+    {
+      "IsNonResource": false,
+      "type": "application/x-javascript"
+    },
+    {
+      "IsNonResource": true,
+      "type": "application/json"
+    },
+    {
+      "IsNonResource": false,
+      "type": "application/javascript"
+    },
+    {
+      "IsNonResource": false,
+      "type": "application/font-woff2"
+    }
+  ],
+  "GeneralInfo": {
+    "BrowserVersion": "",
+    "IsWinInetMode": false,
+    "MaxUsedConnections": 30,
+    "RecordedBrowser": "c:\\program files (x86)\\microsoft\\edge\\application\\msedge.exe",
+    "RecordingDate": "Feb-12-2024",
+    "RecordingDuration": 62328,
+    "RecordingMode": "N/A",
+    "RecordingTimeStamp": 1707728736,
+    "RecordingType": "Application",
+    "TotalBytesReceived": 3148142,
+    "TotalBytesSent": 254449,
+    "TotalRequests": 185,
+    "UserAgent": "Crashpad/0.8.0 WinHTTP/10.0.19041.3031 Windows_NT/10.0.19041.3155 (x64)"
+  },
+  "HostInfo": [
+    {
+      "DomainName": "px-cdn.net",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "35.190.10.96",
+          "IncludeInScript": true,
+          "Name": "collector-pxgnttli3a.px-cdn.net",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 172,
+              "EventId": 824,
+              "HttpStatus": 200,
+              "Size": 600,
+              "URL": "https://collector-pxgnttli3a.px-cdn.net/api/v2/collector"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 266,
+              "EventId": 809,
+              "HttpStatus": 200,
+              "Size": 588,
+              "URL": "https://collector-pxgnttli3a.px-cdn.net/api/v2/collector"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "omtrdc.net",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "66.117.22.233",
+          "IncludeInScript": true,
+          "Name": "flipkart.d1.sc.omtrdc.net",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "application/x-javascript",
+              "DownloadTime": 79,
+              "EventId": 798,
+              "HttpStatus": 200,
+              "Size": 67,
+              "URL": "https://flipkart.d1.sc.omtrdc.net/id?d_visid_ver=1.5.4&callback=s_c_il%5B0%5D._setAnalyticsFields&mcorgid=17EB401053DAF4840A490D4C%40AdobeOrg&mid=64661683922883419631748055552660139383"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "nelreports.net",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "14.98.16.8",
+          "IncludeInScript": true,
+          "Name": "bzib.nelreports.net",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/plain",
+              "DownloadTime": 375,
+              "EventId": 414,
+              "HttpStatus": 200,
+              "Size": 137,
+              "URL": "https://bzib.nelreports.net/api/report?cat=bingbusiness"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "",
+              "DownloadTime": 266,
+              "EventId": 405,
+              "HttpStatus": 200,
+              "Size": 0,
+              "URL": "https://bzib.nelreports.net/api/report?cat=bingbusiness"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "microsoft.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "20.189.173.21",
+          "IncludeInScript": true,
+          "Name": "nw-umwatson.events.data.microsoft.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "text/xml",
+              "DownloadTime": 281,
+              "EventId": 350,
+              "HttpStatus": 200,
+              "Size": 636,
+              "URL": "https://nw-umwatson.events.data.microsoft.com/Telemetry.Request"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "52.182.143.210",
+          "IncludeInScript": true,
+          "Name": "functional.events.data.microsoft.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 343,
+              "EventId": 1185,
+              "HttpStatus": 200,
+              "Size": 9,
+              "URL": "https://functional.events.data.microsoft.com/OneCollector/1.0/"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "googletagmanager.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "142.250.182.72",
+          "IncludeInScript": true,
+          "Name": "www.googletagmanager.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "br",
+              "DataType": "application/javascript",
+              "DownloadTime": 78,
+              "EventId": 1073,
+              "HttpStatus": 200,
+              "Size": 79566,
+              "URL": "https://www.googletagmanager.com/gtag/js?id=AW-594691041"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "flixcart.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "23.57.36.22",
+          "IncludeInScript": true,
+          "Name": "static-assets-web.flixcart.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "application/font-woff2",
+              "DownloadTime": 16,
+              "EventId": 1142,
+              "HttpStatus": 200,
+              "Size": 9544,
+              "URL": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/fonts/roboto-medium-webfont.woff2"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/font-woff2",
+              "DownloadTime": 16,
+              "EventId": 1139,
+              "HttpStatus": 200,
+              "Size": 9604,
+              "URL": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/fonts/roboto-regular-webfont.woff2"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/javascript",
+              "DownloadTime": 0,
+              "EventId": 1137,
+              "HttpStatus": 200,
+              "Size": 95888,
+              "URL": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/js/Browse.chunk.5612e1cf.js"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "application/javascript",
+              "DownloadTime": 16,
+              "EventId": 1030,
+              "HttpStatus": 200,
+              "Size": 64628,
+              "URL": "https://static-assets-web.flixcart.com/px/gNtTli3A/init.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/javascript",
+              "DownloadTime": 0,
+              "EventId": 1026,
+              "HttpStatus": 200,
+              "Size": 48844,
+              "URL": "https://static-assets-web.flixcart.com/www/linchpin/batman-returns/omni/omni16.js"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/javascript",
+              "DownloadTime": 15,
+              "EventId": 1024,
+              "HttpStatus": 200,
+              "Size": 5415,
+              "URL": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/js/SearchFeedback.chunk.815329dc.js"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/javascript",
+              "DownloadTime": 16,
+              "EventId": 1019,
+              "HttpStatus": 200,
+              "Size": 19739,
+              "URL": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/js/NavMenu.chunk.2901c888.js"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 0,
+              "EventId": 999,
+              "HttpStatus": 200,
+              "Size": 15972,
+              "URL": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/payment-method_69e7ec.svg"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 0,
+              "EventId": 993,
+              "HttpStatus": 200,
+              "Size": 500,
+              "URL": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/YoutubeLogo_958b78.svg"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/javascript",
+              "DownloadTime": 16,
+              "EventId": 989,
+              "HttpStatus": 200,
+              "Size": 80408,
+              "URL": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/js/app_common.chunk.ffcb14cb.js"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/javascript",
+              "DownloadTime": 16,
+              "EventId": 987,
+              "HttpStatus": 200,
+              "Size": 188552,
+              "URL": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/js/app.chunk.8744a37d.js"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/javascript",
+              "DownloadTime": 16,
+              "EventId": 972,
+              "HttpStatus": 200,
+              "Size": 67141,
+              "URL": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/js/app_modules.chunk.1b9065a8.js"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/javascript",
+              "DownloadTime": 16,
+              "EventId": 969,
+              "HttpStatus": 200,
+              "Size": 72841,
+              "URL": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/js/vendor.chunk.47556f6f.js"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/javascript",
+              "DownloadTime": 15,
+              "EventId": 967,
+              "HttpStatus": 200,
+              "Size": 8279,
+              "URL": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/js/runtime.25392090.js"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/css",
+              "DownloadTime": 15,
+              "EventId": 965,
+              "HttpStatus": 200,
+              "Size": 606,
+              "URL": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/css/NavMenu.chunk.0a28b6.css"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/css",
+              "DownloadTime": 15,
+              "EventId": 963,
+              "HttpStatus": 200,
+              "Size": 1021,
+              "URL": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/css/SearchFeedback.chunk.51a13b.css"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 0,
+              "EventId": 961,
+              "HttpStatus": 200,
+              "Size": 1555,
+              "URL": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/buying-guide-illustration_4dd325.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 0,
+              "EventId": 957,
+              "HttpStatus": 200,
+              "Size": 3926,
+              "URL": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 0,
+              "EventId": 955,
+              "HttpStatus": 200,
+              "Size": 1756,
+              "URL": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/plus_aef861.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 16,
+              "EventId": 953,
+              "HttpStatus": 200,
+              "Size": 5843,
+              "URL": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/css",
+              "DownloadTime": 16,
+              "EventId": 948,
+              "HttpStatus": 200,
+              "Size": 17037,
+              "URL": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/css/Browse.chunk.b2aeab.css"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/css",
+              "DownloadTime": 0,
+              "EventId": 944,
+              "HttpStatus": 200,
+              "Size": 25139,
+              "URL": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/css/app.chunk.e82689.css"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/css",
+              "DownloadTime": 15,
+              "EventId": 942,
+              "HttpStatus": 200,
+              "Size": 77,
+              "URL": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/css/app_modules.chunk.905c37.css"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/javascript",
+              "DownloadTime": 0,
+              "EventId": 832,
+              "HttpStatus": 200,
+              "Size": 156662,
+              "URL": "https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/MapiActionNonCriticalActions.f88271.js"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/javascript",
+              "DownloadTime": 16,
+              "EventId": 830,
+              "HttpStatus": 200,
+              "Size": 32050,
+              "URL": "https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/OmnitureLazyChunk.73c4e5.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 0,
+              "EventId": 802,
+              "HttpStatus": 200,
+              "Size": 6152,
+              "URL": "https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logo_lite-cbb357.png"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/json",
+              "DownloadTime": 0,
+              "EventId": 768,
+              "HttpStatus": 200,
+              "Size": 3951,
+              "URL": "https://static-assets-web.flixcart.com/www/linchpin/batman-returns/codes.json"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/javascript",
+              "DownloadTime": 15,
+              "EventId": 762,
+              "HttpStatus": 200,
+              "Size": 7701,
+              "URL": "https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/lazyLoadChunk.1b7994.js"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/css",
+              "DownloadTime": 15,
+              "EventId": 760,
+              "HttpStatus": 200,
+              "Size": 1955,
+              "URL": "https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/lazyLoadChunk.071250.css"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/javascript",
+              "DownloadTime": 16,
+              "EventId": 742,
+              "HttpStatus": 200,
+              "Size": 139207,
+              "URL": "https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/BaseActionNonCritical.84a8f0.js"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/css",
+              "DownloadTime": 47,
+              "EventId": 676,
+              "HttpStatus": 200,
+              "Size": 3246,
+              "URL": "https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/OVHomePageTS.a463bb.css"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/javascript",
+              "DownloadTime": 31,
+              "EventId": 673,
+              "HttpStatus": 200,
+              "Size": 37449,
+              "URL": "https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/OVHomePageTS.45e770.js"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/javascript",
+              "DownloadTime": 0,
+              "EventId": 667,
+              "HttpStatus": 200,
+              "Size": 599475,
+              "URL": "https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/MultiWidgetpage.de2a40.js"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/css",
+              "DownloadTime": 0,
+              "EventId": 665,
+              "HttpStatus": 200,
+              "Size": 14555,
+              "URL": "https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/MultiWidgetpage.4d5314.css"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/javascript",
+              "DownloadTime": 0,
+              "EventId": 662,
+              "HttpStatus": 200,
+              "Size": 21820,
+              "URL": "https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/commonLazyLoadChunk.3126f7.js"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/css",
+              "DownloadTime": 0,
+              "EventId": 660,
+              "HttpStatus": 200,
+              "Size": 2834,
+              "URL": "https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/commonLazyLoadChunk.3dac73.css"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/javascript",
+              "DownloadTime": 0,
+              "EventId": 658,
+              "HttpStatus": 200,
+              "Size": 8345,
+              "URL": "https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/en-js.c21818.js"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/javascript",
+              "DownloadTime": 63,
+              "EventId": 652,
+              "HttpStatus": 200,
+              "Size": 17866,
+              "URL": "https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/omniv31-1.js"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/javascript",
+              "DownloadTime": 31,
+              "EventId": 636,
+              "HttpStatus": 200,
+              "Size": 58785,
+              "URL": "https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/fkvendor.8ea9b1.js"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/javascript",
+              "DownloadTime": 16,
+              "EventId": 633,
+              "HttpStatus": 200,
+              "Size": 135971,
+              "URL": "https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/app.a8e7b8.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/font-woff2",
+              "DownloadTime": 0,
+              "EventId": 625,
+              "HttpStatus": 200,
+              "Size": 11196,
+              "URL": "https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/fonts/Inter-Regular.woff2"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/font-woff2",
+              "DownloadTime": 0,
+              "EventId": 619,
+              "HttpStatus": 200,
+              "Size": 11284,
+              "URL": "https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/fonts/Inter-SemiBold.woff2"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "application/javascript",
+              "DownloadTime": 0,
+              "EventId": 559,
+              "HttpStatus": 200,
+              "Size": 64631,
+              "URL": "https://static-assets-web.flixcart.com/PXgNtTli3A/main.min.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 0,
+              "EventId": 531,
+              "HttpStatus": 200,
+              "Size": 1953,
+              "URL": "https://static-assets-web.flixcart.com/www/linchpin/batman-returns/images/fk-default-image-75ff340b.png?q=90"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/javascript",
+              "DownloadTime": 15,
+              "EventId": 516,
+              "HttpStatus": 200,
+              "Size": 20161,
+              "URL": "https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/DesktopComponents.c5f1d3.js"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/javascript",
+              "DownloadTime": 0,
+              "EventId": 514,
+              "HttpStatus": 200,
+              "Size": 137856,
+              "URL": "https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/CrossCommon.453cbf.js"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 15,
+              "EventId": 505,
+              "HttpStatus": 200,
+              "Size": 15972,
+              "URL": "https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/payment-method-c454fb.svg"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 15,
+              "EventId": 503,
+              "HttpStatus": 200,
+              "Size": 1060,
+              "URL": "https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/help-centre-image-c4ace8.svg"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 0,
+              "EventId": 501,
+              "HttpStatus": 200,
+              "Size": 1292,
+              "URL": "https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/gift-cards-image-d7ff24.svg"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 16,
+              "EventId": 499,
+              "HttpStatus": 200,
+              "Size": 1493,
+              "URL": "https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/advertise-image-866c0b.svg"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 16,
+              "EventId": 497,
+              "HttpStatus": 200,
+              "Size": 747,
+              "URL": "https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/sell-image-9de8ef.svg"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 15,
+              "EventId": 493,
+              "HttpStatus": 200,
+              "Size": 750,
+              "URL": "https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/downloadApp-2ea657.svg"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 15,
+              "EventId": 491,
+              "HttpStatus": 200,
+              "Size": 500,
+              "URL": "https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/YoutubeLogo-8425c4.svg"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 0,
+              "EventId": 489,
+              "HttpStatus": 200,
+              "Size": 566,
+              "URL": "https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/advertise-298691.svg"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 16,
+              "EventId": 487,
+              "HttpStatus": 200,
+              "Size": 611,
+              "URL": "https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/helpcenter-7d90c0.svg"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 0,
+              "EventId": 485,
+              "HttpStatus": 200,
+              "Size": 619,
+              "URL": "https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/notificationPreferences-cfffaf.svg"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 15,
+              "EventId": 483,
+              "HttpStatus": 200,
+              "Size": 637,
+              "URL": "https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_3verticalDots-ea7819.svg"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 15,
+              "EventId": 481,
+              "HttpStatus": 200,
+              "Size": 403,
+              "URL": "https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 0,
+              "EventId": 479,
+              "HttpStatus": 200,
+              "Size": 600,
+              "URL": "https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/giftCard-bd87e1.svg"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 16,
+              "EventId": 477,
+              "HttpStatus": 200,
+              "Size": 517,
+              "URL": "https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/rewards-fbd212.svg"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 0,
+              "EventId": 473,
+              "HttpStatus": 200,
+              "Size": 490,
+              "URL": "https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/orders-bfe8c4.svg"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 16,
+              "EventId": 471,
+              "HttpStatus": 200,
+              "Size": 599,
+              "URL": "https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 16,
+              "EventId": 469,
+              "HttpStatus": 200,
+              "Size": 424,
+              "URL": "https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-52e0dc.svg"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 0,
+              "EventId": 467,
+              "HttpStatus": 200,
+              "Size": 835,
+              "URL": "https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkplus-4ff29a.svg"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 0,
+              "EventId": 463,
+              "HttpStatus": 200,
+              "Size": 6902,
+              "URL": "https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/css",
+              "DownloadTime": 16,
+              "EventId": 461,
+              "HttpStatus": 200,
+              "Size": 4428,
+              "URL": "https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/DesktopComponents.d15f21.css"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/css",
+              "DownloadTime": 0,
+              "EventId": 459,
+              "HttpStatus": 200,
+              "Size": 1139,
+              "URL": "https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/CrossCommon.e0aa0a.css"
+            }
+          ],
+          "SSLCipher": "ECDHE-RSA-AES256-GCM-SHA384",
+          "SSLVersion": "TLS1.2"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "23.34.25.51",
+          "IncludeInScript": true,
+          "Name": "rukminim2.flixcart.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 0,
+              "EventId": 1068,
+              "HttpStatus": 200,
+              "Size": 7637,
+              "URL": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/k/u/n/-original-imagzjhwtfthcmzz.jpeg?q=70"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 32,
+              "EventId": 1064,
+              "HttpStatus": 200,
+              "Size": 7801,
+              "URL": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/z/1/c/-original-imagt5uhcnfy66wa.jpeg?q=70"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 32,
+              "EventId": 1062,
+              "HttpStatus": 200,
+              "Size": 7425,
+              "URL": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/4/h/e/-original-imagzjhwmsamexfk.jpeg?q=70"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 16,
+              "EventId": 1060,
+              "HttpStatus": 200,
+              "Size": 7113,
+              "URL": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/s/p/e/-original-imagtkzunhcht8vz.jpeg?q=70"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 16,
+              "EventId": 1058,
+              "HttpStatus": 200,
+              "Size": 2741,
+              "URL": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/8/9/n/-original-imagtc6fyrstd4jm.jpeg?q=70"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 16,
+              "EventId": 1056,
+              "HttpStatus": 200,
+              "Size": 7145,
+              "URL": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/c/n/j/-original-imagt5ugyaxgqugq.jpeg?q=70"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 16,
+              "EventId": 1054,
+              "HttpStatus": 200,
+              "Size": 7461,
+              "URL": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/c/s/x/-original-imagzjhwaaewgj8r.jpeg?q=70"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 16,
+              "EventId": 1052,
+              "HttpStatus": 200,
+              "Size": 7707,
+              "URL": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/t/o/1/-original-imagx4dpnqkcz5yc.jpeg?q=70"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 16,
+              "EventId": 1050,
+              "HttpStatus": 200,
+              "Size": 6967,
+              "URL": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/a/6/2/g54-5g-payw0005in-motorola-original-imagt3mekfgqkyk8.jpeg?q=70"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 31,
+              "EventId": 1048,
+              "HttpStatus": 200,
+              "Size": 3353,
+              "URL": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/j/z/3/-original-imagtc5fqyz8tu4c.jpeg?q=70"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 31,
+              "EventId": 1046,
+              "HttpStatus": 200,
+              "Size": 6565,
+              "URL": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/j/q/2/edge-40-neo-payj0001in-motorola-original-imagtkf5ewhafvhh.jpeg?q=70"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 31,
+              "EventId": 1044,
+              "HttpStatus": 200,
+              "Size": 6705,
+              "URL": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/u/g/j/-original-imagt5uejuxw2ytm.jpeg?q=70"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 15,
+              "EventId": 1042,
+              "HttpStatus": 200,
+              "Size": 8147,
+              "URL": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/r/s/r/-original-imagpfbtmrr7spgc.jpeg?q=70"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 47,
+              "EventId": 1033,
+              "HttpStatus": 200,
+              "Size": 3403,
+              "URL": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/a/c/k/-original-imagtc5fuzkvczr7.jpeg?q=70"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 15,
+              "EventId": 1028,
+              "HttpStatus": 200,
+              "Size": 8511,
+              "URL": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/u/1/h/-original-imagpfbvfu4p55n4.jpeg?q=70"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 31,
+              "EventId": 1022,
+              "HttpStatus": 200,
+              "Size": 7881,
+              "URL": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/c/k/9/g34-5g-pb1v0001in-motorola-original-imagwu4r4xze9jwz.jpeg?q=70"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 47,
+              "EventId": 1004,
+              "HttpStatus": 200,
+              "Size": 2911,
+              "URL": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/d/9/-original-imagtc2qzgnnuhxh.jpeg?q=70"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 31,
+              "EventId": 985,
+              "HttpStatus": 200,
+              "Size": 3323,
+              "URL": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/k/l/l/-original-imagtc5fz9spysyk.jpeg?q=70"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 15,
+              "EventId": 983,
+              "HttpStatus": 200,
+              "Size": 7503,
+              "URL": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/n/m/f/g34-5g-pb1v0002in-motorola-original-imagwu4rayqhgfjh.jpeg?q=70"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 16,
+              "EventId": 917,
+              "HttpStatus": 200,
+              "Size": 2115,
+              "URL": "https://rukminim2.flixcart.com/image/100/100/xif0q/mobile/d/p/l/g73-5g-paux0024in-motorola-original-imagngjhg3bjmazu.jpeg?q=90"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 16,
+              "EventId": 894,
+              "HttpStatus": 200,
+              "Size": 2861,
+              "URL": "https://rukminim2.flixcart.com/image/100/100/xif0q/mobile/9/i/h/-original-imagt4tdvvhyag9j.jpeg?q=90"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 0,
+              "EventId": 880,
+              "HttpStatus": 200,
+              "Size": 3247,
+              "URL": "https://rukminim2.flixcart.com/image/100/100/xif0q/mobile/t/o/1/-original-imagx4dpnqkcz5yc.jpeg?q=90"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 15,
+              "EventId": 878,
+              "HttpStatus": 200,
+              "Size": 2785,
+              "URL": "https://rukminim2.flixcart.com/image/100/100/xif0q/mobile/n/m/f/g34-5g-pb1v0002in-motorola-original-imagwu4rayqhgfjh.jpeg?q=90"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 15,
+              "EventId": 869,
+              "HttpStatus": 200,
+              "Size": 1723,
+              "URL": "https://rukminim2.flixcart.com/www/100/100/promos/20/07/2022/ea2077a7-575d-4fb9-a4dd-6df16e53c5d8.png?q=90"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 31,
+              "EventId": 792,
+              "HttpStatus": 200,
+              "Size": 1983,
+              "URL": "https://rukminim2.flixcart.com/flap/64/64/image/71050627a56b4693.png?q=100"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 31,
+              "EventId": 790,
+              "HttpStatus": 200,
+              "Size": 3811,
+              "URL": "https://rukminim2.flixcart.com/flap/64/64/image/dff3f7adcf3a90c6.png?q=100"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 15,
+              "EventId": 787,
+              "HttpStatus": 200,
+              "Size": 16455,
+              "URL": "https://rukminim2.flixcart.com/www/1070/790/promos/26/09/2023/ed27f892-1bc6-462f-805b-953f5add4f6a.jpg?q=80"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 15,
+              "EventId": 785,
+              "HttpStatus": 200,
+              "Size": 3587,
+              "URL": "https://rukminim2.flixcart.com/fk-p-flap/64/64/image/05d708653beff580.png?q=100"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 15,
+              "EventId": 783,
+              "HttpStatus": 200,
+              "Size": 2393,
+              "URL": "https://rukminim2.flixcart.com/fk-p-flap/64/64/image/0139228b2f7eb413.jpg?q=100"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 15,
+              "EventId": 781,
+              "HttpStatus": 200,
+              "Size": 3907,
+              "URL": "https://rukminim2.flixcart.com/fk-p-flap/64/64/image/0d75b34f7d8fbcb3.png?q=100"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 15,
+              "EventId": 779,
+              "HttpStatus": 200,
+              "Size": 2175,
+              "URL": "https://rukminim2.flixcart.com/flap/64/64/image/ab7e2b022a4587dd.jpg?q=100"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 15,
+              "EventId": 777,
+              "HttpStatus": 200,
+              "Size": 2885,
+              "URL": "https://rukminim2.flixcart.com/flap/64/64/image/69c6589653afdb9a.png?q=100"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 15,
+              "EventId": 775,
+              "HttpStatus": 200,
+              "Size": 1939,
+              "URL": "https://rukminim2.flixcart.com/flap/64/64/image/22fddf3c7da4c4f4.png?q=100"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 16,
+              "EventId": 773,
+              "HttpStatus": 200,
+              "Size": 3643,
+              "URL": "https://rukminim2.flixcart.com/flap/64/64/image/29327f40e9c4d26b.png?q=100"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 31,
+              "EventId": 631,
+              "HttpStatus": 200,
+              "Size": 6523,
+              "URL": "https://rukminim2.flixcart.com/image/250/250/kzzw5u80/backpack/r/n/a/casual-unisex-travel-bag-office-messenger-school-backpack-fft-original-imagbwfjdqj7n3fh.jpeg?q=80"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 47,
+              "EventId": 629,
+              "HttpStatus": 200,
+              "Size": 4789,
+              "URL": "https://rukminim2.flixcart.com/image/210/210/acoustic-guitar/e/y/y/dd-380c-blk-jixing-original-imaeff94e9tczafp.jpeg?q=80"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 16,
+              "EventId": 623,
+              "HttpStatus": 200,
+              "Size": 7867,
+              "URL": "https://rukminim2.flixcart.com/image/250/250/xif0q/t-shirt/c/8/x/xl-jawan-one-nb-nicky-boy-original-imagwbavcwbtznv5.jpeg?q=80"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 16,
+              "EventId": 621,
+              "HttpStatus": 200,
+              "Size": 5357,
+              "URL": "https://rukminim2.flixcart.com/image/250/250/xif0q/slipper-flip-flop/e/f/n/-original-imagqxvadspz4zsr.jpeg?q=80"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 16,
+              "EventId": 617,
+              "HttpStatus": 200,
+              "Size": 6931,
+              "URL": "https://rukminim2.flixcart.com/image/250/250/ktn9pjk0/sari/o/i/f/free-5366-leelavati-unstitched-original-imag6xsp4gr2h9eg.jpeg?q=80"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 16,
+              "EventId": 606,
+              "HttpStatus": 200,
+              "Size": 5359,
+              "URL": "https://rukminim2.flixcart.com/image/210/210/kdbzqfk0/bar/8/h/q/push-up-bar-0-8-long-ankaro-original-imafu9dmvdk3rzvy.jpeg?q=80"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 16,
+              "EventId": 604,
+              "HttpStatus": 200,
+              "Size": 3971,
+              "URL": "https://rukminim2.flixcart.com/image/210/210/k0plpjk0/remote-control-toy/9/g/k/4-function-remote-control-high-speed-big-racing-car-toy-funkey-original-imafkg33umd8dy93.jpeg?q=80"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 16,
+              "EventId": 602,
+              "HttpStatus": 200,
+              "Size": 4015,
+              "URL": "https://rukminim2.flixcart.com/image/210/210/kzegk280/action-figure/9/v/t/3-30155-mcfarlane-2-5-original-imagbeyyzehpyk2m.jpeg?q=80"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 47,
+              "EventId": 600,
+              "HttpStatus": 200,
+              "Size": 8223,
+              "URL": "https://rukminim2.flixcart.com/image/210/210/kx50gi80/pen/h/z/k/119766-flair-original-imag9nzubznagufg.jpeg?q=80"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 16,
+              "EventId": 596,
+              "HttpStatus": 200,
+              "Size": 5273,
+              "URL": "https://rukminim2.flixcart.com/image/210/210/l58iaa80/electric-cycle/i/y/f/-original-imagfykthgudy4qz.jpeg?q=80"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 16,
+              "EventId": 594,
+              "HttpStatus": 200,
+              "Size": 4397,
+              "URL": "https://rukminim2.flixcart.com/image/210/210/jxz0brk0/stuffed-toy/n/t/s/4-feet-pink-very-beautiful-best-quality-for-special-gift-125-13-original-imafgv92puzkdytg.jpeg?q=80"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 32,
+              "EventId": 592,
+              "HttpStatus": 200,
+              "Size": 5679,
+              "URL": "https://rukminim2.flixcart.com/image/210/210/l111lzk0/cycle/m/r/e/xc-900-grey-lite-26-15-5-cradiac-21-gear-120-original-imagczuzpxeweczm.jpeg?q=80"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 16,
+              "EventId": 590,
+              "HttpStatus": 200,
+              "Size": 3799,
+              "URL": "https://rukminim2.flixcart.com/image/210/210/kpsnzww0/external-hard-drive/ssd/t/9/7/portable-ssd-sdssde30-1t00-g25-sandisk-original-imag3xx564jxpgrb.jpeg?q=80"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 47,
+              "EventId": 587,
+              "HttpStatus": 200,
+              "Size": 22624,
+              "URL": "https://rukminim2.flixcart.com/fk-p-flap/530/810/image/fc822dc700322fcd.jpg?q=80"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 31,
+              "EventId": 585,
+              "HttpStatus": 200,
+              "Size": 3195,
+              "URL": "https://rukminim2.flixcart.com/image/210/210/xif0q/projector/m/m/m/-original-imagu892v92agucu.jpeg?q=80"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 16,
+              "EventId": 583,
+              "HttpStatus": 200,
+              "Size": 9733,
+              "URL": "https://rukminim2.flixcart.com/fk-p-flap/530/810/image/fc822dc700322fcd.jpg?q=20"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 16,
+              "EventId": 581,
+              "HttpStatus": 200,
+              "Size": 5226,
+              "URL": "https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/d666db78034ac39f.jpg?q=20"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 16,
+              "EventId": 577,
+              "HttpStatus": 200,
+              "Size": 12851,
+              "URL": "https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/d666db78034ac39f.jpg?q=80"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 62,
+              "EventId": 575,
+              "HttpStatus": 200,
+              "Size": 2247,
+              "URL": "https://rukminim2.flixcart.com/image/210/210/kactpjk0/shaver/m/6/z/philips-s1121-45-s1121-45-original-imafry2qgxcwnm9r.jpeg?q=80"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 15,
+              "EventId": 573,
+              "HttpStatus": 200,
+              "Size": 4353,
+              "URL": "https://rukminim2.flixcart.com/image/210/210/kvr01ow0/security-software/l/d/e/quick-heal-original-imag8kpmjygxhzgh.jpeg?q=80"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 0,
+              "EventId": 571,
+              "HttpStatus": 200,
+              "Size": 3109,
+              "URL": "https://rukminim2.flixcart.com/image/210/210/k3khevk0/camera/b/y/k/dkian-sa-digital-kids-camera-20mp-1080p-with-32gb-memory-card-original-imafmne6ueajav2g.jpeg?q=80"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 16,
+              "EventId": 569,
+              "HttpStatus": 200,
+              "Size": 4363,
+              "URL": "https://rukminim2.flixcart.com/image/210/210/xif0q/power-bank/o/a/f/power-bank-dx09-b-holder-20000-mah-20000-dx09-b-holder-callmate-original-imagwvac5d8me4kz.jpeg?q=80"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 16,
+              "EventId": 567,
+              "HttpStatus": 200,
+              "Size": 5321,
+              "URL": "https://rukminim2.flixcart.com/image/210/210/ko8xtow0/monitor/t/a/y/d24-20-66aekac1in-lenovo-original-imag2qwzazcdmqtb.jpeg?q=80"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 15,
+              "EventId": 555,
+              "HttpStatus": 200,
+              "Size": 4421,
+              "URL": "https://rukminim2.flixcart.com/image/210/210/xif0q/keyboard/gaming-keyboard/b/s/q/f2023-aula-original-imagnhc44uakb4zb.jpeg?q=80"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 31,
+              "EventId": 549,
+              "HttpStatus": 200,
+              "Size": 7639,
+              "URL": "https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/229cb9ed6b7b32a4.jpg?q=20"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 16,
+              "EventId": 546,
+              "HttpStatus": 200,
+              "Size": 15798,
+              "URL": "https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/229cb9ed6b7b32a4.jpg?q=80"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 31,
+              "EventId": 544,
+              "HttpStatus": 200,
+              "Size": 16084,
+              "URL": "https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/352e6f0f8034fab5.jpg?q=80"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 15,
+              "EventId": 542,
+              "HttpStatus": 200,
+              "Size": 6590,
+              "URL": "https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/352e6f0f8034fab5.jpg?q=20"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 16,
+              "EventId": 538,
+              "HttpStatus": 200,
+              "Size": 9416,
+              "URL": "https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/0e138e81b7c37406.jpg?q=20"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "image/webp",
+              "DownloadTime": 31,
+              "EventId": 535,
+              "HttpStatus": 200,
+              "Size": 20842,
+              "URL": "https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/0e138e81b7c37406.jpg?q=80"
+            }
+          ],
+          "SSLCipher": "ECDHE-RSA-AES256-GCM-SHA384",
+          "SSLVersion": "TLS1.2"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "flipkart.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "163.53.76.86",
+          "IncludeInScript": true,
+          "Name": "www.flipkart.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 31,
+              "EventId": 1070,
+              "HttpStatus": 200,
+              "Size": 14457,
+              "URL": "https://www.flipkart.com/sw.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/html",
+              "DownloadTime": 1125,
+              "EventId": 929,
+              "HttpStatus": 200,
+              "Size": 121647,
+              "URL": "https://www.flipkart.com/search?q=mobiles5g&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 344,
+              "EventId": 806,
+              "HttpStatus": 200,
+              "Size": 14457,
+              "URL": "https://www.flipkart.com/sw.js?k=6669f663c68fd3fdc54518233992960c"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/html",
+              "DownloadTime": 546,
+              "EventId": 407,
+              "HttpStatus": 200,
+              "Size": 212510,
+              "URL": "https://www.flipkart.com/"
+            }
+          ],
+          "SSLCipher": "",
+          "SSLVersion": ""
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "163.53.76.86",
+          "IncludeInScript": true,
+          "Name": "flipkart.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "text/html",
+              "DownloadTime": 31,
+              "EventId": 363,
+              "HttpStatus": 301,
+              "Size": 162,
+              "URL": "https://flipkart.com/"
+            }
+          ],
+          "SSLCipher": "ECDHE-ECDSA-AES128-GCM-SHA256",
+          "SSLVersion": "TLS1.2"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "163.53.76.64",
+          "IncludeInScript": true,
+          "Name": "2.rome.api.flipkart.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 63,
+              "EventId": 1173,
+              "HttpStatus": 200,
+              "Size": 0,
+              "URL": "https://2.rome.api.flipkart.com/api/1/fdp"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 63,
+              "EventId": 1171,
+              "HttpStatus": 200,
+              "Size": 0,
+              "URL": "https://2.rome.api.flipkart.com/api/1/fdp"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 47,
+              "EventId": 1164,
+              "HttpStatus": 200,
+              "Size": 0,
+              "URL": "https://2.rome.api.flipkart.com/api/1/fdp"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 47,
+              "EventId": 1162,
+              "HttpStatus": 200,
+              "Size": 0,
+              "URL": "https://2.rome.api.flipkart.com/api/1/fdp"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "",
+              "DownloadTime": 31,
+              "EventId": 1160,
+              "HttpStatus": 200,
+              "Size": 0,
+              "URL": "https://2.rome.api.flipkart.com/api/1/fdp"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "",
+              "DownloadTime": 15,
+              "EventId": 1157,
+              "HttpStatus": 200,
+              "Size": 0,
+              "URL": "https://2.rome.api.flipkart.com/api/1/fdp"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/json",
+              "DownloadTime": 47,
+              "EventId": 1153,
+              "HttpStatus": 200,
+              "Size": 1325,
+              "URL": "https://2.rome.api.flipkart.com/api/1/connekt/push/callback"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 16,
+              "EventId": 1151,
+              "HttpStatus": 200,
+              "Size": 0,
+              "URL": "https://2.rome.api.flipkart.com/api/1/connekt/push/callback"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 63,
+              "EventId": 925,
+              "HttpStatus": 200,
+              "Size": 0,
+              "URL": "https://2.rome.api.flipkart.com/api/4/data/collector/business"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 31,
+              "EventId": 922,
+              "HttpStatus": 200,
+              "Size": 0,
+              "URL": "https://2.rome.api.flipkart.com/api/4/data/collector/business"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 141,
+              "EventId": 919,
+              "HttpStatus": 200,
+              "Size": 0,
+              "URL": "https://2.rome.api.flipkart.com/api/4/data/collector/business"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/json",
+              "DownloadTime": 63,
+              "EventId": 914,
+              "HttpStatus": 200,
+              "Size": 2503,
+              "URL": "https://2.rome.api.flipkart.com/api/4/discover/autosuggest"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 47,
+              "EventId": 912,
+              "HttpStatus": 200,
+              "Size": 0,
+              "URL": "https://2.rome.api.flipkart.com/api/4/data/collector/business"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 47,
+              "EventId": 910,
+              "HttpStatus": 200,
+              "Size": 0,
+              "URL": "https://2.rome.api.flipkart.com/api/4/data/collector/business"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 141,
+              "EventId": 908,
+              "HttpStatus": 200,
+              "Size": 0,
+              "URL": "https://2.rome.api.flipkart.com/api/4/data/collector/business"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/json",
+              "DownloadTime": 62,
+              "EventId": 905,
+              "HttpStatus": 200,
+              "Size": 2472,
+              "URL": "https://2.rome.api.flipkart.com/api/4/discover/autosuggest"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 47,
+              "EventId": 902,
+              "HttpStatus": 200,
+              "Size": 0,
+              "URL": "https://2.rome.api.flipkart.com/api/4/data/collector/business"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 47,
+              "EventId": 900,
+              "HttpStatus": 200,
+              "Size": 0,
+              "URL": "https://2.rome.api.flipkart.com/api/4/data/collector/business"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/json",
+              "DownloadTime": 62,
+              "EventId": 898,
+              "HttpStatus": 200,
+              "Size": 2567,
+              "URL": "https://2.rome.api.flipkart.com/api/4/discover/autosuggest"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 47,
+              "EventId": 896,
+              "HttpStatus": 200,
+              "Size": 0,
+              "URL": "https://2.rome.api.flipkart.com/api/4/data/collector/business"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/json",
+              "DownloadTime": 63,
+              "EventId": 891,
+              "HttpStatus": 200,
+              "Size": 2514,
+              "URL": "https://2.rome.api.flipkart.com/api/4/discover/autosuggest"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 47,
+              "EventId": 889,
+              "HttpStatus": 200,
+              "Size": 0,
+              "URL": "https://2.rome.api.flipkart.com/api/4/data/collector/business"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/json",
+              "DownloadTime": 63,
+              "EventId": 886,
+              "HttpStatus": 200,
+              "Size": 2630,
+              "URL": "https://2.rome.api.flipkart.com/api/4/discover/autosuggest"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 47,
+              "EventId": 884,
+              "HttpStatus": 200,
+              "Size": 0,
+              "URL": "https://2.rome.api.flipkart.com/api/4/data/collector/business"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 31,
+              "EventId": 882,
+              "HttpStatus": 200,
+              "Size": 0,
+              "URL": "https://2.rome.api.flipkart.com/api/4/data/collector/business"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/json",
+              "DownloadTime": 62,
+              "EventId": 876,
+              "HttpStatus": 200,
+              "Size": 2629,
+              "URL": "https://2.rome.api.flipkart.com/api/4/discover/autosuggest"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 110,
+              "EventId": 871,
+              "HttpStatus": 200,
+              "Size": 0,
+              "URL": "https://2.rome.api.flipkart.com/api/4/data/collector/business"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/json",
+              "DownloadTime": 62,
+              "EventId": 864,
+              "HttpStatus": 200,
+              "Size": 3009,
+              "URL": "https://2.rome.api.flipkart.com/api/4/discover/autosuggest"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 47,
+              "EventId": 862,
+              "HttpStatus": 200,
+              "Size": 0,
+              "URL": "https://2.rome.api.flipkart.com/api/4/data/collector/business"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 31,
+              "EventId": 860,
+              "HttpStatus": 200,
+              "Size": 0,
+              "URL": "https://2.rome.api.flipkart.com/api/4/discover/autosuggest"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 31,
+              "EventId": 858,
+              "HttpStatus": 200,
+              "Size": 0,
+              "URL": "https://2.rome.api.flipkart.com/api/4/data/collector/business"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 31,
+              "EventId": 812,
+              "HttpStatus": 200,
+              "Size": 0,
+              "URL": "https://2.rome.api.flipkart.com/api/4/data/collector/business"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 47,
+              "EventId": 766,
+              "HttpStatus": 200,
+              "Size": 0,
+              "URL": "https://2.rome.api.flipkart.com/api/4/data/collector/business"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 63,
+              "EventId": 764,
+              "HttpStatus": 200,
+              "Size": 0,
+              "URL": "https://2.rome.api.flipkart.com/api/4/data/collector/business"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 62,
+              "EventId": 756,
+              "HttpStatus": 200,
+              "Size": 0,
+              "URL": "https://2.rome.api.flipkart.com/api/3/data/collector/business"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "",
+              "DownloadTime": 16,
+              "EventId": 738,
+              "HttpStatus": 200,
+              "Size": 0,
+              "URL": "https://2.rome.api.flipkart.com/api/4/data/collector/business"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "",
+              "DownloadTime": 32,
+              "EventId": 732,
+              "HttpStatus": 200,
+              "Size": 0,
+              "URL": "https://2.rome.api.flipkart.com/api/3/data/collector/business"
+            }
+          ],
+          "SSLCipher": "ECDHE-ECDSA-AES128-GCM-SHA256",
+          "SSLVersion": "TLS1.2"
+        }
+      ],
+      "IncludeInScript": false
+    },
+    {
+      "DomainName": "demdex.net",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "3.110.250.93",
+          "IncludeInScript": true,
+          "Name": "dpm.demdex.net",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 47,
+              "EventId": 727,
+              "HttpStatus": 200,
+              "Size": 244,
+              "URL": "https://dpm.demdex.net/id?d_visid_ver=1.5.4&d_rtbd=json&d_ver=2&d_orgid=17EB401053DAF4840A490D4C%40AdobeOrg&d_nsid=0&d_cb=s_c_il%5B0%5D._setMarketingCloudFields"
+            }
+          ],
+          "SSLCipher": "TLS_AES_128_GCM_SHA256",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "bing.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "13.107.21.200",
+          "IncludeInScript": true,
+          "Name": "c.bing.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "image/gif",
+              "DownloadTime": 110,
+              "EventId": 873,
+              "HttpStatus": 200,
+              "Size": 42,
+              "URL": "https://c.bing.com/c.gif?Red3=EdgPID_pd&pid=f942ef10-0fd7-43ef-8c7b-f5457525d38a"
+            }
+          ],
+          "SSLCipher": "",
+          "SSLVersion": ""
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "13.107.6.158",
+          "IncludeInScript": true,
+          "Name": "business.bing.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "br",
+              "DataType": "application/json",
+              "DownloadTime": 453,
+              "EventId": 391,
+              "HttpStatus": 200,
+              "Size": 1564,
+              "URL": "https://business.bing.com/work/api/v2/tenant/my/settingswithflights?&clienttype=edge-omnibox"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "",
+              "DownloadTime": 265,
+              "EventId": 385,
+              "HttpStatus": 401,
+              "Size": 0,
+              "URL": "https://business.bing.com/api/v1/user/token/microsoftgraph?&clienttype=edge-omnibox"
+            }
+          ],
+          "SSLCipher": "ECDHE-RSA-AES256-GCM-SHA384",
+          "SSLVersion": "TLS1.2"
+        }
+      ],
+      "IncludeInScript": true
+    }
+  ],
+  "WebSocket": {
+    "IncludeInScript": false,
+    "IsScriptIncludeWebSocket": false
+  },
+  "NumberOfCorrelations": 5
+}

@@ -1,0 +1,27 @@
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: ALLOW-FROM https://www.google.com
+Vary: Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site
+Content-Security-Policy: frame-ancestors https://www.google.com
+Content-Security-Policy: script-src 'report-sample' 'nonce-ZA5OWGmRhSbUP9jMygzmhg' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/OneGoogleWidgetUi/cspreport;worker-src 'self'
+Content-Security-Policy: script-src 'unsafe-inline' 'self' https://apis.google.com https://ssl.gstatic.com https://www.google.com https://www.googletagmanager.com https://www.gstatic.com https://www.google-analytics.com;report-uri /_/OneGoogleWidgetUi/cspreport/allowlist
+Content-Security-Policy: require-trusted-types-for 'script';report-uri /_/OneGoogleWidgetUi/cspreport
+x-ua-compatible: IE=edge
+Expires: Tue, 20 Feb 2024 04:29:03 GMT
+Date: Tue, 20 Feb 2024 04:29:03 GMT
+Cache-Control: private, max-age=3600
+Strict-Transport-Security: max-age=31536000
+Cross-Origin-Resource-Policy: same-site
+Cross-Origin-Opener-Policy: same-origin
+Report-To: {"group":"OneGoogleWidgetUi","max_age":2592000,"endpoints":[{"url":"https://csp.withgoogle.com/csp/report-to/OneGoogleWidgetUi"}]}
+Cross-Origin-Embedder-Policy-Report-Only: require-corp; report-to="OneGoogleWidgetUi"
+Permissions-Policy: ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factor=*, ch-ua-platform=*, ch-ua-platform-version=*
+Accept-CH: Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factor, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version
+reporting-endpoints: default="/_/OneGoogleWidgetUi/web-reports?context=eJzjctHikmLw0ZBiKFj5gundl5dMPF9fMkkAsQYQ7_DxYOFbN51VBYh1109nDQVip_QZrEFA7FM_gzUGiOP-n2MV4uHov3phHZvAhflXvjIBADUUIRk"
+Content-Encoding: gzip
+Server: ESF
+X-XSS-Protection: 0
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+

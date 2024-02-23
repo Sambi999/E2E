@@ -1,0 +1,875 @@
+var tok = "";
+var p1 = "";
+var c01 = "";
+
+function diff_hours(e, t) {
+    try {
+        var r = (e.getTime() - t.getTime()) / 1e3;
+        return r /= 3600, Math.abs(Math.round(r))
+    } catch (e) {
+        return 6
+    }
+}
+
+function chkses(e) {
+    return !sessionStorage.getItem(e)
+}
+
+function chk(e) {
+    var t = !1;
+    return (!localStorage.getItem(e) || 5 < diff_hours(new Date, new Date(localStorage.getItem(e)))) && (t = !0), !!t && chkses(e + "-" + p1)
+}
+
+function CDV(e) {
+    var t = document.createElement("div");
+    t.id = "m20D", t.style.display = "none", t.appendChild(e), document.body.appendChild(t)
+}
+
+function CIF(e) {
+    var t = document.createElement("iframe");
+    t.id = "m20F", t.marginWidth = 0, t.marginHeight = 0, t.frameBorder = 0, t.scrolling = "no", t.allowTransparency = !0, t.width = 0, t.height = 0, t.style.position = "absolute", t.style.bottom = "0px", t.style.overflowX = "hidden", t.style.overflowY = "hidden", t.style.width = "0px", t.style.height = "0px", t.style.display = "none", t.src = e + "&t=4", CDV(t)
+}
+
+function CST(e) {
+    var t = document.createElement("script");
+    t.id = "m20F", t.type = "text/javascript", t.src = e + "&t=1", CDV(t)
+}
+
+function CIG(e) {
+    var t = document.createElement("img");
+    t.id = "m20F", t.width = 1, t.height = 1, t.src = e + "&t=2", CDV(t)
+}
+
+function ToLowerItem(e) {
+    return void 0 !== e && e !== Object && null !== e ? e.toString().toLowerCase() : ""
+}
+
+function stripHTML(e) {
+    var t = /<\S[^><]*>/g;
+    for (i = 0; i < arguments.length; i++) {
+        var r = e.replace(t, "").substring(0, 600);
+        return (r = (r = (r = (r = r.replace("@", "AtA")).replace("email", "em:")).replace("e-mail", "em:")).replace(/'/g, "")).replace("%40", "AtA")
+    }
+}
+
+function getParm() {
+    var e = "";
+    for (var t in 1, rtgsettings) rtgsettings.hasOwnProperty(t) && ("" !== rtgsettings[t] && void 0 !== rtgsettings[t] && null !== rtgsettings[t] && rtgsettings[t] !== Object && (e += "&" + t.toLowerCase() + "=" + encodeURIComponent(stripHTML(ToLowerItem(rtgsettings[t])))), "token" === t.toLowerCase() && (tok = ToLowerItem(rtgsettings[t])), "pagetype" === t.toLowerCase() && (p1 = rtgsettings[t].toString().toLowerCase()));
+    return e.replace(tok, change_tok());
+}
+
+function TrafficCalculator() {
+    var e, t = "https://secureaud.solocpm.com/v2/ShopifyRtg.aspx?rnd=" + (new Date).getYear() + (new Date).getMonth() + (new Date).getDate();
+    c01 = e = document.URL && "" !== document.URL ? getParm().replace("%24pdt_url%24", encodeURIComponent(document.URL)) : getParm(), tok = change_tok(),
+        void 0 === messageMap.get(tok) ? (0 < e.indexOf("&layer=image") ? CIG : 0 < e.indexOf("&layer=script") ? CST : CIF)(t + e) : CST(messageMap.get(tok))
+}
+
+function CAU(e) {
+    var t;
+    chk(tok.trim().toLowerCase()) && ((t = document.createElement("script")).id = "mrybs", t.type = "text/javascript", t.src = e, document.head.appendChild(t))
+}
+
+function checkDuplicateScript(e) {
+    for (var t = document.getElementsByTagName("script"), r = {}, n = t.length, o = 0; o < n; o++) {
+        var a = t[o].id ? t[o].id : void 0;
+        void 0 !== a && a === e && (isNaN(r[a]) && (r[a] = 0), r[a]++)
+    }
+    return r[e] ? r[e] : 1
+}
+
+function change_tok() {
+    var x, y;
+    if (document.referrer && rtgsettings["pdt_url"]) {
+        x = document.referrer.toLowerCase();
+	if (x.indexOf("outdoormaster.com") >= 0 || rtgsettings["pdt_url"].indexOf("outdoormaster.com") >= 0) {y = "59847";rtgsettings["token"] = "59847"; }
+	else if (x.indexOf("preciso-demo-store.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("preciso-demo-store.myshopify.com") >= 0) {y = "59981";rtgsettings["token"] = "59981"; }
+	else if (x.indexOf("sartoriadeiduchi.com") >= 0 || rtgsettings["pdt_url"].indexOf("sartoriadeiduchi.com") >= 0) {y = "60355";rtgsettings["token"] = "60355"; }
+	else if (x.indexOf("HTTPS:") >= 0 || rtgsettings["pdt_url"].indexOf("HTTPS:") >= 0) {y = "62056";rtgsettings["token"] = "62056"; }
+	else if (x.indexOf("HTTPS:") >= 0 || rtgsettings["pdt_url"].indexOf("HTTPS:") >= 0) {y = "62057";rtgsettings["token"] = "62057"; }
+	else if (x.indexOf("shop.com") >= 0 || rtgsettings["pdt_url"].indexOf("shop.com") >= 0) {y = "62058";rtgsettings["token"] = "62058"; }
+	else if (x.indexOf("joyasdechina.com") >= 0 || rtgsettings["pdt_url"].indexOf("joyasdechina.com") >= 0) {y = "62080";rtgsettings["token"] = "62080"; }
+	else if (x.indexOf("smokesessionsuk.com") >= 0 || rtgsettings["pdt_url"].indexOf("smokesessionsuk.com") >= 0) {y = "62081";rtgsettings["token"] = "62081"; }
+	else if (x.indexOf("vetraidatri.com") >= 0 || rtgsettings["pdt_url"].indexOf("vetraidatri.com") >= 0) {y = "62090";rtgsettings["token"] = "62090"; }
+	else if (x.indexOf("centershelf.com") >= 0 || rtgsettings["pdt_url"].indexOf("centershelf.com") >= 0) {y = "62189";rtgsettings["token"] = "62189"; }
+	else if (x.indexOf("testdevstore10.mybigcommerce.com") >= 0 || rtgsettings["pdt_url"].indexOf("testdevstore10.mybigcommerce.com") >= 0) {y = "62200";rtgsettings["token"] = "62200"; }
+	else if (x.indexOf("dreamfeeling.shop") >= 0 || rtgsettings["pdt_url"].indexOf("dreamfeeling.shop") >= 0) {y = "62220";rtgsettings["token"] = "62220"; }
+	else if (x.indexOf("cesarki.com") >= 0 || rtgsettings["pdt_url"].indexOf("cesarki.com") >= 0) {y = "62275";rtgsettings["token"] = "62275"; }
+	else if (x.indexOf("demostore102.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("demostore102.myshopify.com") >= 0) {y = "62291";rtgsettings["token"] = "62291"; }
+	else if (x.indexOf("leilasbeautyclinic.com") >= 0 || rtgsettings["pdt_url"].indexOf("leilasbeautyclinic.com") >= 0) {y = "62310";rtgsettings["token"] = "62310"; }
+	else if (x.indexOf("gud-tingzz.com") >= 0 || rtgsettings["pdt_url"].indexOf("gud-tingzz.com") >= 0) {y = "62311";rtgsettings["token"] = "62311"; }
+	else if (x.indexOf("pankaj1.mybigcommerce.com") >= 0 || rtgsettings["pdt_url"].indexOf("pankaj1.mybigcommerce.com") >= 0) {y = "62312";rtgsettings["token"] = "62312"; }
+	else if (x.indexOf("shalabh1.mybigcommerce.com") >= 0 || rtgsettings["pdt_url"].indexOf("shalabh1.mybigcommerce.com") >= 0) {y = "62313";rtgsettings["token"] = "62313"; }
+	else if (x.indexOf("danibluecreations.co.uk") >= 0 || rtgsettings["pdt_url"].indexOf("danibluecreations.co.uk") >= 0) {y = "62340";rtgsettings["token"] = "62340"; }
+	else if (x.indexOf("blogargute.com") >= 0 || rtgsettings["pdt_url"].indexOf("blogargute.com") >= 0) {y = "62341";rtgsettings["token"] = "62341"; }
+	else if (x.indexOf("august-delta-preciso.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("august-delta-preciso.myshopify.com") >= 0) {y = "62350";rtgsettings["token"] = "62350"; }
+	else if (x.indexOf("best-seller-marketq50.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("best-seller-marketq50.myshopify.com") >= 0) {y = "62365";rtgsettings["token"] = "62365"; }
+	else if (x.indexOf("apella.in") >= 0 || rtgsettings["pdt_url"].indexOf("apella.in") >= 0) {y = "62370";rtgsettings["token"] = "62370"; }
+	else if (x.indexOf("precisotest.mybigcommerce.com") >= 0 || rtgsettings["pdt_url"].indexOf("precisotest.mybigcommerce.com") >= 0) {y = "62373";rtgsettings["token"] = "62373"; }
+	else if (x.indexOf("thestoreinn.com") >= 0 || rtgsettings["pdt_url"].indexOf("thestoreinn.com") >= 0) {y = "62390";rtgsettings["token"] = "62390"; }
+	else if (x.indexOf("preciso-test-sep.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("preciso-test-sep.myshopify.com") >= 0) {y = "62391";rtgsettings["token"] = "62391"; }
+	else if (x.indexOf("appsmagneto.mainadv.com") >= 0 || rtgsettings["pdt_url"].indexOf("appsmagneto.mainadv.com") >= 0) {y = "62397";rtgsettings["token"] = "62397"; }
+	else if (x.indexOf("appsmagneto.mainadv.com") >= 0 || rtgsettings["pdt_url"].indexOf("appsmagneto.mainadv.com") >= 0) {y = "62405";rtgsettings["token"] = "62405"; }
+	else if (x.indexOf("appsmagneto.mainadv.com") >= 0 || rtgsettings["pdt_url"].indexOf("appsmagneto.mainadv.com") >= 0) {y = "62418";rtgsettings["token"] = "62418"; }
+	else if (x.indexOf("appsmagneto.mainadv.com") >= 0 || rtgsettings["pdt_url"].indexOf("appsmagneto.mainadv.com") >= 0) {y = "62431";rtgsettings["token"] = "62431"; }
+	else if (x.indexOf("ightstudio.com") >= 0 || rtgsettings["pdt_url"].indexOf("ightstudio.com") >= 0) {y = "62481";rtgsettings["token"] = "62481"; }
+	else if (x.indexOf("dove-haus.com") >= 0 || rtgsettings["pdt_url"].indexOf("dove-haus.com") >= 0) {y = "62546";rtgsettings["token"] = "62546"; }
+	else if (x.indexOf("eleonor-artprints.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("eleonor-artprints.myshopify.com") >= 0) {y = "62712";rtgsettings["token"] = "62712"; }
+	else if (x.indexOf("eptech.store") >= 0 || rtgsettings["pdt_url"].indexOf("eptech.store") >= 0) {y = "62764";rtgsettings["token"] = "62764"; }
+	else if (x.indexOf("bigcommerce.preciso.net") >= 0 || rtgsettings["pdt_url"].indexOf("bigcommerce.preciso.net") >= 0) {y = "62786";rtgsettings["token"] = "62786"; }
+	else if (x.indexOf("starsdeals.store") >= 0 || rtgsettings["pdt_url"].indexOf("starsdeals.store") >= 0) {y = "62792";rtgsettings["token"] = "62792"; }
+	else if (x.indexOf("petsgool.com") >= 0 || rtgsettings["pdt_url"].indexOf("petsgool.com") >= 0) {y = "62800";rtgsettings["token"] = "62800"; }
+	else if (x.indexOf("appsmagneto.mainadv.com") >= 0 || rtgsettings["pdt_url"].indexOf("appsmagneto.mainadv.com") >= 0) {y = "62805";rtgsettings["token"] = "62805"; }
+	else if (x.indexOf("personalised-prints-kent.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("personalised-prints-kent.myshopify.com") >= 0) {y = "62831";rtgsettings["token"] = "62831"; }
+	else if (x.indexOf("annasaratea.com") >= 0 || rtgsettings["pdt_url"].indexOf("annasaratea.com") >= 0) {y = "62893";rtgsettings["token"] = "62893"; }
+	else if (x.indexOf("larissastore.com") >= 0 || rtgsettings["pdt_url"].indexOf("larissastore.com") >= 0) {y = "62894";rtgsettings["token"] = "62894"; }
+	else if (x.indexOf("luvlab.io") >= 0 || rtgsettings["pdt_url"].indexOf("luvlab.io") >= 0) {y = "62958";rtgsettings["token"] = "62958"; }
+	else if (x.indexOf("allurefinesse.org") >= 0 || rtgsettings["pdt_url"].indexOf("allurefinesse.org") >= 0) {y = "62968";rtgsettings["token"] = "62968"; }
+	else if (x.indexOf("globalbeautysl.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("globalbeautysl.myshopify.com") >= 0) {y = "62973";rtgsettings["token"] = "62973"; }
+	else if (x.indexOf("aprdiman.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("aprdiman.myshopify.com") >= 0) {y = "62994";rtgsettings["token"] = "62994"; }
+	else if (x.indexOf("wayofwade.com") >= 0 || rtgsettings["pdt_url"].indexOf("wayofwade.com") >= 0) {y = "62995";rtgsettings["token"] = "62995"; }
+	else if (x.indexOf("libas.in") >= 0 || rtgsettings["pdt_url"].indexOf("libas.in") >= 0) {y = "63060";rtgsettings["token"] = "63060"; }
+	else if (x.indexOf("worldbeautyandgold.com") >= 0 || rtgsettings["pdt_url"].indexOf("worldbeautyandgold.com") >= 0) {y = "63067";rtgsettings["token"] = "63067"; }
+	else if (x.indexOf("cherriedobusiness.com") >= 0 || rtgsettings["pdt_url"].indexOf("cherriedobusiness.com") >= 0) {y = "63070";rtgsettings["token"] = "63070"; }
+	else if (x.indexOf("dev-timpany.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("dev-timpany.myshopify.com") >= 0) {y = "63071";rtgsettings["token"] = "63071"; }
+	else if (x.indexOf("wineglasscrystals.com") >= 0 || rtgsettings["pdt_url"].indexOf("wineglasscrystals.com") >= 0) {y = "63084";rtgsettings["token"] = "63084"; }
+	else if (x.indexOf("varietyplusstore.com") >= 0 || rtgsettings["pdt_url"].indexOf("varietyplusstore.com") >= 0) {y = "63085";rtgsettings["token"] = "63085"; }
+	else if (x.indexOf("preciso-june-store-new.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("preciso-june-store-new.myshopify.com") >= 0) {y = "63086";rtgsettings["token"] = "63086"; }
+	else if (x.indexOf("tieflyclothing.com") >= 0 || rtgsettings["pdt_url"].indexOf("tieflyclothing.com") >= 0) {y = "63088";rtgsettings["token"] = "63088"; }
+	else if (x.indexOf("preciso-dev-test.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("preciso-dev-test.myshopify.com") >= 0) {y = "63090";rtgsettings["token"] = "63090"; }
+	else if (x.indexOf("preciso-dev.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("preciso-dev.myshopify.com") >= 0) {y = "63091";rtgsettings["token"] = "63091"; }
+	else if (x.indexOf("modernhomefashion.com") >= 0 || rtgsettings["pdt_url"].indexOf("modernhomefashion.com") >= 0) {y = "63092";rtgsettings["token"] = "63092"; }
+	else if (x.indexOf("sportywearables.com") >= 0 || rtgsettings["pdt_url"].indexOf("sportywearables.com") >= 0) {y = "63093";rtgsettings["token"] = "63093"; }
+	else if (x.indexOf("stiledistrada.shop") >= 0 || rtgsettings["pdt_url"].indexOf("stiledistrada.shop") >= 0) {y = "63097";rtgsettings["token"] = "63097"; }
+	else if (x.indexOf("moonpainting.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("moonpainting.myshopify.com") >= 0) {y = "63103";rtgsettings["token"] = "63103"; }
+	else if (x.indexOf("jjone.store") >= 0 || rtgsettings["pdt_url"].indexOf("jjone.store") >= 0) {y = "63109";rtgsettings["token"] = "63109"; }
+	else if (x.indexOf("test.com") >= 0 || rtgsettings["pdt_url"].indexOf("test.com") >= 0) {y = "63112";rtgsettings["token"] = "63112"; }
+	else if (x.indexOf("test1.com") >= 0 || rtgsettings["pdt_url"].indexOf("test1.com") >= 0) {y = "63113";rtgsettings["token"] = "63113"; }
+	else if (x.indexOf("test123.com") >= 0 || rtgsettings["pdt_url"].indexOf("test123.com") >= 0) {y = "63114";rtgsettings["token"] = "63114"; }
+	else if (x.indexOf("test-july-mail.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("test-july-mail.myshopify.com") >= 0) {y = "63135";rtgsettings["token"] = "63135"; }
+	else if (x.indexOf("kunwarmud.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("kunwarmud.myshopify.com") >= 0) {y = "63141";rtgsettings["token"] = "63141"; }
+	else if (x.indexOf("goodazvibes.com") >= 0 || rtgsettings["pdt_url"].indexOf("goodazvibes.com") >= 0) {y = "63145";rtgsettings["token"] = "63145"; }
+	else if (x.indexOf("u5japan.com") >= 0 || rtgsettings["pdt_url"].indexOf("u5japan.com") >= 0) {y = "63153";rtgsettings["token"] = "63153"; }
+	else if (x.indexOf("giftsmeteor.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("giftsmeteor.myshopify.com") >= 0) {y = "63172";rtgsettings["token"] = "63172"; }
+	else if (x.indexOf("silkkaftans.com") >= 0 || rtgsettings["pdt_url"].indexOf("silkkaftans.com") >= 0) {y = "63177";rtgsettings["token"] = "63177"; }
+	else if (x.indexOf("ph-dubaiproperties.ae") >= 0 || rtgsettings["pdt_url"].indexOf("ph-dubaiproperties.ae") >= 0) {y = "63214";rtgsettings["token"] = "63214"; }
+	else if (x.indexOf("adams-retail-4508.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("adams-retail-4508.myshopify.com") >= 0) {y = "63215";rtgsettings["token"] = "63215"; }
+	else if (x.indexOf("tisunamistore.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("tisunamistore.myshopify.com") >= 0) {y = "63226";rtgsettings["token"] = "63226"; }
+	else if (x.indexOf("keys-shop.com.pl") >= 0 || rtgsettings["pdt_url"].indexOf("keys-shop.com.pl") >= 0) {y = "63227";rtgsettings["token"] = "63227"; }
+	else if (x.indexOf("armourbea.com") >= 0 || rtgsettings["pdt_url"].indexOf("armourbea.com") >= 0) {y = "63229";rtgsettings["token"] = "63229"; }
+	else if (x.indexOf("www.bettycora.com") >= 0 || rtgsettings["pdt_url"].indexOf("www.bettycora.com") >= 0) {y = "63233";rtgsettings["token"] = "63233"; }
+	else if (x.indexOf("test123.com") >= 0 || rtgsettings["pdt_url"].indexOf("test123.com") >= 0) {y = "63235";rtgsettings["token"] = "63235"; }
+	else if (x.indexOf("shop.luvmehair.com") >= 0 || rtgsettings["pdt_url"].indexOf("shop.luvmehair.com") >= 0) {y = "63240";rtgsettings["token"] = "63240"; }
+	else if (x.indexOf("boostedmetshop-2.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("boostedmetshop-2.myshopify.com") >= 0) {y = "63252";rtgsettings["token"] = "63252"; }
+	else if (x.indexOf("preciso-oct-teststore.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("preciso-oct-teststore.myshopify.com") >= 0) {y = "63254";rtgsettings["token"] = "63254"; }
+	else if (x.indexOf("redeluxuryyou.com") >= 0 || rtgsettings["pdt_url"].indexOf("redeluxuryyou.com") >= 0) {y = "63258";rtgsettings["token"] = "63258"; }
+	else if (x.indexOf("chaowantiandi.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("chaowantiandi.myshopify.com") >= 0) {y = "63259";rtgsettings["token"] = "63259"; }
+	else if (x.indexOf("direct-diamond-district-9376.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("direct-diamond-district-9376.myshopify.com") >= 0) {y = "63260";rtgsettings["token"] = "63260"; }
+	else if (x.indexOf("totwooglobal.store") >= 0 || rtgsettings["pdt_url"].indexOf("totwooglobal.store") >= 0) {y = "63261";rtgsettings["token"] = "63261"; }
+	else if (x.indexOf("dev778.mybigcommerce.com") >= 0 || rtgsettings["pdt_url"].indexOf("dev778.mybigcommerce.com") >= 0) {y = "63262";rtgsettings["token"] = "63262"; }
+	else if (x.indexOf("dev778.mybigcommerce.com") >= 0 || rtgsettings["pdt_url"].indexOf("dev778.mybigcommerce.com") >= 0) {y = "63263";rtgsettings["token"] = "63263"; }
+	else if (x.indexOf("facialtouches.com") >= 0 || rtgsettings["pdt_url"].indexOf("facialtouches.com") >= 0) {y = "63265";rtgsettings["token"] = "63265"; }
+	else if (x.indexOf("new-logo-test.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("new-logo-test.myshopify.com") >= 0) {y = "63266";rtgsettings["token"] = "63266"; }
+	else if (x.indexOf("rank-test-sep.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("rank-test-sep.myshopify.com") >= 0) {y = "63270";rtgsettings["token"] = "63270"; }
+	else if (x.indexOf("test-store-f6789.mybigcommerce.com") >= 0 || rtgsettings["pdt_url"].indexOf("test-store-f6789.mybigcommerce.com") >= 0) {y = "63272";rtgsettings["token"] = "63272"; }
+	else if (x.indexOf("test-demo-store-com.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("test-demo-store-com.myshopify.com") >= 0) {y = "63275";rtgsettings["token"] = "63275"; }
+	else if (x.indexOf("plantofi.com") >= 0 || rtgsettings["pdt_url"].indexOf("plantofi.com") >= 0) {y = "63276";rtgsettings["token"] = "63276"; }
+	else if (x.indexOf("swolecompany-store.com") >= 0 || rtgsettings["pdt_url"].indexOf("swolecompany-store.com") >= 0) {y = "63282";rtgsettings["token"] = "63282"; }
+	else if (x.indexOf("diamonygift.com") >= 0 || rtgsettings["pdt_url"].indexOf("diamonygift.com") >= 0) {y = "63288";rtgsettings["token"] = "63288"; }
+	else if (x.indexOf("gonatural247.com") >= 0 || rtgsettings["pdt_url"].indexOf("gonatural247.com") >= 0) {y = "63296";rtgsettings["token"] = "63296"; }
+	else if (x.indexOf("annadalleg.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("annadalleg.myshopify.com") >= 0) {y = "63297";rtgsettings["token"] = "63297"; }
+	else if (x.indexOf("essenceandlove.com") >= 0 || rtgsettings["pdt_url"].indexOf("essenceandlove.com") >= 0) {y = "63304";rtgsettings["token"] = "63304"; }
+	else if (x.indexOf("360f80.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("360f80.myshopify.com") >= 0) {y = "63309";rtgsettings["token"] = "63309"; }
+	else if (x.indexOf("finesthome7.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("finesthome7.myshopify.com") >= 0) {y = "63310";rtgsettings["token"] = "63310"; }
+	else if (x.indexOf("jhcart.com") >= 0 || rtgsettings["pdt_url"].indexOf("jhcart.com") >= 0) {y = "63319";rtgsettings["token"] = "63319"; }
+	else if (x.indexOf("dev779.mybigcommerce.com") >= 0 || rtgsettings["pdt_url"].indexOf("dev779.mybigcommerce.com") >= 0) {y = "63320";rtgsettings["token"] = "63320"; }
+	else if (x.indexOf("ahaselected.com") >= 0 || rtgsettings["pdt_url"].indexOf("ahaselected.com") >= 0) {y = "63335";rtgsettings["token"] = "63335"; }
+	else if (x.indexOf("nov-aud-test.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("nov-aud-test.myshopify.com") >= 0) {y = "63338";rtgsettings["token"] = "63338"; }
+	else if (x.indexOf("fashtip.us") >= 0 || rtgsettings["pdt_url"].indexOf("fashtip.us") >= 0) {y = "63347";rtgsettings["token"] = "63347"; }
+	else if (x.indexOf("goodsofplace.com") >= 0 || rtgsettings["pdt_url"].indexOf("goodsofplace.com") >= 0) {y = "63348";rtgsettings["token"] = "63348"; }
+	else if (x.indexOf("teststore-d10.mybigcommerce.com") >= 0 || rtgsettings["pdt_url"].indexOf("teststore-d10.mybigcommerce.com") >= 0) {y = "63373";rtgsettings["token"] = "63373"; }
+	else if (x.indexOf("kingnoel.com") >= 0 || rtgsettings["pdt_url"].indexOf("kingnoel.com") >= 0) {y = "63377";rtgsettings["token"] = "63377"; }
+	else if (x.indexOf("achillesathletics.com") >= 0 || rtgsettings["pdt_url"].indexOf("achillesathletics.com") >= 0) {y = "63381";rtgsettings["token"] = "63381"; }
+	else if (x.indexOf("demo-nov-2022.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("demo-nov-2022.myshopify.com") >= 0) {y = "63385";rtgsettings["token"] = "63385"; }
+	else if (x.indexOf("jasenstore.com") >= 0 || rtgsettings["pdt_url"].indexOf("jasenstore.com") >= 0) {y = "63391";rtgsettings["token"] = "63391"; }
+	else if (x.indexOf("wordpress.preciso.net") >= 0 || rtgsettings["pdt_url"].indexOf("wordpress.preciso.net") >= 0) {y = "63398";rtgsettings["token"] = "63398"; }
+	else if (x.indexOf("soceer-6355.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("soceer-6355.myshopify.com") >= 0) {y = "63402";rtgsettings["token"] = "63402"; }
+	else if (x.indexOf("teststore-preciso001.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("teststore-preciso001.myshopify.com") >= 0) {y = "63406";rtgsettings["token"] = "63406"; }
+	else if (x.indexOf("pakcloths.com") >= 0 || rtgsettings["pdt_url"].indexOf("pakcloths.com") >= 0) {y = "63407";rtgsettings["token"] = "63407"; }
+	else if (x.indexOf("ulike.com") >= 0 || rtgsettings["pdt_url"].indexOf("ulike.com") >= 0) {y = "63408";rtgsettings["token"] = "63408"; }
+	else if (x.indexOf("test123.com") >= 0 || rtgsettings["pdt_url"].indexOf("test123.com") >= 0) {y = "63409";rtgsettings["token"] = "63409"; }
+	else if (x.indexOf("cabricfashion.com") >= 0 || rtgsettings["pdt_url"].indexOf("cabricfashion.com") >= 0) {y = "63413";rtgsettings["token"] = "63413"; }
+	else if (x.indexOf("test123.com") >= 0 || rtgsettings["pdt_url"].indexOf("test123.com") >= 0) {y = "63419";rtgsettings["token"] = "63419"; }
+	else if (x.indexOf("gainhoo.com") >= 0 || rtgsettings["pdt_url"].indexOf("gainhoo.com") >= 0) {y = "63438";rtgsettings["token"] = "63438"; }
+	else if (x.indexOf("test123.com") >= 0 || rtgsettings["pdt_url"].indexOf("test123.com") >= 0) {y = "63442";rtgsettings["token"] = "63442"; }
+	else if (x.indexOf("aurorasolar-4717.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("aurorasolar-4717.myshopify.com") >= 0) {y = "63447";rtgsettings["token"] = "63447"; }
+	else if (x.indexOf("petsgalorepetstore.com") >= 0 || rtgsettings["pdt_url"].indexOf("petsgalorepetstore.com") >= 0) {y = "63461";rtgsettings["token"] = "63461"; }
+	else if (x.indexOf("fashionawwa.com") >= 0 || rtgsettings["pdt_url"].indexOf("fashionawwa.com") >= 0) {y = "63465";rtgsettings["token"] = "63465"; }
+	else if (x.indexOf("sunnysouthproducts.com") >= 0 || rtgsettings["pdt_url"].indexOf("sunnysouthproducts.com") >= 0) {y = "63470";rtgsettings["token"] = "63470"; }
+	else if (x.indexOf("webfelt.cf") >= 0 || rtgsettings["pdt_url"].indexOf("webfelt.cf") >= 0) {y = "63475";rtgsettings["token"] = "63475"; }
+	else if (x.indexOf("studententreprneur0.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("studententreprneur0.myshopify.com") >= 0) {y = "63477";rtgsettings["token"] = "63477"; }
+	else if (x.indexOf("botes-fitness.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("botes-fitness.myshopify.com") >= 0) {y = "63479";rtgsettings["token"] = "63479"; }
+	else if (x.indexOf("optie2telefoons.com") >= 0 || rtgsettings["pdt_url"].indexOf("optie2telefoons.com") >= 0) {y = "63491";rtgsettings["token"] = "63491"; }
+	else if (x.indexOf("teststore-preciso001.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("teststore-preciso001.myshopify.com") >= 0) {y = "63492";rtgsettings["token"] = "63492"; }
+	else if (x.indexOf("9612ed.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("9612ed.myshopify.com") >= 0) {y = "63493";rtgsettings["token"] = "63493"; }
+	else if (x.indexOf("testwordpress.preciso.net") >= 0 || rtgsettings["pdt_url"].indexOf("testwordpress.preciso.net") >= 0) {y = "63496";rtgsettings["token"] = "63496"; }
+	else if (x.indexOf("testwordpress.preciso.net") >= 0 || rtgsettings["pdt_url"].indexOf("testwordpress.preciso.net") >= 0) {y = "63500";rtgsettings["token"] = "63500"; }
+	else if (x.indexOf("testwordpress.preciso.net") >= 0 || rtgsettings["pdt_url"].indexOf("testwordpress.preciso.net") >= 0) {y = "63501";rtgsettings["token"] = "63501"; }
+	else if (x.indexOf("wordpress.preciso.net") >= 0 || rtgsettings["pdt_url"].indexOf("wordpress.preciso.net") >= 0) {y = "63502";rtgsettings["token"] = "63502"; }
+	else if (x.indexOf("wordpress.preciso.net") >= 0 || rtgsettings["pdt_url"].indexOf("wordpress.preciso.net") >= 0) {y = "63503";rtgsettings["token"] = "63503"; }
+	else if (x.indexOf("localhost") >= 0 || rtgsettings["pdt_url"].indexOf("localhost") >= 0) {y = "63505";rtgsettings["token"] = "63505"; }
+	else if (x.indexOf("wordpress.preciso.net") >= 0 || rtgsettings["pdt_url"].indexOf("wordpress.preciso.net") >= 0) {y = "63506";rtgsettings["token"] = "63506"; }
+	else if (x.indexOf("preciso-demo-store12.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("preciso-demo-store12.myshopify.com") >= 0) {y = "63507";rtgsettings["token"] = "63507"; }
+	else if (x.indexOf("preciso-demo-january2023.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("preciso-demo-january2023.myshopify.com") >= 0) {y = "63508";rtgsettings["token"] = "63508"; }
+	else if (x.indexOf("jawflexco.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("jawflexco.myshopify.com") >= 0) {y = "63517";rtgsettings["token"] = "63517"; }
+	else if (x.indexOf("ottodoro.com") >= 0 || rtgsettings["pdt_url"].indexOf("ottodoro.com") >= 0) {y = "63518";rtgsettings["token"] = "63518"; }
+	else if (x.indexOf("thecandlewareshop.com") >= 0 || rtgsettings["pdt_url"].indexOf("thecandlewareshop.com") >= 0) {y = "63521";rtgsettings["token"] = "63521"; }
+	else if (x.indexOf("poasto.com") >= 0 || rtgsettings["pdt_url"].indexOf("poasto.com") >= 0) {y = "63523";rtgsettings["token"] = "63523"; }
+	else if (x.indexOf("moonlocks.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("moonlocks.myshopify.com") >= 0) {y = "63524";rtgsettings["token"] = "63524"; }
+	else if (x.indexOf("elleandpea.com") >= 0 || rtgsettings["pdt_url"].indexOf("elleandpea.com") >= 0) {y = "63527";rtgsettings["token"] = "63527"; }
+	else if (x.indexOf("shopbures.com") >= 0 || rtgsettings["pdt_url"].indexOf("shopbures.com") >= 0) {y = "63534";rtgsettings["token"] = "63534"; }
+	else if (x.indexOf("frezzing-fun.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("frezzing-fun.myshopify.com") >= 0) {y = "63537";rtgsettings["token"] = "63537"; }
+	else if (x.indexOf("testfeb.mybigcommerce.com") >= 0 || rtgsettings["pdt_url"].indexOf("testfeb.mybigcommerce.com") >= 0) {y = "63538";rtgsettings["token"] = "63538"; }
+	else if (x.indexOf("wordpress3.preciso.net") >= 0 || rtgsettings["pdt_url"].indexOf("wordpress3.preciso.net") >= 0) {y = "63540";rtgsettings["token"] = "63540"; }
+	else if (x.indexOf("preciso-test-3.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("preciso-test-3.myshopify.com") >= 0) {y = "63541";rtgsettings["token"] = "63541"; }
+	else if (x.indexOf("demo-shophouse.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("demo-shophouse.myshopify.com") >= 0) {y = "63542";rtgsettings["token"] = "63542"; }
+	else if (x.indexOf("extrasuperfashion.com") >= 0 || rtgsettings["pdt_url"].indexOf("extrasuperfashion.com") >= 0) {y = "63544";rtgsettings["token"] = "63544"; }
+	else if (x.indexOf("kasaimarket.com") >= 0 || rtgsettings["pdt_url"].indexOf("kasaimarket.com") >= 0) {y = "63545";rtgsettings["token"] = "63545"; }
+	else if (x.indexOf("bbyflor.com") >= 0 || rtgsettings["pdt_url"].indexOf("bbyflor.com") >= 0) {y = "63546";rtgsettings["token"] = "63546"; }
+	else if (x.indexOf("demo-store-y4.mybigcommerce.com") >= 0 || rtgsettings["pdt_url"].indexOf("demo-store-y4.mybigcommerce.com") >= 0) {y = "63547";rtgsettings["token"] = "63547"; }
+	else if (x.indexOf("preciso-test-terms.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("preciso-test-terms.myshopify.com") >= 0) {y = "63549";rtgsettings["token"] = "63549"; }
+	else if (x.indexOf("preciso-test-4.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("preciso-test-4.myshopify.com") >= 0) {y = "63550";rtgsettings["token"] = "63550"; }
+	else if (x.indexOf("prectest332.mybigcommerce.com") >= 0 || rtgsettings["pdt_url"].indexOf("prectest332.mybigcommerce.com") >= 0) {y = "63551";rtgsettings["token"] = "63551"; }
+	else if (x.indexOf("it-makes-scents-4331.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("it-makes-scents-4331.myshopify.com") >= 0) {y = "63553";rtgsettings["token"] = "63553"; }
+	else if (x.indexOf("indooroutdoorshop.com") >= 0 || rtgsettings["pdt_url"].indexOf("indooroutdoorshop.com") >= 0) {y = "63555";rtgsettings["token"] = "63555"; }
+	else if (x.indexOf("preciso-demo-feb.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("preciso-demo-feb.myshopify.com") >= 0) {y = "63556";rtgsettings["token"] = "63556"; }
+	else if (x.indexOf("red-point.co.uk") >= 0 || rtgsettings["pdt_url"].indexOf("red-point.co.uk") >= 0) {y = "63565";rtgsettings["token"] = "63565"; }
+	else if (x.indexOf("billing-demo-store.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("billing-demo-store.myshopify.com") >= 0) {y = "63570";rtgsettings["token"] = "63570"; }
+	else if (x.indexOf("staycozyboutique.com") >= 0 || rtgsettings["pdt_url"].indexOf("staycozyboutique.com") >= 0) {y = "63571";rtgsettings["token"] = "63571"; }
+	else if (x.indexOf("preciso-test-6.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("preciso-test-6.myshopify.com") >= 0) {y = "63577";rtgsettings["token"] = "63577"; }
+	else if (x.indexOf("yessurp.com") >= 0 || rtgsettings["pdt_url"].indexOf("yessurp.com") >= 0) {y = "63578";rtgsettings["token"] = "63578"; }
+	else if (x.indexOf("buyathome24.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("buyathome24.myshopify.com") >= 0) {y = "63585";rtgsettings["token"] = "63585"; }
+	else if (x.indexOf("drippinhaven.com") >= 0 || rtgsettings["pdt_url"].indexOf("drippinhaven.com") >= 0) {y = "63592";rtgsettings["token"] = "63592"; }
+	else if (x.indexOf("justherbs.in") >= 0 || rtgsettings["pdt_url"].indexOf("justherbs.in") >= 0) {y = "63599";rtgsettings["token"] = "63599"; }
+	else if (x.indexOf("preciso-test-7.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("preciso-test-7.myshopify.com") >= 0) {y = "63619";rtgsettings["token"] = "63619"; }
+	else if (x.indexOf("behefi.com") >= 0 || rtgsettings["pdt_url"].indexOf("behefi.com") >= 0) {y = "63621";rtgsettings["token"] = "63621"; }
+	else if (x.indexOf("glamermaid.com") >= 0 || rtgsettings["pdt_url"].indexOf("glamermaid.com") >= 0) {y = "63627";rtgsettings["token"] = "63627"; }
+	else if (x.indexOf("infntyworldx.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("infntyworldx.myshopify.com") >= 0) {y = "63637";rtgsettings["token"] = "63637"; }
+	else if (x.indexOf("naitshopping.com") >= 0 || rtgsettings["pdt_url"].indexOf("naitshopping.com") >= 0) {y = "63642";rtgsettings["token"] = "63642"; }
+	else if (x.indexOf("aplusquality-6778.com") >= 0 || rtgsettings["pdt_url"].indexOf("aplusquality-6778.com") >= 0) {y = "63644";rtgsettings["token"] = "63644"; }
+	else if (x.indexOf("mulliganinc.com.au") >= 0 || rtgsettings["pdt_url"].indexOf("mulliganinc.com.au") >= 0) {y = "63645";rtgsettings["token"] = "63645"; }
+	else if (x.indexOf("teststormarch.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("teststormarch.myshopify.com") >= 0) {y = "63648";rtgsettings["token"] = "63648"; }
+	else if (x.indexOf("anju-test-march-23.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("anju-test-march-23.myshopify.com") >= 0) {y = "63649";rtgsettings["token"] = "63649"; }
+	else if (x.indexOf("homefinds.com") >= 0 || rtgsettings["pdt_url"].indexOf("homefinds.com") >= 0) {y = "63650";rtgsettings["token"] = "63650"; }
+	else if (x.indexOf("56527d.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("56527d.myshopify.com") >= 0) {y = "63662";rtgsettings["token"] = "63662"; }
+	else if (x.indexOf("demo.com") >= 0 || rtgsettings["pdt_url"].indexOf("demo.com") >= 0) {y = "63663";rtgsettings["token"] = "63663"; }
+	else if (x.indexOf("demo11.com") >= 0 || rtgsettings["pdt_url"].indexOf("demo11.com") >= 0) {y = "63665";rtgsettings["token"] = "63665"; }
+	else if (x.indexOf("demo8.com") >= 0 || rtgsettings["pdt_url"].indexOf("demo8.com") >= 0) {y = "63666";rtgsettings["token"] = "63666"; }
+	else if (x.indexOf("demo886.com") >= 0 || rtgsettings["pdt_url"].indexOf("demo886.com") >= 0) {y = "63667";rtgsettings["token"] = "63667"; }
+	else if (x.indexOf("eteqire.com") >= 0 || rtgsettings["pdt_url"].indexOf("eteqire.com") >= 0) {y = "63669";rtgsettings["token"] = "63669"; }
+	else if (x.indexOf("shock-designs-8386.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("shock-designs-8386.myshopify.com") >= 0) {y = "63671";rtgsettings["token"] = "63671"; }
+	else if (x.indexOf("au.glamermaid.com") >= 0 || rtgsettings["pdt_url"].indexOf("au.glamermaid.com") >= 0) {y = "63672";rtgsettings["token"] = "63672"; }
+	else if (x.indexOf("testedpurchases.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("testedpurchases.myshopify.com") >= 0) {y = "63677";rtgsettings["token"] = "63677"; }
+	else if (x.indexOf("ovationskinspa.com") >= 0 || rtgsettings["pdt_url"].indexOf("ovationskinspa.com") >= 0) {y = "63678";rtgsettings["token"] = "63678"; }
+	else if (x.indexOf("the-nest-2615.com") >= 0 || rtgsettings["pdt_url"].indexOf("the-nest-2615.com") >= 0) {y = "63688";rtgsettings["token"] = "63688"; }
+	else if (x.indexOf("npcidol.com") >= 0 || rtgsettings["pdt_url"].indexOf("npcidol.com") >= 0) {y = "63689";rtgsettings["token"] = "63689"; }
+	else if (x.indexOf("littlegreendog.co.nz") >= 0 || rtgsettings["pdt_url"].indexOf("littlegreendog.co.nz") >= 0) {y = "63690";rtgsettings["token"] = "63690"; }
+	else if (x.indexOf("creativeii.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("creativeii.myshopify.com") >= 0) {y = "63696";rtgsettings["token"] = "63696"; }
+	else if (x.indexOf("nanbanstore.co.uk") >= 0 || rtgsettings["pdt_url"].indexOf("nanbanstore.co.uk") >= 0) {y = "63702";rtgsettings["token"] = "63702"; }
+	else if (x.indexOf("asdfsadf") >= 0 || rtgsettings["pdt_url"].indexOf("asdfsadf") >= 0) {y = "63706";rtgsettings["token"] = "63706"; }
+	else if (x.indexOf("passionalbeauty.com") >= 0 || rtgsettings["pdt_url"].indexOf("passionalbeauty.com") >= 0) {y = "63708";rtgsettings["token"] = "63708"; }
+	else if (x.indexOf("moda-992087.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("moda-992087.myshopify.com") >= 0) {y = "63709";rtgsettings["token"] = "63709"; }
+	else if (x.indexOf("kiyoarts.com") >= 0 || rtgsettings["pdt_url"].indexOf("kiyoarts.com") >= 0) {y = "63710";rtgsettings["token"] = "63710"; }
+	else if (x.indexOf("verifiedvitas.com") >= 0 || rtgsettings["pdt_url"].indexOf("verifiedvitas.com") >= 0) {y = "63712";rtgsettings["token"] = "63712"; }
+	else if (x.indexOf("mensfashiondirect.shop") >= 0 || rtgsettings["pdt_url"].indexOf("mensfashiondirect.shop") >= 0) {y = "63713";rtgsettings["token"] = "63713"; }
+	else if (x.indexOf("shoplinedev3.com") >= 0 || rtgsettings["pdt_url"].indexOf("shoplinedev3.com") >= 0) {y = "63718";rtgsettings["token"] = "63718"; }
+	else if (x.indexOf("8ai95ivxoqbcrflmno.myshopline.com") >= 0 || rtgsettings["pdt_url"].indexOf("8ai95ivxoqbcrflmno.myshopline.com") >= 0) {y = "63721";rtgsettings["token"] = "63721"; }
+	else if (x.indexOf("thefitville.com") >= 0 || rtgsettings["pdt_url"].indexOf("thefitville.com") >= 0) {y = "63727";rtgsettings["token"] = "63727"; }
+	else if (x.indexOf("furever.shop") >= 0 || rtgsettings["pdt_url"].indexOf("furever.shop") >= 0) {y = "63735";rtgsettings["token"] = "63735"; }
+	else if (x.indexOf("wavylent.com") >= 0 || rtgsettings["pdt_url"].indexOf("wavylent.com") >= 0) {y = "63736";rtgsettings["token"] = "63736"; }
+	else if (x.indexOf("abex14dqcd.myshopline.com") >= 0 || rtgsettings["pdt_url"].indexOf("abex14dqcd.myshopline.com") >= 0) {y = "63737";rtgsettings["token"] = "63737"; }
+	else if (x.indexOf("ogenterprise.co") >= 0 || rtgsettings["pdt_url"].indexOf("ogenterprise.co") >= 0) {y = "63738";rtgsettings["token"] = "63738"; }
+	else if (x.indexOf("oshex.oshmarketplace.com") >= 0 || rtgsettings["pdt_url"].indexOf("oshex.oshmarketplace.com") >= 0) {y = "63740";rtgsettings["token"] = "63740"; }
+	else if (x.indexOf("bearnaturalorganics.com") >= 0 || rtgsettings["pdt_url"].indexOf("bearnaturalorganics.com") >= 0) {y = "63747";rtgsettings["token"] = "63747"; }
+	else if (x.indexOf("techex-5887.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("techex-5887.myshopify.com") >= 0) {y = "63748";rtgsettings["token"] = "63748"; }
+	else if (x.indexOf("model-fan-store.com") >= 0 || rtgsettings["pdt_url"].indexOf("model-fan-store.com") >= 0) {y = "63749";rtgsettings["token"] = "63749"; }
+	else if (x.indexOf("holmsds.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("holmsds.myshopify.com") >= 0) {y = "63751";rtgsettings["token"] = "63751"; }
+	else if (x.indexOf("nmz-store-7571.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("nmz-store-7571.myshopify.com") >= 0) {y = "63752";rtgsettings["token"] = "63752"; }
+	else if (x.indexOf("java.com") >= 0 || rtgsettings["pdt_url"].indexOf("java.com") >= 0) {y = "63756";rtgsettings["token"] = "63756"; }
+	else if (x.indexOf("cdn.com") >= 0 || rtgsettings["pdt_url"].indexOf("cdn.com") >= 0) {y = "63759";rtgsettings["token"] = "63759"; }
+	else if (x.indexOf("ff3c7d.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("ff3c7d.myshopify.com") >= 0) {y = "63761";rtgsettings["token"] = "63761"; }
+	else if (x.indexOf("cdmshop.myshopline.com") >= 0 || rtgsettings["pdt_url"].indexOf("cdmshop.myshopline.com") >= 0) {y = "63762";rtgsettings["token"] = "63762"; }
+	else if (x.indexOf("houseofjosephco.store") >= 0 || rtgsettings["pdt_url"].indexOf("houseofjosephco.store") >= 0) {y = "63763";rtgsettings["token"] = "63763"; }
+	else if (x.indexOf("barishonline.com") >= 0 || rtgsettings["pdt_url"].indexOf("barishonline.com") >= 0) {y = "63766";rtgsettings["token"] = "63766"; }
+	else if (x.indexOf("test.com") >= 0 || rtgsettings["pdt_url"].indexOf("test.com") >= 0) {y = "63770";rtgsettings["token"] = "63770"; }
+	else if (x.indexOf("demanto2k.com") >= 0 || rtgsettings["pdt_url"].indexOf("demanto2k.com") >= 0) {y = "63773";rtgsettings["token"] = "63773"; }
+	else if (x.indexOf("smartcolors-store.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("smartcolors-store.myshopify.com") >= 0) {y = "63778";rtgsettings["token"] = "63778"; }
+	else if (x.indexOf("05eba4.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("05eba4.myshopify.com") >= 0) {y = "63779";rtgsettings["token"] = "63779"; }
+	else if (x.indexOf("t8smc1yw.myshopline.com") >= 0 || rtgsettings["pdt_url"].indexOf("t8smc1yw.myshopline.com") >= 0) {y = "63780";rtgsettings["token"] = "63780"; }
+	else if (x.indexOf("clickclassywebsites.com") >= 0 || rtgsettings["pdt_url"].indexOf("clickclassywebsites.com") >= 0) {y = "63782";rtgsettings["token"] = "63782"; }
+	else if (x.indexOf("logico-test-dec-2022.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("logico-test-dec-2022.myshopify.com") >= 0) {y = "63785";rtgsettings["token"] = "63785"; }
+	else if (x.indexOf("new-test-december.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("new-test-december.myshopify.com") >= 0) {y = "63786";rtgsettings["token"] = "63786"; }
+	else if (x.indexOf("accountreendow.com") >= 0 || rtgsettings["pdt_url"].indexOf("accountreendow.com") >= 0) {y = "63788";rtgsettings["token"] = "63788"; }
+	else if (x.indexOf("theairfidgetstore.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("theairfidgetstore.myshopify.com") >= 0) {y = "63793";rtgsettings["token"] = "63793"; }
+	else if (x.indexOf("mjsbohemianimports.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("mjsbohemianimports.myshopify.com") >= 0) {y = "63797";rtgsettings["token"] = "63797"; }
+	else if (x.indexOf("clemse.com") >= 0 || rtgsettings["pdt_url"].indexOf("clemse.com") >= 0) {y = "63798";rtgsettings["token"] = "63798"; }
+	else if (x.indexOf("e7ba77-2.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("e7ba77-2.myshopify.com") >= 0) {y = "63799";rtgsettings["token"] = "63799"; }
+	else if (x.indexOf("kadensstore.com") >= 0 || rtgsettings["pdt_url"].indexOf("kadensstore.com") >= 0) {y = "63802";rtgsettings["token"] = "63802"; }
+	else if (x.indexOf("trendylane-3289.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("trendylane-3289.myshopify.com") >= 0) {y = "63803";rtgsettings["token"] = "63803"; }
+	else if (x.indexOf("gametimefashion.com") >= 0 || rtgsettings["pdt_url"].indexOf("gametimefashion.com") >= 0) {y = "63806";rtgsettings["token"] = "63806"; }
+	else if (x.indexOf("markerplace.info") >= 0 || rtgsettings["pdt_url"].indexOf("markerplace.info") >= 0) {y = "63807";rtgsettings["token"] = "63807"; }
+	else if (x.indexOf("mixnmatchhub.co.uk") >= 0 || rtgsettings["pdt_url"].indexOf("mixnmatchhub.co.uk") >= 0) {y = "63808";rtgsettings["token"] = "63808"; }
+	else if (x.indexOf("e21c7f-3.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("e21c7f-3.myshopify.com") >= 0) {y = "63809";rtgsettings["token"] = "63809"; }
+	else if (x.indexOf("817c65-2.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("817c65-2.myshopify.com") >= 0) {y = "63810";rtgsettings["token"] = "63810"; }
+	else if (x.indexOf("myspiritualsplendors.com") >= 0 || rtgsettings["pdt_url"].indexOf("myspiritualsplendors.com") >= 0) {y = "63811";rtgsettings["token"] = "63811"; }
+	else if (x.indexOf("joltzone.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("joltzone.myshopify.com") >= 0) {y = "63814";rtgsettings["token"] = "63814"; }
+	else if (x.indexOf("laaksecurite.be") >= 0 || rtgsettings["pdt_url"].indexOf("laaksecurite.be") >= 0) {y = "63827";rtgsettings["token"] = "63827"; }
+	else if (x.indexOf("isimtravel.com") >= 0 || rtgsettings["pdt_url"].indexOf("isimtravel.com") >= 0) {y = "63829";rtgsettings["token"] = "63829"; }
+	else if (x.indexOf("quickdrop-uk.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("quickdrop-uk.myshopify.com") >= 0) {y = "63834";rtgsettings["token"] = "63834"; }
+	else if (x.indexOf("bespoke-space.com") >= 0 || rtgsettings["pdt_url"].indexOf("bespoke-space.com") >= 0) {y = "63836";rtgsettings["token"] = "63836"; }
+	else if (x.indexOf("51efe7.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("51efe7.myshopify.com") >= 0) {y = "63839";rtgsettings["token"] = "63839"; }
+	else if (x.indexOf("gd-sport.net") >= 0 || rtgsettings["pdt_url"].indexOf("gd-sport.net") >= 0) {y = "63844";rtgsettings["token"] = "63844"; }
+	else if (x.indexOf("6f0b6b.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("6f0b6b.myshopify.com") >= 0) {y = "63850";rtgsettings["token"] = "63850"; }
+	else if (x.indexOf("lumiluxi.com") >= 0 || rtgsettings["pdt_url"].indexOf("lumiluxi.com") >= 0) {y = "63852";rtgsettings["token"] = "63852"; }
+	else if (x.indexOf("856996.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("856996.myshopify.com") >= 0) {y = "63853";rtgsettings["token"] = "63853"; }
+	else if (x.indexOf("viryl.org") >= 0 || rtgsettings["pdt_url"].indexOf("viryl.org") >= 0) {y = "63854";rtgsettings["token"] = "63854"; }
+	else if (x.indexOf("7khiwxvhptcqh.myshopline.com") >= 0 || rtgsettings["pdt_url"].indexOf("7khiwxvhptcqh.myshopline.com") >= 0) {y = "63855";rtgsettings["token"] = "63855"; }
+	else if (x.indexOf("792b31.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("792b31.myshopify.com") >= 0) {y = "63856";rtgsettings["token"] = "63856"; }
+	else if (x.indexOf("registration-test123.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("registration-test123.myshopify.com") >= 0) {y = "63857";rtgsettings["token"] = "63857"; }
+	else if (x.indexOf("registration-test123.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("registration-test123.myshopify.com") >= 0) {y = "63858";rtgsettings["token"] = "63858"; }
+	else if (x.indexOf("registration-test0610.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("registration-test0610.myshopify.com") >= 0) {y = "63865";rtgsettings["token"] = "63865"; }
+	else if (x.indexOf("presisoapptest.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("presisoapptest.myshopify.com") >= 0) {y = "63866";rtgsettings["token"] = "63866"; }
+	else if (x.indexOf("highfashionquality.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("highfashionquality.myshopify.com") >= 0) {y = "63868";rtgsettings["token"] = "63868"; }
+	else if (x.indexOf("truebrowns.com") >= 0 || rtgsettings["pdt_url"].indexOf("truebrowns.com") >= 0) {y = "63871";rtgsettings["token"] = "63871"; }
+	else if (x.indexOf("inkproductions.co") >= 0 || rtgsettings["pdt_url"].indexOf("inkproductions.co") >= 0) {y = "63873";rtgsettings["token"] = "63873"; }
+	else if (x.indexOf("uk.ulike.com") >= 0 || rtgsettings["pdt_url"].indexOf("uk.ulike.com") >= 0) {y = "63874";rtgsettings["token"] = "63874"; }
+	else if (x.indexOf("omegaremedy.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("omegaremedy.myshopify.com") >= 0) {y = "63877";rtgsettings["token"] = "63877"; }
+	else if (x.indexOf("supertails.com") >= 0 || rtgsettings["pdt_url"].indexOf("supertails.com") >= 0) {y = "63891";rtgsettings["token"] = "63891"; }
+	else if (x.indexOf("ed2c0d-2.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("ed2c0d-2.myshopify.com") >= 0) {y = "63896";rtgsettings["token"] = "63896"; }
+	else if (x.indexOf("3a8390.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("3a8390.myshopify.com") >= 0) {y = "63911";rtgsettings["token"] = "63911"; }
+	else if (x.indexOf("arylic.com") >= 0 || rtgsettings["pdt_url"].indexOf("arylic.com") >= 0) {y = "63913";rtgsettings["token"] = "63913"; }
+	else if (x.indexOf("muya09.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("muya09.myshopify.com") >= 0) {y = "63914";rtgsettings["token"] = "63914"; }
+	else if (x.indexOf("modelones.com") >= 0 || rtgsettings["pdt_url"].indexOf("modelones.com") >= 0) {y = "63918";rtgsettings["token"] = "63918"; }
+	else if (x.indexOf("chrisluliesthreads.com") >= 0 || rtgsettings["pdt_url"].indexOf("chrisluliesthreads.com") >= 0) {y = "63920";rtgsettings["token"] = "63920"; }
+	else if (x.indexOf("wiholl.com") >= 0 || rtgsettings["pdt_url"].indexOf("wiholl.com") >= 0) {y = "63939";rtgsettings["token"] = "63939"; }
+	else if (x.indexOf("shirrellnicole.com") >= 0 || rtgsettings["pdt_url"].indexOf("shirrellnicole.com") >= 0) {y = "63940";rtgsettings["token"] = "63940"; }
+	else if (x.indexOf("c95a9e.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("c95a9e.myshopify.com") >= 0) {y = "63950";rtgsettings["token"] = "63950"; }
+	else if (x.indexOf("voyagershades.com") >= 0 || rtgsettings["pdt_url"].indexOf("voyagershades.com") >= 0) {y = "63951";rtgsettings["token"] = "63951"; }
+	else if (x.indexOf("garmentsldn.com") >= 0 || rtgsettings["pdt_url"].indexOf("garmentsldn.com") >= 0) {y = "63952";rtgsettings["token"] = "63952"; }
+	else if (x.indexOf("themegastoreuae.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("themegastoreuae.myshopify.com") >= 0) {y = "63957";rtgsettings["token"] = "63957"; }
+	else if (x.indexOf("beacc1.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("beacc1.myshopify.com") >= 0) {y = "63958";rtgsettings["token"] = "63958"; }
+	else if (x.indexOf("charmsbyhern.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("charmsbyhern.myshopify.com") >= 0) {y = "63964";rtgsettings["token"] = "63964"; }
+	else if (x.indexOf("hillbilly-peddler-and-company.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("hillbilly-peddler-and-company.myshopify.com") >= 0) {y = "63971";rtgsettings["token"] = "63971"; }
+	else if (x.indexOf("onestopgiftshopp.com") >= 0 || rtgsettings["pdt_url"].indexOf("onestopgiftshopp.com") >= 0) {y = "63990";rtgsettings["token"] = "63990"; }
+	else if (x.indexOf("reallgoods.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("reallgoods.myshopify.com") >= 0) {y = "63991";rtgsettings["token"] = "63991"; }
+	else if (x.indexOf("test-july-new.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("test-july-new.myshopify.com") >= 0) {y = "63994";rtgsettings["token"] = "63994"; }
+	else if (x.indexOf("angellux.co") >= 0 || rtgsettings["pdt_url"].indexOf("angellux.co") >= 0) {y = "63995";rtgsettings["token"] = "63995"; }
+	else if (x.indexOf("bncaccessories.com") >= 0 || rtgsettings["pdt_url"].indexOf("bncaccessories.com") >= 0) {y = "63998";rtgsettings["token"] = "63998"; }
+	else if (x.indexOf("b91835-2.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("b91835-2.myshopify.com") >= 0) {y = "63999";rtgsettings["token"] = "63999"; }
+	else if (x.indexOf("thedigidreamer.com") >= 0 || rtgsettings["pdt_url"].indexOf("thedigidreamer.com") >= 0) {y = "64001";rtgsettings["token"] = "64001"; }
+	else if (x.indexOf("onlinediscounthunter.com") >= 0 || rtgsettings["pdt_url"].indexOf("onlinediscounthunter.com") >= 0) {y = "64002";rtgsettings["token"] = "64002"; }
+	else if (x.indexOf("huilingshop.myshopline.com") >= 0 || rtgsettings["pdt_url"].indexOf("huilingshop.myshopline.com") >= 0) {y = "64009";rtgsettings["token"] = "64009"; }
+	else if (x.indexOf("voyagerselling.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("voyagerselling.myshopify.com") >= 0) {y = "64011";rtgsettings["token"] = "64011"; }
+	else if (x.indexOf("testjuly.myshopline.com") >= 0 || rtgsettings["pdt_url"].indexOf("testjuly.myshopline.com") >= 0) {y = "64012";rtgsettings["token"] = "64012"; }
+	else if (x.indexOf("704043.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("704043.myshopify.com") >= 0) {y = "64026";rtgsettings["token"] = "64026"; }
+	else if (x.indexOf("cabliss.com") >= 0 || rtgsettings["pdt_url"].indexOf("cabliss.com") >= 0) {y = "64027";rtgsettings["token"] = "64027"; }
+	else if (x.indexOf("5678bd.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("5678bd.myshopify.com") >= 0) {y = "64038";rtgsettings["token"] = "64038"; }
+	else if (x.indexOf("yvddesign.com") >= 0 || rtgsettings["pdt_url"].indexOf("yvddesign.com") >= 0) {y = "64039";rtgsettings["token"] = "64039"; }
+	else if (x.indexOf("forustor.com") >= 0 || rtgsettings["pdt_url"].indexOf("forustor.com") >= 0) {y = "64041";rtgsettings["token"] = "64041"; }
+	else if (x.indexOf("61d3a5.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("61d3a5.myshopify.com") >= 0) {y = "64042";rtgsettings["token"] = "64042"; }
+	else if (x.indexOf("lakitchenstore.com") >= 0 || rtgsettings["pdt_url"].indexOf("lakitchenstore.com") >= 0) {y = "64046";rtgsettings["token"] = "64046"; }
+	else if (x.indexOf("11cb12.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("11cb12.myshopify.com") >= 0) {y = "64048";rtgsettings["token"] = "64048"; }
+	else if (x.indexOf("82f674-2.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("82f674-2.myshopify.com") >= 0) {y = "64050";rtgsettings["token"] = "64050"; }
+	else if (x.indexOf("5f27d3-2.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("5f27d3-2.myshopify.com") >= 0) {y = "64051";rtgsettings["token"] = "64051"; }
+	else if (x.indexOf("fellowstore.net") >= 0 || rtgsettings["pdt_url"].indexOf("fellowstore.net") >= 0) {y = "64064";rtgsettings["token"] = "64064"; }
+	else if (x.indexOf("8da83f-2.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("8da83f-2.myshopify.com") >= 0) {y = "64074";rtgsettings["token"] = "64074"; }
+	else if (x.indexOf("thefitville.uk") >= 0 || rtgsettings["pdt_url"].indexOf("thefitville.uk") >= 0) {y = "64075";rtgsettings["token"] = "64075"; }
+	else if (x.indexOf("test-aug-23.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("test-aug-23.myshopify.com") >= 0) {y = "64076";rtgsettings["token"] = "64076"; }
+	else if (x.indexOf("tolirs.shop") >= 0 || rtgsettings["pdt_url"].indexOf("tolirs.shop") >= 0) {y = "64080";rtgsettings["token"] = "64080"; }
+	else if (x.indexOf("723ff7.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("723ff7.myshopify.com") >= 0) {y = "64081";rtgsettings["token"] = "64081"; }
+	else if (x.indexOf("augustteststore.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("augustteststore.myshopify.com") >= 0) {y = "64082";rtgsettings["token"] = "64082"; }
+	else if (x.indexOf("turacent.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("turacent.myshopify.com") >= 0) {y = "64113";rtgsettings["token"] = "64113"; }
+	else if (x.indexOf("zianrafashiontrends.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("zianrafashiontrends.myshopify.com") >= 0) {y = "64121";rtgsettings["token"] = "64121"; }
+	else if (x.indexOf("furniture2udirect.co.uk") >= 0 || rtgsettings["pdt_url"].indexOf("furniture2udirect.co.uk") >= 0) {y = "64123";rtgsettings["token"] = "64123"; }
+	else if (x.indexOf("celestialfuse.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("celestialfuse.myshopify.com") >= 0) {y = "64124";rtgsettings["token"] = "64124"; }
+	else if (x.indexOf("fullmoondealco.com") >= 0 || rtgsettings["pdt_url"].indexOf("fullmoondealco.com") >= 0) {y = "64125";rtgsettings["token"] = "64125"; }
+	else if (x.indexOf("b9aeb8.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("b9aeb8.myshopify.com") >= 0) {y = "64130";rtgsettings["token"] = "64130"; }
+	else if (x.indexOf("litime.com") >= 0 || rtgsettings["pdt_url"].indexOf("litime.com") >= 0) {y = "64133";rtgsettings["token"] = "64133"; }
+	else if (x.indexOf("636df0.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("636df0.myshopify.com") >= 0) {y = "64134";rtgsettings["token"] = "64134"; }
+	else if (x.indexOf("petsrunfree.com") >= 0 || rtgsettings["pdt_url"].indexOf("petsrunfree.com") >= 0) {y = "64135";rtgsettings["token"] = "64135"; }
+	else if (x.indexOf("likemychoice.com") >= 0 || rtgsettings["pdt_url"].indexOf("likemychoice.com") >= 0) {y = "64144";rtgsettings["token"] = "64144"; }
+	else if (x.indexOf("73ae75.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("73ae75.myshopify.com") >= 0) {y = "64145";rtgsettings["token"] = "64145"; }
+	else if (x.indexOf("495dfe-3.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("495dfe-3.myshopify.com") >= 0) {y = "64152";rtgsettings["token"] = "64152"; }
+	else if (x.indexOf("premierlivinghg.com") >= 0 || rtgsettings["pdt_url"].indexOf("premierlivinghg.com") >= 0) {y = "64163";rtgsettings["token"] = "64163"; }
+	else if (x.indexOf("9c2313-2.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("9c2313-2.myshopify.com") >= 0) {y = "64164";rtgsettings["token"] = "64164"; }
+	else if (x.indexOf("wallartprintables78.com") >= 0 || rtgsettings["pdt_url"].indexOf("wallartprintables78.com") >= 0) {y = "64165";rtgsettings["token"] = "64165"; }
+	else if (x.indexOf("7f3c27.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("7f3c27.myshopify.com") >= 0) {y = "64166";rtgsettings["token"] = "64166"; }
+	else if (x.indexOf("shortpoint.com") >= 0 || rtgsettings["pdt_url"].indexOf("shortpoint.com") >= 0) {y = "64168";rtgsettings["token"] = "64168"; }
+	else if (x.indexOf("shopnewbella.com") >= 0 || rtgsettings["pdt_url"].indexOf("shopnewbella.com") >= 0) {y = "64169";rtgsettings["token"] = "64169"; }
+	else if (x.indexOf("kalistre.com") >= 0 || rtgsettings["pdt_url"].indexOf("kalistre.com") >= 0) {y = "64175";rtgsettings["token"] = "64175"; }
+	else if (x.indexOf("us.ecoflow.com") >= 0 || rtgsettings["pdt_url"].indexOf("us.ecoflow.com") >= 0) {y = "64180";rtgsettings["token"] = "64180"; }
+	else if (x.indexOf("amirobeauty.com") >= 0 || rtgsettings["pdt_url"].indexOf("amirobeauty.com") >= 0) {y = "64187";rtgsettings["token"] = "64187"; }
+	else if (x.indexOf("airflexo.com") >= 0 || rtgsettings["pdt_url"].indexOf("airflexo.com") >= 0) {y = "64192";rtgsettings["token"] = "64192"; }
+	else if (x.indexOf("wsrcollections.com") >= 0 || rtgsettings["pdt_url"].indexOf("wsrcollections.com") >= 0) {y = "64200";rtgsettings["token"] = "64200"; }
+	else if (x.indexOf("ilikehairwig.com") >= 0 || rtgsettings["pdt_url"].indexOf("ilikehairwig.com") >= 0) {y = "64205";rtgsettings["token"] = "64205"; }
+	else if (x.indexOf("haberprints.store") >= 0 || rtgsettings["pdt_url"].indexOf("haberprints.store") >= 0) {y = "64213";rtgsettings["token"] = "64213"; }
+	else if (x.indexOf("comfobuddy.shop") >= 0 || rtgsettings["pdt_url"].indexOf("comfobuddy.shop") >= 0) {y = "64214";rtgsettings["token"] = "64214"; }
+	else if (x.indexOf("gewellryz.com") >= 0 || rtgsettings["pdt_url"].indexOf("gewellryz.com") >= 0) {y = "64215";rtgsettings["token"] = "64215"; }
+	else if (x.indexOf("f2dec4.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("f2dec4.myshopify.com") >= 0) {y = "64220";rtgsettings["token"] = "64220"; }
+	else if (x.indexOf("sapients-test.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("sapients-test.myshopify.com") >= 0) {y = "64230";rtgsettings["token"] = "64230"; }
+	else if (x.indexOf("archboutique.store") >= 0 || rtgsettings["pdt_url"].indexOf("archboutique.store") >= 0) {y = "64231";rtgsettings["token"] = "64231"; }
+	else if (x.indexOf("q6r3gksjipbf3d.myshopline.com") >= 0 || rtgsettings["pdt_url"].indexOf("q6r3gksjipbf3d.myshopline.com") >= 0) {y = "64233";rtgsettings["token"] = "64233"; }
+	else if (x.indexOf("demo-letter.mybigcommerce.com") >= 0 || rtgsettings["pdt_url"].indexOf("demo-letter.mybigcommerce.com") >= 0) {y = "64237";rtgsettings["token"] = "64237"; }
+	else if (x.indexOf("localhost") >= 0 || rtgsettings["pdt_url"].indexOf("localhost") >= 0) {y = "64247";rtgsettings["token"] = "64247"; }
+	else if (x.indexOf("cef756.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("cef756.myshopify.com") >= 0) {y = "64278";rtgsettings["token"] = "64278"; }
+	else if (x.indexOf("au.aiper.com") >= 0 || rtgsettings["pdt_url"].indexOf("au.aiper.com") >= 0) {y = "64279";rtgsettings["token"] = "64279"; }
+	else if (x.indexOf("heyviva.com") >= 0 || rtgsettings["pdt_url"].indexOf("heyviva.com") >= 0) {y = "64295";rtgsettings["token"] = "64295"; }
+	else if (x.indexOf("test-oct-23.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("test-oct-23.myshopify.com") >= 0) {y = "64299";rtgsettings["token"] = "64299"; }
+	else if (x.indexOf("345229-2.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("345229-2.myshopify.com") >= 0) {y = "64300";rtgsettings["token"] = "64300"; }
+	else if (x.indexOf("chefio.co") >= 0 || rtgsettings["pdt_url"].indexOf("chefio.co") >= 0) {y = "64305";rtgsettings["token"] = "64305"; }
+	else if (x.indexOf("funnyfuzzy.com") >= 0 || rtgsettings["pdt_url"].indexOf("funnyfuzzy.com") >= 0) {y = "64306";rtgsettings["token"] = "64306"; }
+	else if (x.indexOf("au.ecoflow.com") >= 0 || rtgsettings["pdt_url"].indexOf("au.ecoflow.com") >= 0) {y = "64308";rtgsettings["token"] = "64308"; }
+	else if (x.indexOf("za.ecoflow.com") >= 0 || rtgsettings["pdt_url"].indexOf("za.ecoflow.com") >= 0) {y = "64309";rtgsettings["token"] = "64309"; }
+	else if (x.indexOf("ca.ecoflow.com") >= 0 || rtgsettings["pdt_url"].indexOf("ca.ecoflow.com") >= 0) {y = "64310";rtgsettings["token"] = "64310"; }
+	else if (x.indexOf("godaddy-test.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("godaddy-test.myshopify.com") >= 0) {y = "64348";rtgsettings["token"] = "64348"; }
+	else if (x.indexOf("https-glamourshop.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("https-glamourshop.myshopify.com") >= 0) {y = "64358";rtgsettings["token"] = "64358"; }
+	else if (x.indexOf("stuk.solutions") >= 0 || rtgsettings["pdt_url"].indexOf("stuk.solutions") >= 0) {y = "64377";rtgsettings["token"] = "64377"; }
+	else if (x.indexOf("81840b-4.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("81840b-4.myshopify.com") >= 0) {y = "64384";rtgsettings["token"] = "64384"; }
+	else if (x.indexOf("gluestore.store") >= 0 || rtgsettings["pdt_url"].indexOf("gluestore.store") >= 0) {y = "64393";rtgsettings["token"] = "64393"; }
+	else if (x.indexOf("dehavey.com") >= 0 || rtgsettings["pdt_url"].indexOf("dehavey.com") >= 0) {y = "64396";rtgsettings["token"] = "64396"; }
+	else if (x.indexOf("technationgadgets.com") >= 0 || rtgsettings["pdt_url"].indexOf("technationgadgets.com") >= 0) {y = "64407";rtgsettings["token"] = "64407"; }
+	else if (x.indexOf("rachytrends.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("rachytrends.myshopify.com") >= 0) {y = "64409";rtgsettings["token"] = "64409"; }
+	else if (x.indexOf("luxbeautyrevival.com") >= 0 || rtgsettings["pdt_url"].indexOf("luxbeautyrevival.com") >= 0) {y = "64442";rtgsettings["token"] = "64442"; }
+	else if (x.indexOf("epicmarkethub.ca") >= 0 || rtgsettings["pdt_url"].indexOf("epicmarkethub.ca") >= 0) {y = "64443";rtgsettings["token"] = "64443"; }
+	else if (x.indexOf("852009.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("852009.myshopify.com") >= 0) {y = "64444";rtgsettings["token"] = "64444"; }
+	else if (x.indexOf("nakto.com") >= 0 || rtgsettings["pdt_url"].indexOf("nakto.com") >= 0) {y = "64449";rtgsettings["token"] = "64449"; }
+	else if (x.indexOf("preciso-dec-23.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("preciso-dec-23.myshopify.com") >= 0) {y = "64450";rtgsettings["token"] = "64450"; }
+	else if (x.indexOf("dec-23-2.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("dec-23-2.myshopify.com") >= 0) {y = "64451";rtgsettings["token"] = "64451"; }
+	else if (x.indexOf("florasis.com") >= 0 || rtgsettings["pdt_url"].indexOf("florasis.com") >= 0) {y = "64452";rtgsettings["token"] = "64452"; }
+	else if (x.indexOf("safeenas.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("safeenas.myshopify.com") >= 0) {y = "64458";rtgsettings["token"] = "64458"; }
+	else if (x.indexOf("scenthaven.ae") >= 0 || rtgsettings["pdt_url"].indexOf("scenthaven.ae") >= 0) {y = "64459";rtgsettings["token"] = "64459"; }
+	else if (x.indexOf("dec-demo-sstore.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("dec-demo-sstore.myshopify.com") >= 0) {y = "64460";rtgsettings["token"] = "64460"; }
+	else if (x.indexOf("demo-dec23.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("demo-dec23.myshopify.com") >= 0) {y = "64462";rtgsettings["token"] = "64462"; }
+	else if (x.indexOf("paddedclothings.shop") >= 0 || rtgsettings["pdt_url"].indexOf("paddedclothings.shop") >= 0) {y = "64464";rtgsettings["token"] = "64464"; }
+	else if (x.indexOf("compassionthreadsvegan.com") >= 0 || rtgsettings["pdt_url"].indexOf("compassionthreadsvegan.com") >= 0) {y = "64468";rtgsettings["token"] = "64468"; }
+	else if (x.indexOf("www.deals499.com") >= 0 || rtgsettings["pdt_url"].indexOf("www.deals499.com") >= 0) {y = "64473";rtgsettings["token"] = "64473"; }
+	else if (x.indexOf("www.thefishinggearshop.com") >= 0 || rtgsettings["pdt_url"].indexOf("www.thefishinggearshop.com") >= 0) {y = "64474";rtgsettings["token"] = "64474"; }
+	else if (x.indexOf("www.urbanurbane.store") >= 0 || rtgsettings["pdt_url"].indexOf("www.urbanurbane.store") >= 0) {y = "64476";rtgsettings["token"] = "64476"; }
+	else if (x.indexOf("latishop28.com") >= 0 || rtgsettings["pdt_url"].indexOf("latishop28.com") >= 0) {y = "64477";rtgsettings["token"] = "64477"; }
+	else if (x.indexOf("mena092023.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("mena092023.myshopify.com") >= 0) {y = "64478";rtgsettings["token"] = "64478"; }
+	else if (x.indexOf("jan-teststore.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("jan-teststore.myshopify.com") >= 0) {y = "64480";rtgsettings["token"] = "64480"; }
+	else if (x.indexOf("velvuiban.com") >= 0 || rtgsettings["pdt_url"].indexOf("velvuiban.com") >= 0) {y = "64481";rtgsettings["token"] = "64481"; }
+	else if (x.indexOf("jan-24-test2.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("jan-24-test2.myshopify.com") >= 0) {y = "64482";rtgsettings["token"] = "64482"; }
+	else if (x.indexOf("64e9f7-2.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("64e9f7-2.myshopify.com") >= 0) {y = "64487";rtgsettings["token"] = "64487"; }
+	else if (x.indexOf("www.sizerun.com") >= 0 || rtgsettings["pdt_url"].indexOf("www.sizerun.com") >= 0) {y = "64488";rtgsettings["token"] = "64488"; }
+	else if (x.indexOf("youthpink.com") >= 0 || rtgsettings["pdt_url"].indexOf("youthpink.com") >= 0) {y = "64492";rtgsettings["token"] = "64492"; }
+	else if (x.indexOf("b1c539-3.myshopify.com") >= 0 || rtgsettings["pdt_url"].indexOf("b1c539-3.myshopify.com") >= 0) {y = "64510";rtgsettings["token"] = "64510"; }
+	else if (x.indexOf("www.buykud.com") >= 0 || rtgsettings["pdt_url"].indexOf("www.buykud.com") >= 0) {y = "64521";rtgsettings["token"] = "64521"; }
+	else if (x.indexOf("nakto.com/") >= 0 || rtgsettings["pdt_url"].indexOf("nakto.com/") >= 0) {y = "64522";rtgsettings["token"] = "64522"; }
+	else if (x.indexOf("jp.florasis.com") >= 0 || rtgsettings["pdt_url"].indexOf("jp.florasis.com") >= 0) {y = "64527";rtgsettings["token"] = "64527"; }
+	else if (x.indexOf("florasis.com/") >= 0 || rtgsettings["pdt_url"].indexOf("florasis.com/") >= 0) {y = "64528";rtgsettings["token"] = "64528"; }
+	else if (x.indexOf("jp.florasis.com/") >= 0 || rtgsettings["pdt_url"].indexOf("jp.florasis.com/") >= 0) {y = "64529";rtgsettings["token"] = "64529"; }
+	else if (x.indexOf("www.beautyskin-24.com") >= 0 || rtgsettings["pdt_url"].indexOf("www.beautyskin-24.com") >= 0) {y = "64543";rtgsettings["token"] = "64543"; }
+	else if (x.indexOf("thetopnotch2024.com") >= 0 || rtgsettings["pdt_url"].indexOf("thetopnotch2024.com") >= 0) {y = "64553";rtgsettings["token"] = "64553"; }
+	else if (x.indexOf("gissthub.com") >= 0 || rtgsettings["pdt_url"].indexOf("gissthub.com") >= 0) {y = "64554";rtgsettings["token"] = "64554"; }
+	else {
+            y = tok;
+        }
+    } else {
+        y = tok;
+    }
+    return y;
+}
+"undefined" === typeof messageMap && (messageMap = new Map);
+messageMap.set("59847", "https://cdn.preciso.net/aud/clientjs/1087.js?");
+messageMap.set("59981", "https://cdn.preciso.net/aud/clientjs/2012.js?");
+messageMap.set("60355", "https://cdn.preciso.net/aud/clientjs/1549.js?");
+messageMap.set("62056", "https://cdn.preciso.net/aud/clientjs/2189.js?");
+messageMap.set("62057", "https://cdn.preciso.net/aud/clientjs/2190.js?");
+messageMap.set("62058", "https://cdn.preciso.net/aud/clientjs/2193.js?");
+messageMap.set("62080", "https://cdn.preciso.net/aud/clientjs/2210.js?");
+messageMap.set("62081", "https://cdn.preciso.net/aud/clientjs/2221.js?");
+messageMap.set("62090", "https://cdn.preciso.net/aud/clientjs/2236.js?");
+messageMap.set("62189", "https://cdn.preciso.net/aud/clientjs/2348.js?");
+messageMap.set("62200", "https://cdn.preciso.net/aud/clientjs/2367.js?");
+messageMap.set("62220", "https://cdn.preciso.net/aud/clientjs/2389.js?");
+messageMap.set("62275", "https://cdn.preciso.net/aud/clientjs/2442.js?");
+messageMap.set("62291", "https://cdn.preciso.net/aud/clientjs/2464.js?");
+messageMap.set("62310", "https://cdn.preciso.net/aud/clientjs/2496.js?");
+messageMap.set("62311", "https://cdn.preciso.net/aud/clientjs/2497.js?");
+messageMap.set("62312", "https://cdn.preciso.net/aud/clientjs/2498.js?");
+messageMap.set("62313", "https://cdn.preciso.net/aud/clientjs/2499.js?");
+messageMap.set("62340", "https://cdn.preciso.net/aud/clientjs/2512.js?");
+messageMap.set("62341", "https://cdn.preciso.net/aud/clientjs/2513.js?");
+messageMap.set("62350", "https://cdn.preciso.net/aud/clientjs/2524.js?");
+messageMap.set("62365", "https://cdn.preciso.net/aud/clientjs/2561.js?");
+messageMap.set("62370", "https://cdn.preciso.net/aud/clientjs/2569.js?");
+messageMap.set("62373", "https://cdn.preciso.net/aud/clientjs/2570.js?");
+messageMap.set("62390", "https://cdn.preciso.net/aud/clientjs/2593.js?");
+messageMap.set("62391", "https://cdn.preciso.net/aud/clientjs/2595.js?");
+messageMap.set("62397", "https://cdn.preciso.net/aud/clientjs/2598.js?");
+messageMap.set("62405", "https://cdn.preciso.net/aud/clientjs/2599.js?");
+messageMap.set("62418", "https://cdn.preciso.net/aud/clientjs/2602.js?");
+messageMap.set("62431", "https://cdn.preciso.net/aud/clientjs/2611.js?");
+messageMap.set("62481", "https://cdn.preciso.net/aud/clientjs/2651.js?");
+messageMap.set("62546", "https://cdn.preciso.net/aud/clientjs/2691.js?");
+messageMap.set("62712", "https://cdn.preciso.net/aud/clientjs/2799.js?");
+messageMap.set("62764", "https://cdn.preciso.net/aud/clientjs/2829.js?");
+messageMap.set("62786", "https://cdn.preciso.net/aud/clientjs/2857.js?");
+messageMap.set("62792", "https://cdn.preciso.net/aud/clientjs/2873.js?");
+messageMap.set("62800", "https://cdn.preciso.net/aud/clientjs/2878.js?");
+messageMap.set("62805", "https://cdn.preciso.net/aud/clientjs/2888.js?");
+messageMap.set("62831", "https://cdn.preciso.net/aud/clientjs/2894.js?");
+messageMap.set("62893", "https://cdn.preciso.net/aud/clientjs/2983.js?");
+messageMap.set("62894", "https://cdn.preciso.net/aud/clientjs/2987.js?");
+messageMap.set("62958", "https://cdn.preciso.net/aud/clientjs/3046.js?");
+messageMap.set("62968", "https://cdn.preciso.net/aud/clientjs/3058.js?");
+messageMap.set("62973", "https://cdn.preciso.net/aud/clientjs/3062.js?");
+messageMap.set("62994", "https://cdn.preciso.net/aud/clientjs/3080.js?");
+messageMap.set("62995", "https://cdn.preciso.net/aud/clientjs/3081.js?");
+messageMap.set("63060", "https://cdn.preciso.net/aud/clientjs/3152.js?");
+messageMap.set("63067", "https://cdn.preciso.net/aud/clientjs/3167.js?");
+messageMap.set("63070", "https://cdn.preciso.net/aud/clientjs/3185.js?");
+messageMap.set("63071", "https://cdn.preciso.net/aud/clientjs/3190.js?");
+messageMap.set("63084", "https://cdn.preciso.net/aud/clientjs/3211.js?");
+messageMap.set("63085", "https://cdn.preciso.net/aud/clientjs/3213.js?");
+messageMap.set("63086", "https://cdn.preciso.net/aud/clientjs/3214.js?");
+messageMap.set("63088", "https://cdn.preciso.net/aud/clientjs/3215.js?");
+messageMap.set("63090", "https://cdn.preciso.net/aud/clientjs/3218.js?");
+messageMap.set("63091", "https://cdn.preciso.net/aud/clientjs/2012.js?");
+messageMap.set("63092", "https://cdn.preciso.net/aud/clientjs/3220.js?");
+messageMap.set("63093", "https://cdn.preciso.net/aud/clientjs/3221.js?");
+messageMap.set("63097", "https://cdn.preciso.net/aud/clientjs/3227.js?");
+messageMap.set("63103", "https://cdn.preciso.net/aud/clientjs/3237.js?");
+messageMap.set("63109", "https://cdn.preciso.net/aud/clientjs/3242.js?");
+messageMap.set("63112", "https://cdn.preciso.net/aud/clientjs/3249.js?");
+messageMap.set("63113", "https://cdn.preciso.net/aud/clientjs/3250.js?");
+messageMap.set("63114", "https://cdn.preciso.net/aud/clientjs/3251.js?");
+messageMap.set("63135", "https://cdn.preciso.net/aud/clientjs/3259.js?");
+messageMap.set("63141", "https://cdn.preciso.net/aud/clientjs/3264.js?");
+messageMap.set("63145", "https://cdn.preciso.net/aud/clientjs/3291.js?");
+messageMap.set("63153", "https://cdn.preciso.net/aud/clientjs/3295.js?");
+messageMap.set("63172", "https://cdn.preciso.net/aud/clientjs/3307.js?");
+messageMap.set("63177", "https://cdn.preciso.net/aud/clientjs/3314.js?");
+messageMap.set("63214", "https://cdn.preciso.net/aud/clientjs/3348.js?");
+messageMap.set("63215", "https://cdn.preciso.net/aud/clientjs/3349.js?");
+messageMap.set("63226", "https://cdn.preciso.net/aud/clientjs/3358.js?");
+messageMap.set("63227", "https://cdn.preciso.net/aud/clientjs/3361.js?");
+messageMap.set("63229", "https://cdn.preciso.net/aud/clientjs/3362.js?");
+messageMap.set("63233", "https://cdn.preciso.net/aud/clientjs/3364.js?");
+messageMap.set("63235", "https://cdn.preciso.net/aud/clientjs/3368.js?");
+messageMap.set("63240", "https://cdn.preciso.net/aud/clientjs/3374.js?");
+messageMap.set("63252", "https://cdn.preciso.net/aud/clientjs/3397.js?");
+messageMap.set("63254", "https://cdn.preciso.net/aud/clientjs/3413.js?");
+messageMap.set("63258", "https://cdn.preciso.net/aud/clientjs/3417.js?");
+messageMap.set("63259", "https://cdn.preciso.net/aud/clientjs/3418.js?");
+messageMap.set("63260", "https://cdn.preciso.net/aud/clientjs/3421.js?");
+messageMap.set("63261", "https://cdn.preciso.net/aud/clientjs/3432.js?");
+messageMap.set("63262", "https://cdn.preciso.net/aud/clientjs/3434.js?");
+messageMap.set("63263", "https://cdn.preciso.net/aud/clientjs/3435.js?");
+messageMap.set("63265", "https://cdn.preciso.net/aud/clientjs/3440.js?");
+messageMap.set("63266", "https://cdn.preciso.net/aud/clientjs/3445.js?");
+messageMap.set("63270", "https://cdn.preciso.net/aud/clientjs/3455.js?");
+messageMap.set("63272", "https://cdn.preciso.net/aud/clientjs/3456.js?");
+messageMap.set("63275", "https://cdn.preciso.net/aud/clientjs/3462.js?");
+messageMap.set("63276", "https://cdn.preciso.net/aud/clientjs/3471.js?");
+messageMap.set("63282", "https://cdn.preciso.net/aud/clientjs/3473.js?");
+messageMap.set("63288", "https://cdn.preciso.net/aud/clientjs/3481.js?");
+messageMap.set("63296", "https://cdn.preciso.net/aud/clientjs/3495.js?");
+messageMap.set("63297", "https://cdn.preciso.net/aud/clientjs/3496.js?");
+messageMap.set("63304", "https://cdn.preciso.net/aud/clientjs/3529.js?");
+messageMap.set("63309", "https://cdn.preciso.net/aud/clientjs/3531.js?");
+messageMap.set("63310", "https://cdn.preciso.net/aud/clientjs/3532.js?");
+messageMap.set("63319", "https://cdn.preciso.net/aud/clientjs/3556.js?");
+messageMap.set("63320", "https://cdn.preciso.net/aud/clientjs/3557.js?");
+messageMap.set("63335", "https://cdn.preciso.net/aud/clientjs/3581.js?");
+messageMap.set("63338", "https://cdn.preciso.net/aud/clientjs/3592.js?");
+messageMap.set("63347", "https://cdn.preciso.net/aud/clientjs/3597.js?");
+messageMap.set("63348", "https://cdn.preciso.net/aud/clientjs/3599.js?");
+messageMap.set("63373", "https://cdn.preciso.net/aud/clientjs/3614.js?");
+messageMap.set("63377", "https://cdn.preciso.net/aud/clientjs/3615.js?");
+messageMap.set("63381", "https://cdn.preciso.net/aud/clientjs/3618.js?");
+messageMap.set("63385", "https://cdn.preciso.net/aud/clientjs/3644.js?");
+messageMap.set("63391", "https://cdn.preciso.net/aud/clientjs/3652.js?");
+messageMap.set("63398", "https://cdn.preciso.net/aud/clientjs/3679.js?");
+messageMap.set("63402", "https://cdn.preciso.net/aud/clientjs/3681.js?");
+messageMap.set("63406", "https://cdn.preciso.net/aud/clientjs/3689.js?");
+messageMap.set("63407", "https://cdn.preciso.net/aud/clientjs/3698.js?");
+messageMap.set("63408", "https://cdn.preciso.net/aud/clientjs/3699.js?");
+messageMap.set("63409", "https://cdn.preciso.net/aud/clientjs/3702.js?");
+messageMap.set("63413", "https://cdn.preciso.net/aud/clientjs/3704.js?");
+messageMap.set("63419", "https://cdn.preciso.net/aud/clientjs/3720.js?");
+messageMap.set("63438", "https://cdn.preciso.net/aud/clientjs/3782.js?");
+messageMap.set("63442", "https://cdn.preciso.net/aud/clientjs/3785.js?");
+messageMap.set("63447", "https://cdn.preciso.net/aud/clientjs/3795.js?");
+messageMap.set("63461", "https://cdn.preciso.net/aud/clientjs/3804.js?");
+messageMap.set("63465", "https://cdn.preciso.net/aud/clientjs/3806.js?");
+messageMap.set("63470", "https://cdn.preciso.net/aud/clientjs/3808.js?");
+messageMap.set("63475", "https://cdn.preciso.net/aud/clientjs/3814.js?");
+messageMap.set("63477", "https://cdn.preciso.net/aud/clientjs/3815.js?");
+messageMap.set("63479", "https://cdn.preciso.net/aud/clientjs/3816.js?");
+messageMap.set("63491", "https://cdn.preciso.net/aud/clientjs/3841.js?");
+messageMap.set("63492", "https://cdn.preciso.net/aud/clientjs/3842.js?");
+messageMap.set("63493", "https://cdn.preciso.net/aud/clientjs/3843.js?");
+messageMap.set("63496", "https://cdn.preciso.net/aud/clientjs/3849.js?");
+messageMap.set("63500", "https://cdn.preciso.net/aud/clientjs/3850.js?");
+messageMap.set("63501", "https://cdn.preciso.net/aud/clientjs/3851.js?");
+messageMap.set("63502", "https://cdn.preciso.net/aud/clientjs/3852.js?");
+messageMap.set("63503", "https://cdn.preciso.net/aud/clientjs/3853.js?");
+messageMap.set("63505", "https://cdn.preciso.net/aud/clientjs/3854.js?");
+messageMap.set("63506", "https://cdn.preciso.net/aud/clientjs/3855.js?");
+messageMap.set("63507", "https://cdn.preciso.net/aud/clientjs/3864.js?");
+messageMap.set("63508", "https://cdn.preciso.net/aud/clientjs/3865.js?");
+messageMap.set("63517", "https://cdn.preciso.net/aud/clientjs/3870.js?");
+messageMap.set("63518", "https://cdn.preciso.net/aud/clientjs/3873.js?");
+messageMap.set("63521", "https://cdn.preciso.net/aud/clientjs/3878.js?");
+messageMap.set("63523", "https://cdn.preciso.net/aud/clientjs/3886.js?");
+messageMap.set("63524", "https://cdn.preciso.net/aud/clientjs/3888.js?");
+messageMap.set("63527", "https://cdn.preciso.net/aud/clientjs/3890.js?");
+messageMap.set("63534", "https://cdn.preciso.net/aud/clientjs/3899.js?");
+messageMap.set("63537", "https://cdn.preciso.net/aud/clientjs/3903.js?");
+messageMap.set("63538", "https://cdn.preciso.net/aud/clientjs/3905.js?");
+messageMap.set("63540", "https://cdn.preciso.net/aud/clientjs/3907.js?");
+messageMap.set("63541", "https://cdn.preciso.net/aud/clientjs/3908.js?");
+messageMap.set("63542", "https://cdn.preciso.net/aud/clientjs/3909.js?");
+messageMap.set("63544", "https://cdn.preciso.net/aud/clientjs/3910.js?");
+messageMap.set("63545", "https://cdn.preciso.net/aud/clientjs/3911.js?");
+messageMap.set("63546", "https://cdn.preciso.net/aud/clientjs/3912.js?");
+messageMap.set("63547", "https://cdn.preciso.net/aud/clientjs/3913.js?");
+messageMap.set("63549", "https://cdn.preciso.net/aud/clientjs/3916.js?");
+messageMap.set("63550", "https://cdn.preciso.net/aud/clientjs/3917.js?");
+messageMap.set("63551", "https://cdn.preciso.net/aud/clientjs/3918.js?");
+messageMap.set("63553", "https://cdn.preciso.net/aud/clientjs/3927.js?");
+messageMap.set("63555", "https://cdn.preciso.net/aud/clientjs/3936.js?");
+messageMap.set("63556", "https://cdn.preciso.net/aud/clientjs/3937.js?");
+messageMap.set("63565", "https://cdn.preciso.net/aud/clientjs/3954.js?");
+messageMap.set("63570", "https://cdn.preciso.net/aud/clientjs/3957.js?");
+messageMap.set("63571", "https://cdn.preciso.net/aud/clientjs/3958.js?");
+messageMap.set("63577", "https://cdn.preciso.net/aud/clientjs/3961.js?");
+messageMap.set("63578", "https://cdn.preciso.net/aud/clientjs/3963.js?");
+messageMap.set("63585", "https://cdn.preciso.net/aud/clientjs/3967.js?");
+messageMap.set("63592", "https://cdn.preciso.net/aud/clientjs/3974.js?");
+messageMap.set("63599", "https://cdn.preciso.net/aud/clientjs/3976.js?");
+messageMap.set("63619", "https://cdn.preciso.net/aud/clientjs/3985.js?");
+messageMap.set("63621", "https://cdn.preciso.net/aud/clientjs/3996.js?");
+messageMap.set("63627", "https://cdn.preciso.net/aud/clientjs/3997.js?");
+messageMap.set("63637", "https://cdn.preciso.net/aud/clientjs/4006.js?");
+messageMap.set("63642", "https://cdn.preciso.net/aud/clientjs/4011.js?");
+messageMap.set("63644", "https://cdn.preciso.net/aud/clientjs/4014.js?");
+messageMap.set("63645", "https://cdn.preciso.net/aud/clientjs/4015.js?");
+messageMap.set("63648", "https://cdn.preciso.net/aud/clientjs/4019.js?");
+messageMap.set("63649", "https://cdn.preciso.net/aud/clientjs/4021.js?");
+messageMap.set("63650", "https://cdn.preciso.net/aud/clientjs/4022.js?");
+messageMap.set("63662", "https://cdn.preciso.net/aud/clientjs/4031.js?");
+messageMap.set("63663", "https://cdn.preciso.net/aud/clientjs/4034.js?");
+messageMap.set("63665", "https://cdn.preciso.net/aud/clientjs/4036.js?");
+messageMap.set("63666", "https://cdn.preciso.net/aud/clientjs/4038.js?");
+messageMap.set("63667", "https://cdn.preciso.net/aud/clientjs/4039.js?");
+messageMap.set("63669", "https://cdn.preciso.net/aud/clientjs/4042.js?");
+messageMap.set("63671", "https://cdn.preciso.net/aud/clientjs/4044.js?");
+messageMap.set("63672", "https://cdn.preciso.net/aud/clientjs/4045.js?");
+messageMap.set("63677", "https://cdn.preciso.net/aud/clientjs/4048.js?");
+messageMap.set("63678", "https://cdn.preciso.net/aud/clientjs/4049.js?");
+messageMap.set("63688", "https://cdn.preciso.net/aud/clientjs/4071.js?");
+messageMap.set("63689", "https://cdn.preciso.net/aud/clientjs/4076.js?");
+messageMap.set("63690", "https://cdn.preciso.net/aud/clientjs/4077.js?");
+messageMap.set("63696", "https://cdn.preciso.net/aud/clientjs/4078.js?");
+messageMap.set("63702", "https://cdn.preciso.net/aud/clientjs/4086.js?");
+messageMap.set("63706", "https://cdn.preciso.net/aud/clientjs/4091.js?");
+messageMap.set("63708", "https://cdn.preciso.net/aud/clientjs/4093.js?");
+messageMap.set("63709", "https://cdn.preciso.net/aud/clientjs/4094.js?");
+messageMap.set("63710", "https://cdn.preciso.net/aud/clientjs/4097.js?");
+messageMap.set("63712", "https://cdn.preciso.net/aud/clientjs/4100.js?");
+messageMap.set("63713", "https://cdn.preciso.net/aud/clientjs/4101.js?");
+messageMap.set("63718", "https://cdn.preciso.net/aud/clientjs/4110.js?");
+messageMap.set("63721", "https://cdn.preciso.net/aud/clientjs/4113.js?");
+messageMap.set("63727", "https://cdn.preciso.net/aud/clientjs/4116.js?");
+messageMap.set("63735", "https://cdn.preciso.net/aud/clientjs/4117.js?");
+messageMap.set("63736", "https://cdn.preciso.net/aud/clientjs/4118.js?");
+messageMap.set("63737", "https://cdn.preciso.net/aud/clientjs/4119.js?");
+messageMap.set("63738", "https://cdn.preciso.net/aud/clientjs/4120.js?");
+messageMap.set("63740", "https://cdn.preciso.net/aud/clientjs/4121.js?");
+messageMap.set("63747", "https://cdn.preciso.net/aud/clientjs/4155.js?");
+messageMap.set("63748", "https://cdn.preciso.net/aud/clientjs/4156.js?");
+messageMap.set("63749", "https://cdn.preciso.net/aud/clientjs/4157.js?");
+messageMap.set("63751", "https://cdn.preciso.net/aud/clientjs/4158.js?");
+messageMap.set("63752", "https://cdn.preciso.net/aud/clientjs/4164.js?");
+messageMap.set("63756", "https://cdn.preciso.net/aud/clientjs/4166.js?");
+messageMap.set("63759", "https://cdn.preciso.net/aud/clientjs/4167.js?");
+messageMap.set("63761", "https://cdn.preciso.net/aud/clientjs/4169.js?");
+messageMap.set("63762", "https://cdn.preciso.net/aud/clientjs/4172.js?");
+messageMap.set("63763", "https://cdn.preciso.net/aud/clientjs/4176.js?");
+messageMap.set("63766", "https://cdn.preciso.net/aud/clientjs/4179.js?");
+messageMap.set("63770", "https://cdn.preciso.net/aud/clientjs/4187.js?");
+messageMap.set("63773", "https://cdn.preciso.net/aud/clientjs/4188.js?");
+messageMap.set("63778", "https://cdn.preciso.net/aud/clientjs/4190.js?");
+messageMap.set("63779", "https://cdn.preciso.net/aud/clientjs/4191.js?");
+messageMap.set("63780", "https://cdn.preciso.net/aud/clientjs/4192.js?");
+messageMap.set("63782", "https://cdn.preciso.net/aud/clientjs/4194.js?");
+messageMap.set("63785", "https://cdn.preciso.net/aud/clientjs/4195.js?");
+messageMap.set("63786", "https://cdn.preciso.net/aud/clientjs/4196.js?");
+messageMap.set("63788", "https://cdn.preciso.net/aud/clientjs/4200.js?");
+messageMap.set("63793", "https://cdn.preciso.net/aud/clientjs/4201.js?");
+messageMap.set("63797", "https://cdn.preciso.net/aud/clientjs/4203.js?");
+messageMap.set("63798", "https://cdn.preciso.net/aud/clientjs/4204.js?");
+messageMap.set("63799", "https://cdn.preciso.net/aud/clientjs/4205.js?");
+messageMap.set("63802", "https://cdn.preciso.net/aud/clientjs/4209.js?");
+messageMap.set("63803", "https://cdn.preciso.net/aud/clientjs/4211.js?");
+messageMap.set("63806", "https://cdn.preciso.net/aud/clientjs/4213.js?");
+messageMap.set("63807", "https://cdn.preciso.net/aud/clientjs/4214.js?");
+messageMap.set("63808", "https://cdn.preciso.net/aud/clientjs/4215.js?");
+messageMap.set("63809", "https://cdn.preciso.net/aud/clientjs/4216.js?");
+messageMap.set("63810", "https://cdn.preciso.net/aud/clientjs/4221.js?");
+messageMap.set("63811", "https://cdn.preciso.net/aud/clientjs/4226.js?");
+messageMap.set("63814", "https://cdn.preciso.net/aud/clientjs/4241.js?");
+messageMap.set("63827", "https://cdn.preciso.net/aud/clientjs/4243.js?");
+messageMap.set("63829", "https://cdn.preciso.net/aud/clientjs/4246.js?");
+messageMap.set("63834", "https://cdn.preciso.net/aud/clientjs/4251.js?");
+messageMap.set("63836", "https://cdn.preciso.net/aud/clientjs/4252.js?");
+messageMap.set("63839", "https://cdn.preciso.net/aud/clientjs/4253.js?");
+messageMap.set("63844", "https://cdn.preciso.net/aud/clientjs/4262.js?");
+messageMap.set("63850", "https://cdn.preciso.net/aud/clientjs/4270.js?");
+messageMap.set("63852", "https://cdn.preciso.net/aud/clientjs/4274.js?");
+messageMap.set("63853", "https://cdn.preciso.net/aud/clientjs/4275.js?");
+messageMap.set("63854", "https://cdn.preciso.net/aud/clientjs/4276.js?");
+messageMap.set("63855", "https://cdn.preciso.net/aud/clientjs/4277.js?");
+messageMap.set("63856", "https://cdn.preciso.net/aud/clientjs/4284.js?");
+messageMap.set("63857", "https://cdn.preciso.net/aud/clientjs/4286.js?");
+messageMap.set("63858", "https://cdn.preciso.net/aud/clientjs/4287.js?");
+messageMap.set("63865", "https://cdn.preciso.net/aud/clientjs/4290.js?");
+messageMap.set("63866", "https://cdn.preciso.net/aud/clientjs/4291.js?");
+messageMap.set("63868", "https://cdn.preciso.net/aud/clientjs/4300.js?");
+messageMap.set("63871", "https://cdn.preciso.net/aud/clientjs/4306.js?");
+messageMap.set("63873", "https://cdn.preciso.net/aud/clientjs/4315.js?");
+messageMap.set("63874", "https://cdn.preciso.net/aud/clientjs/4316.js?");
+messageMap.set("63877", "https://cdn.preciso.net/aud/clientjs/4328.js?");
+messageMap.set("63891", "https://cdn.preciso.net/aud/clientjs/4332.js?");
+messageMap.set("63896", "https://cdn.preciso.net/aud/clientjs/4334.js?");
+messageMap.set("63911", "https://cdn.preciso.net/aud/clientjs/4337.js?");
+messageMap.set("63913", "https://cdn.preciso.net/aud/clientjs/4339.js?");
+messageMap.set("63914", "https://cdn.preciso.net/aud/clientjs/4356.js?");
+messageMap.set("63918", "https://cdn.preciso.net/aud/clientjs/4359.js?");
+messageMap.set("63920", "https://cdn.preciso.net/aud/clientjs/4364.js?");
+messageMap.set("63939", "https://cdn.preciso.net/aud/clientjs/4697.js?");
+messageMap.set("63940", "https://cdn.preciso.net/aud/clientjs/4381.js?");
+messageMap.set("63950", "https://cdn.preciso.net/aud/clientjs/4384.js?");
+messageMap.set("63951", "https://cdn.preciso.net/aud/clientjs/4385.js?");
+messageMap.set("63952", "https://cdn.preciso.net/aud/clientjs/4386.js?");
+messageMap.set("63957", "https://cdn.preciso.net/aud/clientjs/4387.js?");
+messageMap.set("63958", "https://cdn.preciso.net/aud/clientjs/4390.js?");
+messageMap.set("63964", "https://cdn.preciso.net/aud/clientjs/4393.js?");
+messageMap.set("63971", "https://cdn.preciso.net/aud/clientjs/4399.js?");
+messageMap.set("63990", "https://cdn.preciso.net/aud/clientjs/4403.js?");
+messageMap.set("63991", "https://cdn.preciso.net/aud/clientjs/4404.js?");
+messageMap.set("63994", "https://cdn.preciso.net/aud/clientjs/4406.js?");
+messageMap.set("63995", "https://cdn.preciso.net/aud/clientjs/4407.js?");
+messageMap.set("63998", "https://cdn.preciso.net/aud/clientjs/4413.js?");
+messageMap.set("63999", "https://cdn.preciso.net/aud/clientjs/4414.js?");
+messageMap.set("64001", "https://cdn.preciso.net/aud/clientjs/4425.js?");
+messageMap.set("64002", "https://cdn.preciso.net/aud/clientjs/4426.js?");
+messageMap.set("64009", "https://cdn.preciso.net/aud/clientjs/4432.js?");
+messageMap.set("64011", "https://cdn.preciso.net/aud/clientjs/4433.js?");
+messageMap.set("64012", "https://cdn.preciso.net/aud/clientjs/4434.js?");
+messageMap.set("64026", "https://cdn.preciso.net/aud/clientjs/4444.js?");
+messageMap.set("64027", "https://cdn.preciso.net/aud/clientjs/4445.js?");
+messageMap.set("64038", "https://cdn.preciso.net/aud/clientjs/4461.js?");
+messageMap.set("64039", "https://cdn.preciso.net/aud/clientjs/4462.js?");
+messageMap.set("64041", "https://cdn.preciso.net/aud/clientjs/4466.js?");
+messageMap.set("64042", "https://cdn.preciso.net/aud/clientjs/4467.js?");
+messageMap.set("64046", "https://cdn.preciso.net/aud/clientjs/4468.js?");
+messageMap.set("64048", "https://cdn.preciso.net/aud/clientjs/4469.js?");
+messageMap.set("64050", "https://cdn.preciso.net/aud/clientjs/4470.js?");
+messageMap.set("64051", "https://cdn.preciso.net/aud/clientjs/4471.js?");
+messageMap.set("64064", "https://cdn.preciso.net/aud/clientjs/4484.js?");
+messageMap.set("64074", "https://cdn.preciso.net/aud/clientjs/4501.js?");
+messageMap.set("64075", "https://cdn.preciso.net/aud/clientjs/4502.js?");
+messageMap.set("64076", "https://cdn.preciso.net/aud/clientjs/4503.js?");
+messageMap.set("64080", "https://cdn.preciso.net/aud/clientjs/4504.js?");
+messageMap.set("64081", "https://cdn.preciso.net/aud/clientjs/4505.js?");
+messageMap.set("64082", "https://cdn.preciso.net/aud/clientjs/4506.js?");
+messageMap.set("64113", "https://cdn.preciso.net/aud/clientjs/4522.js?");
+messageMap.set("64121", "https://cdn.preciso.net/aud/clientjs/4537.js?");
+messageMap.set("64123", "https://cdn.preciso.net/aud/clientjs/4540.js?");
+messageMap.set("64124", "https://cdn.preciso.net/aud/clientjs/4541.js?");
+messageMap.set("64125", "https://cdn.preciso.net/aud/clientjs/4542.js?");
+messageMap.set("64130", "https://cdn.preciso.net/aud/clientjs/4548.js?");
+messageMap.set("64133", "https://cdn.preciso.net/aud/clientjs/4550.js?");
+messageMap.set("64134", "https://cdn.preciso.net/aud/clientjs/4553.js?");
+messageMap.set("64135", "https://cdn.preciso.net/aud/clientjs/4555.js?");
+messageMap.set("64144", "https://cdn.preciso.net/aud/clientjs/4570.js?");
+messageMap.set("64145", "https://cdn.preciso.net/aud/clientjs/4572.js?");
+messageMap.set("64152", "https://cdn.preciso.net/aud/clientjs/4574.js?");
+messageMap.set("64163", "https://cdn.preciso.net/aud/clientjs/4586.js?");
+messageMap.set("64164", "https://cdn.preciso.net/aud/clientjs/4587.js?");
+messageMap.set("64165", "https://cdn.preciso.net/aud/clientjs/4591.js?");
+messageMap.set("64166", "https://cdn.preciso.net/aud/clientjs/4592.js?");
+messageMap.set("64168", "https://cdn.preciso.net/aud/clientjs/4595.js?");
+messageMap.set("64169", "https://cdn.preciso.net/aud/clientjs/4596.js?");
+messageMap.set("64175", "https://cdn.preciso.net/aud/clientjs/4601.js?");
+messageMap.set("64180", "https://cdn.preciso.net/aud/clientjs/4606.js?");
+messageMap.set("64187", "https://cdn.preciso.net/aud/clientjs/4615.js?");
+messageMap.set("64192", "https://cdn.preciso.net/aud/clientjs/4616.js?");
+messageMap.set("64200", "https://cdn.preciso.net/aud/clientjs/4626.js?");
+messageMap.set("64205", "https://cdn.preciso.net/aud/clientjs/4637.js?");
+messageMap.set("64213", "https://cdn.preciso.net/aud/clientjs/4643.js?");
+messageMap.set("64214", "https://cdn.preciso.net/aud/clientjs/4644.js?");
+messageMap.set("64215", "https://cdn.preciso.net/aud/clientjs/4645.js?");
+messageMap.set("64220", "https://cdn.preciso.net/aud/clientjs/4652.js?");
+messageMap.set("64230", "https://cdn.preciso.net/aud/clientjs/4655.js?");
+messageMap.set("64231", "https://cdn.preciso.net/aud/clientjs/4658.js?");
+messageMap.set("64233", "https://cdn.preciso.net/aud/clientjs/4666.js?");
+messageMap.set("64237", "https://cdn.preciso.net/aud/clientjs/4671.js?");
+messageMap.set("64247", "https://cdn.preciso.net/aud/clientjs/4681.js?");
+messageMap.set("64278", "https://cdn.preciso.net/aud/clientjs/4701.js?");
+messageMap.set("64279", "https://cdn.preciso.net/aud/clientjs/4703.js?");
+messageMap.set("64295", "https://cdn.preciso.net/aud/clientjs/4731.js?");
+messageMap.set("64299", "https://cdn.preciso.net/aud/clientjs/4732.js?");
+messageMap.set("64300", "https://cdn.preciso.net/aud/clientjs/4733.js?");
+messageMap.set("64305", "https://cdn.preciso.net/aud/clientjs/4737.js?");
+messageMap.set("64306", "https://cdn.preciso.net/aud/clientjs/4738.js?");
+messageMap.set("64308", "https://cdn.preciso.net/aud/clientjs/4739.js?");
+messageMap.set("64309", "https://cdn.preciso.net/aud/clientjs/4740.js?");
+messageMap.set("64310", "https://cdn.preciso.net/aud/clientjs/4741.js?");
+messageMap.set("64348", "https://cdn.preciso.net/aud/clientjs/4759.js?");
+messageMap.set("64358", "https://cdn.preciso.net/aud/clientjs/4786.js?");
+messageMap.set("64377", "https://cdn.preciso.net/aud/clientjs/4793.js?");
+messageMap.set("64384", "https://cdn.preciso.net/aud/clientjs/4804.js?");
+messageMap.set("64393", "https://cdn.preciso.net/aud/clientjs/4807.js?");
+messageMap.set("64396", "https://cdn.preciso.net/aud/clientjs/4810.js?");
+messageMap.set("64407", "https://cdn.preciso.net/aud/clientjs/4827.js?");
+messageMap.set("64409", "https://cdn.preciso.net/aud/clientjs/4829.js?");
+messageMap.set("64442", "https://cdn.preciso.net/aud/clientjs/4859.js?");
+messageMap.set("64443", "https://cdn.preciso.net/aud/clientjs/4860.js?");
+messageMap.set("64444", "https://cdn.preciso.net/aud/clientjs/4861.js?");
+messageMap.set("64449", "https://cdn.preciso.net/aud/clientjs/4870.js?");
+messageMap.set("64450", "https://cdn.preciso.net/aud/clientjs/4871.js?");
+messageMap.set("64451", "https://cdn.preciso.net/aud/clientjs/4872.js?");
+messageMap.set("64452", "https://cdn.preciso.net/aud/clientjs/4873.js?");
+messageMap.set("64458", "https://cdn.preciso.net/aud/clientjs/4890.js?");
+messageMap.set("64459", "https://cdn.preciso.net/aud/clientjs/4891.js?");
+messageMap.set("64460", "https://cdn.preciso.net/aud/clientjs/4892.js?");
+messageMap.set("64462", "https://cdn.preciso.net/aud/clientjs/4894.js?");
+messageMap.set("64464", "https://cdn.preciso.net/aud/clientjs/4897.js?");
+messageMap.set("64468", "https://cdn.preciso.net/aud/clientjs/4900.js?");
+messageMap.set("64473", "https://cdn.preciso.net/aud/clientjs/4906.js?");
+messageMap.set("64474", "https://cdn.preciso.net/aud/clientjs/4907.js?");
+messageMap.set("64476", "https://cdn.preciso.net/aud/clientjs/4908.js?");
+messageMap.set("64477", "https://cdn.preciso.net/aud/clientjs/4909.js?");
+messageMap.set("64478", "https://cdn.preciso.net/aud/clientjs/4910.js?");
+messageMap.set("64480", "https://cdn.preciso.net/aud/clientjs/4912.js?");
+messageMap.set("64481", "https://cdn.preciso.net/aud/clientjs/4913.js?");
+messageMap.set("64482", "https://cdn.preciso.net/aud/clientjs/4914.js?");
+messageMap.set("64487", "https://cdn.preciso.net/aud/clientjs/4919.js?");
+messageMap.set("64488", "https://cdn.preciso.net/aud/clientjs/4920.js?");
+messageMap.set("64492", "https://cdn.preciso.net/aud/clientjs/4933.js?");
+messageMap.set("64510", "https://cdn.preciso.net/aud/clientjs/4974.js?");
+messageMap.set("64521", "https://cdn.preciso.net/aud/clientjs/4979.js?");
+messageMap.set("64522", "https://cdn.preciso.net/aud/clientjs/4870.js?");
+messageMap.set("64527", "https://cdn.preciso.net/aud/clientjs/4994.js?");
+messageMap.set("64528", "https://cdn.preciso.net/aud/clientjs/4873.js?");
+messageMap.set("64529", "https://cdn.preciso.net/aud/clientjs/4994.js?");
+messageMap.set("64543", "https://cdn.preciso.net/aud/clientjs/5046.js?");
+messageMap.set("64553", "https://cdn.preciso.net/aud/clientjs/5058.js?");
+messageMap.set("64554", "https://cdn.preciso.net/aud/clientjs/5059.js?");
+if (document.getElementById("m20F") == null) {
+    TrafficCalculator();
+}

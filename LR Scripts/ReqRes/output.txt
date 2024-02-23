@@ -1,0 +1,36 @@
+Virtual User Script started at: 07-02-2024 14:56:25
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 2023.0.0 for Windows 10; build 506 (Mar 08 2023 13:11:40)  	[MsgId: MMSG-26983]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Replay user agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36  	[MsgId: MMSG-26988]
+Runtime Settings file: "D:\LR Scripts\ReqRes\\default.cfg"  	[MsgId: MMSG-27141]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Maximum number of concurrent connections per server: 6  	[MsgId: MMSG-26989]
+Starting action Action.
+Action.c(4): web_set_sockets_option started  	[MsgId: MMSG-26355]
+Action.c(4): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+Action.c(6): web_url("seed") started  	[MsgId: MMSG-26355]
+Action.c(6): HTML parsing not performed for Content-Type "application/octet-stream" ("ParseHtmlContentType" Runtime Setting is "TEXT"). URL="https://clientservices.googleapis.com/chrome-variations/seed?osname=win&channel=stable&milestone=121"  	[MsgId: MMSG-26547]
+Action.c(6): web_url("seed") was successful, 367945 body bytes, 377 header bytes  	[MsgId: MMSG-26386]
+Action.c(16): web_url("generate_204") started  	[MsgId: MMSG-26355]
+Action.c(16): web_url("generate_204") was successful, 0 body bytes, 127 header bytes  	[MsgId: MMSG-26386]
+Action.c(24): web_url("reqres.in") started  	[MsgId: MMSG-26355]
+Action.c(24): Warning -26603: Unsupported "Content-Encoding"  	[MsgId: MWAR-26603]
+Action.c(24): web_url("reqres.in") highest severity level was "warning", 7136 body bytes, 780 header bytes  	[MsgId: MMSG-26388]
+Action.c(33): web_set_sockets_option started  	[MsgId: MMSG-26355]
+Action.c(33): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+Action.c(35): web_custom_request("json") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("json") was successful, 1689 body bytes, 1148 header bytes  	[MsgId: MMSG-26386]
+Action.c(66): web_set_sockets_option started  	[MsgId: MMSG-26355]
+Action.c(66): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+Action.c(68): web_custom_request("command") started  	[MsgId: MMSG-26355]
+Action.c(68): Error -26630: HTTP Status-Code=400 (Bad Request) for "https://clients4.google.com/chrome-sync/command/?client=Google+Chrome&client_id=I76XEoEoSqxhEjiZ7akd2w%3D%3D"  	[MsgId: MERR-26630]
+Action.c(68): web_custom_request("command") highest severity level was "ERROR", 31 body bytes, 482 header bytes  	[MsgId: MMSG-26388]
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

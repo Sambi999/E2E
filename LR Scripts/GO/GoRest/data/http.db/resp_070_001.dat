@@ -1,0 +1,250 @@
+30de
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>OAuth 2.0 &mdash; OAuth</title>
+  <link href="/stylesheets/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="/stylesheets/style.css?2" rel="stylesheet" type="text/css" />
+  <link href="/stylesheets/print.css" rel="stylesheet" type="text/css" media="print" />
+  <link rel="webmention" href="https://webmention.io/oauth/webmention" />
+</head>
+<body>
+
+<div id="ea">
+  <div class="ea-placement"><div class="ea-content"></div></div>
+</div>
+
+<script src="https://cdn.usefathom.com/script.js" site="KKZQTOOD" defer></script>
+<script>
+var trackOutboundClick = function(url, code) {
+   if(window.fathom) {
+     window.fathom.trackGoal(code, 0);
+   }
+}
+</script>
+
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+  <a class="navbar-brand" href="/"><img src="/images/oauth-logo-square.png" width="45" alt=""></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item"><a class="nav-link" href="/2/">OAuth 2.0</a></li>
+      <li class="nav-item"><a class="nav-link" href="/specs/">Specs</a></li>
+      <li class="nav-item"><a class="nav-link" href="/code/">Code</a></li>
+      <li class="nav-item"><a class="nav-link" href="/articles/">Articles</a></li>
+      <li class="nav-item"><a class="nav-link" href="/videos/">Videos</a></li>
+      <li class="nav-item"><a class="nav-link" href="https://events.oauth.net/">Events</a></li>
+      <li class="nav-item"><a class="nav-link" href="/books/">Books</a></li>
+      <li class="nav-item"><a class="nav-link" href="/security/">Security</a></li>
+      <li class="nav-item"><a class="nav-link" href="https://shop.oauth.net/">Merch</a></li>
+      <li class="nav-item"><a class="nav-link" href="/about/credits/">About</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="print-header">
+  <span class="item"><img src="/images/oauth-logo-square.png" width="45" alt=""></span>
+  <span class="item">oauth.net/2/</span>
+</div>
+
+<div class="alert alert-success" role="alert" style="border-radius: 0;" id="site-banner">
+  <div style="max-width:800px; margin: 0 auto; padding: 0 15px;">
+    Featured: <span ><a href="https://fusionauth.io/learn/expert-advice/oauth/modern-guide-to-oauth?utm_medium=display&utm_source=oauthnet&utm_campaign=oauth_ebook" onclick="fathom.trackGoal('IX7OVRZA', 0);" class="featured-banner">Master OAuth 2.0 from this guide with modern use cases and real-world examples</a></span>  </div>
+</div>
+
+
+
+<div class="container">
+  <div>
+
+
+    <h2 id="oauth-2.0">OAuth 2.0</h2>
+
+    <p><img src="/images/oauth-2-sm.png" alt="OAuth 2.0 logo" style="float:right; margin: 0 0 8px 8px;" />OAuth 2.0 is the industry-standard protocol for authorization. OAuth 2.0 focuses on client developer simplicity while providing specific authorization flows for web applications, desktop applications, mobile phones, and living room devices. This specification and its extensions are being developed within the <a href="https://datatracker.ietf.org/wg/oauth/about/">IETF OAuth Working Group</a>.</p>
+    <p><a href="/2.1/">OAuth 2.1</a> is an in-progress effort to consolidate OAuth 2.0 and many common extensions under a new name.</p>
+    <p>Questions, suggestions and protocol changes should be discussed on the <a href="https://www.ietf.org/mailman/listinfo/oauth">mailing list</a>.</p>
+
+    
+    <div style="margin-top: 10px; margin-bottom: 20px; padding: 40px; border: 1px #ddd solid;">
+      <div style="">Video Course: The Nuts and Bolts of OAuth 2.0</div>
+      <div class="course-image"><a href="https://oauth2simplified.com/course" onclick="trackOutboundClick('https://oauth2simplified.com/course', '7VBGSQN1');"><img src="https://oauth2simplified.com/images/nuts-and-bolts-of-oauth.png" style="width: 100%"></a></div>
+      <div style="text-align: right;">by Aaron Parecki</div>
+    </div>
+
+    
+    <h3 style="clear:none;">OAuth 2.0</h3>
+
+
+    
+    <ul>
+      <li><a href="https://tools.ietf.org/html/rfc6749">OAuth 2.0 Framework</a> - RFC 6749
+        <ul>
+          <li><a href="/2/access-tokens/">Access Tokens</a></li>
+          <li><a href="/2/refresh-tokens/">Refresh Tokens</a></li>
+          <li><a href="/2/scope/">OAuth Scope</a></li>
+        </ul>
+      </li>
+      <li><a href="/2/grant-types/">OAuth Grant Types</a>
+        <ul>
+          <li><a href="/2/grant-types/authorization-code/">Authorization Code</a></li>
+          <li><a href="/2/pkce/">PKCE</a></li>
+          <li><a href="/2/grant-types/client-credentials/">Client Credentials</a></li>
+          <li><a href="/2/grant-types/device-code/">Device Code</a></li>
+          <li><a href="/2/grant-types/refresh-token/">Refresh Token</a></li>
+          <li>Legacy: <a href="/2/grant-types/implicit/">Implicit Flow</a></li>
+          <li>Legacy: <a href="/2/grant-types/password/">Password Grant</a></li>
+        </ul>
+      </li>
+      <li><a href="/2/client-types/">Client Types - Confidential and Public Applications</a></li>
+      <li><a href="/2/client-authentication/">Client Authentication</a></li>
+      <li><a href="/2/bearer-tokens/">Bearer Tokens</a> - RFC 6750</li>
+      <li><a href="/2/security-considerations/">Threat Model and Security Considerations</a> - RFC 6819</li>
+      <li><a href="/2/oauth-best-practice/">OAuth Security Best Current Practice</a>
+      <li><a href="/id-tokens-vs-access-tokens/">ID Tokens vs Access Tokens</a></li>
+    </ul>
+
+    <h4>Mobile and Other Devices</h4>
+    <ul>
+      <li><a href="/2/native-apps/">Native Apps</a> - Recommendations for using OAuth with native apps</li>
+      <li><a href="/2/browser-based-apps/">Browser-Based Apps</a> - Recommendations for using OAuth with browser-based apps (e.g. an SPA)</li>
+      <li><a href="/2/device-flow/">Device Authorization Grant</a> - OAuth for devices with no browser or no keyboard</li>
+    </ul>
+
+    <h4>Token and Token Management</h4>
+    <ul>
+      <li><a href="/2/jwt-access-tokens/">JWT Profile for Access Tokens</a> - RFC 9068, a standard for structured access tokens</li>
+      <li><a href="/2/token-introspection/">Token Introspection</a> - RFC 7662, to determine the active state and meta-information of a token</li>
+      <li><a href="/2/token-revocation/">Token Revocation</a> - RFC 7009, to signal that a previously obtained token is no longer needed</li>
+      <li><a href="/2/jwt/">JSON Web Token</a> - RFC 7519</li>
+      <li><a href="/2/token-exchange/">Token Exchange</a> - RFC 8693</li>
+    </ul>
+
+    <h4>Discovery and Registration</h4>
+    <ul>
+      <li><a href="/2/authorization-server-metadata/">Authorization Server Metadata</a> - RFC 8414, for clients to discover OAuth endpoints and authorization server capabilities</li>
+      <li><a href="/2/dynamic-client-registration/">Dynamic Client Registration</a> - RFC 7591, to programmatically register OAuth clients</li>
+      <li><a href="/2/dynamic-client-management/">Dynamic Client Registration Management</a> - Experimental RFC 7592, for updating and managing dynamically registered OAuth clients</li>
+    </ul>
+
+    <h4>High Security OAuth</h4>
+    <p>These specs are used to add additional security properties on top of OAuth 2.0.</p>
+    <ul>
+      <li><a href="/2/pushed-authorization-requests/">Pushed Authorization Requests (PAR)</a> - RFC 9126</li>
+      <li><a href="/2/dpop/">Demonstration of Proof of Possession (DPoP)</a> - RFC 9449</li>
+      <li><a href="/2/mtls/">Mutual TLS</a> - RFC 8705</li>
+      <li><a href="/private-key-jwt/">Private Key JWT</a> - (RFC 7521, RFC 7521, OpenID)</li>
+      <li><a href="/fapi/">FAPI</a></li>
+    </ul>
+
+    <h3>Experimental and Draft Specs</h3>
+    <p>The specs below are either experimental or in draft status and are still active working group items. They will likely change before they are finalized as RFCs or BCPs.</p>
+    <ul>
+      <li><a href="https://tools.ietf.org/html/draft-ietf-oauth-incremental-authz">Incremental Authorization</a></li>
+      <li><a href="https://datatracker.ietf.org/doc/html/draft-ietf-oauth-step-up-authn-challenge">Step-up Authentication Challenge</a></li>
+      <li><a href="/specs/">All OAuth Working Group Documents</a></li>
+    </ul>
+
+    <h3>Additional Extensions</h3>
+    <ul>
+      <li><a href="https://www.iana.org/assignments/oauth-parameters/oauth-parameters.xhtml">OAuth Extension Parameter Registry</a></li>
+      <li><a href="http://tools.ietf.org/html/rfc7521">OAuth Assertions Framework</a> - RFC 7521</li>
+      <li><a href="http://tools.ietf.org/html/rfc7522">SAML2 Bearer Assertion</a> - RFC 7522, for integrating with existing identity systems</li>
+      <li><a href="http://tools.ietf.org/html/rfc7523">JWT Bearer Assertion</a> - RFC 7523</li>
+      <li><a href="http://tools.ietf.org/html/rfc9207">Authorization Server Issuer Identification</a> - RFC 9207, indicates the authorization server identifier in the authorization response</li>
+      <li><a href="/2/rich-authorization-requests/">Rich Authorization Requests (RAR)</a> - RFC 9396</li>
+    </ul>
+
+    <h3>Related Work from Other Communities</h3>
+    <ul>
+      <li><a href="/fapi/">FAPI</a> (OpenID Foundation)</li>
+      <li><a href="/webauthn/">WebAuthn - Web Authentication</a></li>
+      <li><a href="/passkeys">passkeys</a> are a new way to sign in to services without a password</li>
+      <li><a href="/http-signatures/">HTTP Message Signatures</a> - A generic HTTP message signing spec</li>
+      <li><a href="/openid-for-verifiable-credentials/">OpenID for Verifiable Credentials</a></li>
+    </ul>
+
+    <h3>Community Resources</h3>
+    <ul>
+      <li><a href="https://aaronparecki.com/oauth-2-simplified/">OAuth 2.0 Simplified</a></li>
+      <li>
+        <a href="/books/">Books about OAuth</a>
+        <ul>
+          <li><a href="https://oauth2simplified.com">OAuth 2.0 Simplified</a> by Aaron Parecki</li>
+          <li><a href="https://www.amazon.com/OAuth-2-Action-Justin-Richer/dp/161729327X/?tag=oauthnet-20">OAuth 2 in Action</a> by Justin Richer and Antonio Sanso</li>
+          <li><a href="https://www.amazon.com/Mastering-OAuth-2-0-Charles-Bihis/dp/1784395404?tag=oauthnet-20">Mastering OAuth 2.0</a> by Charles Bihis</li>
+          <li><a href="https://www.amazon.com/dp/178829596X?tag=oauthnet-20">OAuth 2.0 Cookbook</a> by Adolfo Eloy Nascimento</li>
+        </ul>
+      </li>
+      <li><a href="https://oauth2simplified.com/course">The Nuts and Bolts of OAuth</a> - video course by Aaron Parecki</li>
+    </ul>
+
+    <h3>Protocols Built on OAuth 2.0</h3>
+    <ul>
+      <li><a href="https://openid.net/connect/">OpenID Connect</a> (OpenID Foundation)</li>
+      <li><a href="https://docs.kantarainitiative.org/uma/wg/rec-oauth-uma-grant-2.0.html">UMA 2.0</a> (Kantara)</li>
+      <li><a href="https://indieauth.spec.indieweb.org/">IndieAuth</a> (W3C)</li>
+    </ul>
+
+    <h3>Code and Services</h3>
+    <ul>
+      <li><a href="/code/">OAuth 2.0 Code and Services</a></li>
+    </ul>
+
+    <h3>OAuth 2.1</h3>
+
+    <ul>
+      <li><a href="/2.1/">OAuth 2.1</a> - An in-progress update to consolidate and simplify OAuth 2.0</li>
+      <li><a href="https://aaronparecki.com/2019/12/12/21/its-time-for-oauth-2-dot-1">It's Time for OAuth 2.1</a> (by Aaron Parecki)</li>
+    </ul>
+
+    <h3>Legacy</h3>
+
+    <ul>
+      <li><a href="/1/">OAuth 1.0 and 1.0a</a></li>
+    </ul>
+
+  </div>
+</div>
+
+
+<footer>
+
+  <div class="source">
+    Follow <a href="https://twitter.com/oauth_2" class="twitter-follow-button">@oauth_2</a> on Twitter.
+    Missing something?
+        <a href="https://github.com/aaronpk/oauth.net/blob/main/public/2/index.php">Edit this page</a>.
+  </div>
+
+  <div class="container">
+          
+      </div>
+
+</footer>
+
+
+<script src="/stylesheets/jquery-3.2.1.slim.min.js"></script>
+<script src="/stylesheets/bootstrap/js/bootstrap.min.js"></script>
+
+<script>
+function ea(response) {
+  if(response.html) {
+    $("#ea").html(response.html);
+  }
+};
+$(function(){
+  if(window.fathom && $(".featured-banner").data("view-code")) {
+    window.fathom.trackGoal($(".featured-banner").data("view-code"), 0);
+  }
+});
+</script>
+<script async src="/thanks.php"></script>
+
+</body>
+</html>
+
+0
+

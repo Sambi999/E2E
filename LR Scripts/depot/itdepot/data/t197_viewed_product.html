@@ -1,0 +1,75 @@
+function getCurrency() {
+  let currency = window.localStorage.getItem('_fwcrm_curr') || '';
+  if (currency !== '') {
+    return currency;
+  }
+  fetch('/cart.js', {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  })
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      currency = data.currency || '';
+      if (currency !== '') {
+        window.localStorage.setItem('_fwcrm_curr', currency);
+      }
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
+  return currency;
+}
+
+function sendProductDataToFm(currentProductData) {
+  currentProductData.currency = getCurrency();
+  currentProductData.customer = FreshMarketerSourceMap.currentCustomer;
+  currentProductData.shopName = FreshMarketerSourceMap.shopName;
+
+  let timesRun = 0;
+  let sendProductTimerId = setInterval(function () {
+    timesRun++;
+
+    try {
+      FM.trackMasEvent('shopify.viewed_product', true, currentProductData);
+      clearInterval(sendProductTimerId);
+    } catch (err) {
+      if (timesRun === 40) {
+        clearInterval(sendProductTimerId);
+        console.info('FM not loaded yet  at sendProductDataToFm', err);
+      }
+    }
+  }, 300);
+}
+
+function associateVisitor(customerData) {
+  let timesRun = 0;
+  let associateVistoriTimerId = setInterval(function () {
+    timesRun++;
+
+    try {
+      fwcrm.identify(customerData?.email);
+      clearInterval(associateVistoriTimerId);
+    } catch (err) {
+      if (timesRun === 40) {
+        clearInterval(associateVistoriTimerId);
+        console.info('fwrcm not loaded yet at associateVisitor', err);
+      }
+    }
+  }, 300);
+}
+
+if (typeof FreshMarketerSourceMap !== 'undefined') {
+  const currentProductData = FreshMarketerSourceMap.currentProduct;
+  if (currentProductData) {
+    sendProductDataToFm(currentProductData);
+  }
+  if (FreshMarketerSourceMap.currentCustomer) {
+    associateVisitor(FreshMarketerSourceMap.currentCustomer);
+  }
+} else {
+  console.log('FreshMarketSourceMap is not defined');
+}

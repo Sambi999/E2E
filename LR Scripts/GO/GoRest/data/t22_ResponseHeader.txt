@@ -1,0 +1,33 @@
+HTTP/1.1 200 OK
+content-type: application/json; charset=utf-8; profile="https://www.mediawiki.org/wiki/Specs/Summary/1.5.0"
+cache-control: s-maxage=1209600, max-age=300
+content-language: en
+vary: Accept-Encoding
+content-location: https://en.wikipedia.org/api/rest_v1/page/summary/Base64
+access-control-allow-origin: *
+access-control-allow-methods: GET,HEAD
+access-control-allow-headers: accept, content-type, content-length, cache-control, accept-language, api-user-agent, if-match, if-modified-since, if-none-match, dnt, accept-encoding
+access-control-expose-headers: etag
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+referrer-policy: origin-when-cross-origin
+x-xss-protection: 1; mode=block
+content-security-policy: default-src 'none'; frame-ancestors 'none'
+x-content-security-policy: default-src 'none'; frame-ancestors 'none'
+x-webkit-csp: default-src 'none'; frame-ancestors 'none'
+server: restbase2029
+date: Sun, 18 Feb 2024 12:48:15 GMT
+etag: W/"1208667027/6fd57200-ce57-11ee-9fb0-70cca6d483f6"
+content-encoding: gzip
+age: 76269
+x-cache: cp5024 miss, cp5024 hit/15
+x-cache-status: hit-front
+server-timing: cache;desc="hit-front", host;desc="cp5024"
+strict-transport-security: max-age=106384710; includeSubDomains; preload
+report-to: { "group": "wm_nel", "max_age": 604800, "endpoints": [{ "url": "https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0" }] }
+nel: { "report_to": "wm_nel", "max_age": 604800, "failure_fraction": 0.05, "success_fraction": 0.0}
+x-client-ip: 203.92.61.72
+set-cookie: NetworkProbeLimit=0.001;Path=/;Secure;Max-Age=3600
+accept-ranges: bytes
+content-length: 631
+

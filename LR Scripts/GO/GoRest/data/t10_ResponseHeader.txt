@@ -1,0 +1,21 @@
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Content-Encoding: gzip
+Access-Control-Allow-Origin: *
+Content-Security-Policy: require-trusted-types-for 'script'; report-uri https://csp.withgoogle.com/csp/ads-people-metrics-releaser
+Cross-Origin-Resource-Policy: cross-origin
+Cross-Origin-Opener-Policy: same-origin; report-to="ads-people-metrics-releaser"
+Report-To: {"group":"ads-people-metrics-releaser","max_age":2592000,"endpoints":[{"url":"https://csp.withgoogle.com/csp/report-to/ads-people-metrics-releaser"}]}
+Content-Length: 44658
+X-Content-Type-Options: nosniff
+Server: sffe
+X-XSS-Protection: 0
+Date: Mon, 19 Feb 2024 06:25:17 GMT
+Expires: Tue, 20 Feb 2024 06:25:17 GMT
+Cache-Control: public, max-age=86400
+Age: 12813
+Last-Modified: Mon, 26 Jun 2023 19:52:52 GMT
+Content-Type: application/json
+Vary: Accept-Encoding
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
